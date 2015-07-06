@@ -135,142 +135,65 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
         ImageView a1 = (ImageView) b_a1.findViewById(R.id.ban_a);
 
         LinearLayout b_a2 = (LinearLayout) findViewById(R.id.bottom_a2);
-        ImageView a2 = (ImageView) b_a2.findViewById(R.id.ban_a);
+        ImageView a2 = (ImageView) b_a2.findViewById(R.id.ban_a2);
 
         LinearLayout b_a3 = (LinearLayout) findViewById(R.id.bottom_a3);
-        ImageView a3 = (ImageView) b_a3.findViewById(R.id.ban_a);
+        ImageView a3 = (ImageView) b_a3.findViewById(R.id.ban_a3);
 
         //a2-------------------------------------------------------------
 
-        LinearLayout b_a4 = (LinearLayout) findViewById(R.id.bottom_a);
-        ImageView a4 = (ImageView) b_a4.findViewById(R.id.ban_a2);
+        LinearLayout b_a4 = (LinearLayout) findViewById(R.id.bottom_a2);
+        ImageView a4 = (ImageView) b_a4.findViewById(R.id.ban_a);
 
-        LinearLayout b_a5 = (LinearLayout) findViewById(R.id.bottom_a2);
+        LinearLayout b_a5 = (LinearLayout) findViewById(R.id.bottom_a3);
         ImageView a5 = (ImageView) b_a5.findViewById(R.id.ban_a2);
 
-        LinearLayout b_a6 = (LinearLayout) findViewById(R.id.bottom_a3);
-        ImageView a6 = (ImageView) b_a6.findViewById(R.id.ban_a2);
+        LinearLayout b_a6 = (LinearLayout) findViewById(R.id.bottom_a);
+        ImageView a6 = (ImageView) b_a6.findViewById(R.id.ban_a3);
 
         //a3-------------------------------------------------------------
 
-        LinearLayout b_a7 = (LinearLayout) findViewById(R.id.bottom_a);
-        ImageView a7 = (ImageView) b_a7.findViewById(R.id.ban_a3);
+        LinearLayout b_a7 = (LinearLayout) findViewById(R.id.bottom_a3);
+        ImageView a7 = (ImageView) b_a7.findViewById(R.id.ban_a);
 
-        LinearLayout b_a8 = (LinearLayout) findViewById(R.id.bottom_a2);
-        ImageView a8 = (ImageView) b_a8.findViewById(R.id.ban_a3);
+        LinearLayout b_a8 = (LinearLayout) findViewById(R.id.bottom_a);
+        ImageView a8 = (ImageView) b_a8.findViewById(R.id.ban_a2);
 
-        LinearLayout b_a9 = (LinearLayout) findViewById(R.id.bottom_a3);
+        LinearLayout b_a9 = (LinearLayout) findViewById(R.id.bottom_a2);
         ImageView a9 = (ImageView) b_a9.findViewById(R.id.ban_a3);
 
-        //a4------------------------------------------------------------
+        //a4-------------------------------------------------------------
 
         LinearLayout b_a10 = (LinearLayout) findViewById(R.id.bottom_a);
         ImageView a10 = (ImageView) b_a10.findViewById(R.id.ban_a);
 
-        LinearLayout b_a11 = (LinearLayout) findViewById(R.id.bottom_a);
+        LinearLayout b_a11 = (LinearLayout) findViewById(R.id.bottom_a2);
         ImageView a11 = (ImageView) b_a11.findViewById(R.id.ban_a2);
 
-        LinearLayout b_a12 = (LinearLayout) findViewById(R.id.bottom_a);
+        LinearLayout b_a12 = (LinearLayout) findViewById(R.id.bottom_a3);
         ImageView a12 = (ImageView) b_a12.findViewById(R.id.ban_a3);
 
-        //a5------------------------------------------------------------
+        //a5-------------------------------------------------------------
 
-        LinearLayout b_a13 = (LinearLayout) findViewById(R.id.bottom_a2);
-        ImageView a13 = (ImageView) b_a13.findViewById(R.id.ban_a);
+        LinearLayout b_a13 = (LinearLayout) findViewById(R.id.bottom_a);
+        ImageView a13 = (ImageView) b_a13.findViewById(R.id.ban_a3);
 
         LinearLayout b_a14 = (LinearLayout) findViewById(R.id.bottom_a2);
         ImageView a14 = (ImageView) b_a14.findViewById(R.id.ban_a2);
 
-        LinearLayout b_a15 = (LinearLayout) findViewById(R.id.bottom_a2);
-        ImageView a15 = (ImageView) b_a15.findViewById(R.id.ban_a3);
+        LinearLayout b_a15 = (LinearLayout) findViewById(R.id.bottom_a3);
+        ImageView a15 = (ImageView) b_a15.findViewById(R.id.ban_a);
 
-        //a6------------------------------------------------------------
+        //a5-------------------------------------------------------------
 
-        LinearLayout b_a16 = (LinearLayout) findViewById(R.id.bottom_a3);
-        ImageView a16 = (ImageView) b_a16.findViewById(R.id.ban_a);
+        LinearLayout b_a16 = (LinearLayout) findViewById(R.id.bottom_a);
+        ImageView a16 = (ImageView) b_a16.findViewById(R.id.ban_a2);
 
-        LinearLayout b_a17 = (LinearLayout) findViewById(R.id.bottom_a3);
-        ImageView a17 = (ImageView) b_a17.findViewById(R.id.ban_a2);
+        LinearLayout b_a17 = (LinearLayout) findViewById(R.id.bottom_a2);
+        ImageView a17 = (ImageView) b_a17.findViewById(R.id.ban_a);
 
         LinearLayout b_a18 = (LinearLayout) findViewById(R.id.bottom_a3);
         ImageView a18 = (ImageView) b_a18.findViewById(R.id.ban_a3);
-
-        //a7------------------------------------------------------------
-
-        LinearLayout b_a19 = (LinearLayout) findViewById(R.id.bottom_a);
-        ImageView a19 = (ImageView) b_a19.findViewById(R.id.ban_a);
-
-        LinearLayout b_a20 = (LinearLayout) findViewById(R.id.bottom_a2);
-        ImageView a20 = (ImageView) b_a20.findViewById(R.id.ban_a2);
-
-        LinearLayout b_a21 = (LinearLayout) findViewById(R.id.bottom_a3);
-        ImageView a21 = (ImageView) b_a21.findViewById(R.id.ban_a3);
-
-        //a8------------------------------------------------------------
-
-        LinearLayout b_a22 = (LinearLayout) findViewById(R.id.bottom_a2);
-        ImageView a22 = (ImageView) b_a22.findViewById(R.id.ban_a);
-
-        LinearLayout b_a23 = (LinearLayout) findViewById(R.id.bottom_a3);
-        ImageView a23 = (ImageView) b_a23.findViewById(R.id.ban_a2);
-
-        LinearLayout b_a24 = (LinearLayout) findViewById(R.id.bottom_a);
-        ImageView a24 = (ImageView) b_a24.findViewById(R.id.ban_a3);
-
-        //a9------------------------------------------------------------
-
-        LinearLayout b_a25 = (LinearLayout) findViewById(R.id.bottom_a3);
-        ImageView a25 = (ImageView) b_a25.findViewById(R.id.ban_a);
-
-        LinearLayout b_a26 = (LinearLayout) findViewById(R.id.bottom_a);
-        ImageView a26 = (ImageView) b_a26.findViewById(R.id.ban_a2);
-
-        LinearLayout b_a27 = (LinearLayout) findViewById(R.id.bottom_a2);
-        ImageView a27 = (ImageView) b_a27.findViewById(R.id.ban_a3);
-
-        //a10------------------------------------------------------------
-
-        LinearLayout b_a28 = (LinearLayout) findViewById(R.id.bottom_a);
-        ImageView a28 = (ImageView) b_a28.findViewById(R.id.ban_a2);
-
-        LinearLayout b_a29 = (LinearLayout) findViewById(R.id.bottom_a2);
-        ImageView a29 = (ImageView) b_a29.findViewById(R.id.ban_a3);
-
-        LinearLayout b_a30 = (LinearLayout) findViewById(R.id.bottom_a3);
-        ImageView a30 = (ImageView) b_a30.findViewById(R.id.ban_a);
-
-        //a11------------------------------------------------------------
-
-        LinearLayout b_a31 = (LinearLayout) findViewById(R.id.bottom_a2);
-        ImageView a31 = (ImageView) b_a31.findViewById(R.id.ban_a2);
-
-        LinearLayout b_a32 = (LinearLayout) findViewById(R.id.bottom_a3);
-        ImageView a32 = (ImageView) b_a32.findViewById(R.id.ban_a3);
-
-        LinearLayout b_a33 = (LinearLayout) findViewById(R.id.bottom_a);
-        ImageView a33 = (ImageView) b_a33.findViewById(R.id.ban_a);
-
-        //a12------------------------------------------------------------
-
-        LinearLayout b_a34 = (LinearLayout) findViewById(R.id.bottom_a3);
-        ImageView a34 = (ImageView) b_a34.findViewById(R.id.ban_a2);
-
-        LinearLayout b_a35 = (LinearLayout) findViewById(R.id.bottom_a2);
-        ImageView a35 = (ImageView) b_a35.findViewById(R.id.ban_a3);
-
-        LinearLayout b_a36 = (LinearLayout) findViewById(R.id.bottom_a);
-        ImageView a36 = (ImageView) b_a36.findViewById(R.id.ban_a);
-
-        //a13------------------------------------------------------------
-
-        LinearLayout b_a37 = (LinearLayout) findViewById(R.id.bottom_a3);
-        ImageView a37 = (ImageView) b_a37.findViewById(R.id.ban_a2);
-
-        LinearLayout b_a38 = (LinearLayout) findViewById(R.id.bottom_a);
-        ImageView a38 = (ImageView) b_a38.findViewById(R.id.ban_a3);
-
-        LinearLayout b_a39 = (LinearLayout) findViewById(R.id.bottom_a2);
-        ImageView a39 = (ImageView) b_a39.findViewById(R.id.ban_a);
 
 
         //check if containers are not empty and all letters are in proper place
@@ -290,27 +213,6 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
             approved();
         }
         else if ((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a16!= null && a17!= null && a18!= null)){
-            approved();
-        }
-        else if((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a19!= null && a20!= null && a21!= null)){
-            approved();
-        }
-        else if((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a22!= null && a23!= null && a24!= null)){
-            approved();
-        }
-        else if((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a25!= null && a26!= null && a27!= null)){
-            approved();
-        }
-        else if((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a28!= null && a29!= null && a30!= null)){
-            approved();
-        }
-        else if((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a31!= null && a32!= null && a33!= null)){
-            approved();
-        }
-        else if((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a34!= null && a35!= null && a36!= null)){
-            approved();
-        }
-        else if((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a37!= null && a38!= null && a39!= null)){
             approved();
         }
         else {

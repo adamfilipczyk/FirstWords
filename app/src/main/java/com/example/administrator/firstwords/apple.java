@@ -114,6 +114,8 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
         LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
         ImageView e = (ImageView) b_e.findViewById(R.id.apple_e);
 
+        //p---------------------------------------------------------
+
         LinearLayout b_p = (LinearLayout)findViewById(R.id.bottom_p);
         ImageView p = (ImageView) b_p.findViewById(R.id.apple_p);
 
