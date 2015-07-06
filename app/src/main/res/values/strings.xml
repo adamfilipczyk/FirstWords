@@ -32,5 +32,6 @@
     <string name="title_activity_cabbage">cabbage</string>
     <string name="title_activity_carrot">carrot</string>
     <string name="title_activity_cucumber">cucumber</string>
+    <string name="title_activity_onion">onion</string>
 
 </resources>
