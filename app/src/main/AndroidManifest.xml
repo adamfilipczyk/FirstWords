@@ -107,6 +107,10 @@
         <activity
             android:name=".cucumber"
             android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".onion"
+            android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -114,8 +118,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".onion"
-            android:label="@string/title_activity_onion" >
+            android:name=".pear"
+            android:label="@string/title_activity_pear" >
         </activity>
     </application>
 

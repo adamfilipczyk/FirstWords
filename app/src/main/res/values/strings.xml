@@ -33,5 +33,6 @@
     <string name="title_activity_carrot">carrot</string>
     <string name="title_activity_cucumber">cucumber</string>
     <string name="title_activity_onion">onion</string>
+    <string name="title_activity_pear">pear</string>
 
 </resources>

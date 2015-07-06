@@ -126,7 +126,6 @@
         android:orientation="horizontal">
     </LinearLayout>
 
-
     <LinearLayout
         android:id="@+id/top_c"
         android:layout_width="match_parent"

@@ -5,11 +5,8 @@ import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.DragEvent;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -64,7 +61,7 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
 
     //method to play the sound of the picture displayed on the screen
     public void play(View view) {
-       // sound.play(soundID, 1, 1, 1, 0, 1);
+       sound.play(soundID, 1, 1, 1, 0, 1);
     }
 
     //method to play the sound of the picture displayed on the screen
