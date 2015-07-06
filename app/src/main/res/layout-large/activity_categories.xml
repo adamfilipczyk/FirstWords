@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.firstwords.categories">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow android:layout_weight="1">
+
+            <Button
+                android:id="@+id/icon1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/animals_btn"
+                android:clickable="true"
+                android:enabled="true"
+                android:shadowColor="#000000"
+                android:singleLine="false" />
+
+            <Button
+                android:id="@+id/icon2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/quest"/>
+
+            <Button
+                android:id="@+id/icon3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/quest"/>
+
+            <Button
+                android:id="@+id/icon4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/quest"/>
+
+            <Button
+                android:id="@+id/icon5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/quest"/>
+
+
+        </TableRow>
+        <TableRow android:layout_weight="2"
+            android:layout_marginTop="100dp">
+
+            <Button
+                android:id="@+id/icon6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/quest"
+                />
+
+            <Button
+                android:id="@+id/icon7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/quest"/>
+
+            <Button
+                android:id="@+id/icon8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/quest"/>
+
+            <Button
+                android:id="@+id/icon9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/quest"/>
+
+            <Button
+                android:id="@+id/icon10"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/quest"/>
+
+
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.firstwords" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".splash"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".home"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".info"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".categories"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".cow"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".donkey"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".elephant"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".giraffe"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".hippo"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".lion"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".mouse"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".hen"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".owl"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".rabbit"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".rat"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".tiger"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".zebra"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".one_completed"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".categories2"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".apple"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".banana"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".blueberry"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".cabbage"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".carrot"
+            android:label="@string/title_activity_carrot" >
+        </activity>
+        <activity
+            android:name=".cucumber"
+            android:label="@string/title_activity_cucumber" >
+        </activity>
+    </application>
+
+</manifest>

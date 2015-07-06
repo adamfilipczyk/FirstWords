@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listen1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_white"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".cow">
+
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/cow" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back"
+        android:background="@drawable/home_btn"
+        android:onClick="back"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignTop="@+id/bottom_c" />
+
+    <ImageButton
+        android:id="@+id/listen"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="right"
+        android:background="@drawable/listend"
+        android:onClick="play" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_check"
+        android:layout_below="@+id/listen"
+        android:layout_alignRight="@+id/top_c"
+        android:layout_alignEnd="@+id/top_c"
+        android:onClick="check"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:background="@drawable/selector" />
+
+    <LinearLayout
+            android:id="@+id/bottom_c"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/top_c"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/picture"
+            android:background="#000000"
+            android:orientation="horizontal">
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_o"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/top_c"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/bottom_c"
+            android:background="#000000"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_w"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/top_c"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/bottom_o"
+            android:background="#000000"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top_c"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="140dp"
+            android:layout_toRightOf="@+id/picture">
+
+            <ImageView
+                android:id="@+id/cow_o"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/o" />
+
+            <ImageView
+                android:id="@+id/cow_w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/w" />
+
+            <ImageView
+                android:id="@+id/cow_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c" />
+        </LinearLayout>
+
+</RelativeLayout>
