@@ -5,11 +5,8 @@ import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.DragEvent;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,7 +44,7 @@ public class cucumber extends Activity implements View.OnTouchListener, View.OnD
         findViewById(R.id.cucumber_c).setOnTouchListener(this);
         findViewById(R.id.cucumber_u).setOnTouchListener(this);
         findViewById(R.id.cucumber_c2).setOnTouchListener(this);
-        findViewById(R.id.cucumber_u).setOnTouchListener(this);
+        findViewById(R.id.cucumber_u2).setOnTouchListener(this);
         findViewById(R.id.cucumber_m).setOnTouchListener(this);
         findViewById(R.id.cucumber_b).setOnTouchListener(this);
         findViewById(R.id.cucumber_e).setOnTouchListener(this);
@@ -68,7 +65,7 @@ public class cucumber extends Activity implements View.OnTouchListener, View.OnD
 
     //method to play the sound of the picture displayed on the screen
     public void play(View view) {
-        // sound.play(soundID, 1, 1, 1, 0, 1);
+        sound.play(soundID, 1, 1, 1, 0, 1);
     }
 
     //method to play the sound of the picture displayed on the screen
@@ -106,7 +103,6 @@ public class cucumber extends Activity implements View.OnTouchListener, View.OnD
             return false;
         }
     }
-
 
     public void check (View view) {
 

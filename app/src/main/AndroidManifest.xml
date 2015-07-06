@@ -91,6 +91,11 @@
         <activity
             android:name=".banana"
             android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".blueberry"
@@ -111,15 +116,14 @@
         <activity
             android:name=".onion"
             android:screenOrientation="landscape" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".pear"
-            android:label="@string/title_activity_pear" >
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".pepper"
+            android:label="@string/title_activity_pepper" >
         </activity>
     </application>
 

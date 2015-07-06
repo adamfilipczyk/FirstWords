@@ -3,12 +3,12 @@
     android:id="@+id/listen14"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/bg_green"
+    android:background="@drawable/bg_beige"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".pear">
+    tools:context=".pepper">
 
 
     <ImageView
@@ -16,7 +16,7 @@
         android:layout_width="140dp"
         android:layout_height="180dp"
         android:layout_gravity="center_vertical"
-        android:background="@drawable/pear" />
+        android:background="@drawable/pepper" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -26,7 +26,7 @@
         android:onClick="back"
         android:layout_alignParentLeft="false"
         android:layout_alignParentStart="false"
-        android:layout_alignTop="@+id/bottom_a" />
+        android:layout_alignTop="@+id/bottom_p" />
 
     <ImageButton
         android:id="@+id/listen"
@@ -77,7 +77,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/bottom_a"
+        android:id="@+id/bottom_p2"
         android:layout_width="44dp"
         android:layout_height="44dp"
         android:layout_below="@+id/top_c"
@@ -89,13 +89,35 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/bottom_p3"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/top_c"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/bottom_p2"
+        android:background="#000000"
+        android:orientation="horizontal">
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom_e2"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/top_c"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/bottom_p3"
+        android:background="#000000"
+        android:orientation="horizontal">
+    </LinearLayout>
+    <LinearLayout
         android:id="@+id/bottom_r"
         android:layout_width="44dp"
         android:layout_height="44dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@+id/bottom_a"
+        android:layout_toRightOf="@+id/bottom_e2"
         android:background="#000000"
         android:orientation="horizontal">
     </LinearLayout>
@@ -108,28 +130,38 @@
         android:layout_toRightOf="@+id/picture">
 
         <ImageView
-            android:id="@+id/pear_r"
+            android:id="@+id/pepper_r"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/r" />
 
         <ImageView
-            android:id="@+id/pear_p"
+            android:id="@+id/pepper_p"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/p" />
 
         <ImageView
-            android:id="@+id/pear_e"
+            android:id="@+id/pepper_e"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/e" />
 
         <ImageView
-            android:id="@+id/pear_a"
+            android:id="@+id/pepper_p2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/a" />
+            android:background="@drawable/p" />
+        <ImageView
+            android:id="@+id/pepper_e2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/e" />
+        <ImageView
+            android:id="@+id/pepper_p3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/p" />
     </LinearLayout>
 
 </RelativeLayout>

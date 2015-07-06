@@ -7,8 +7,6 @@ import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.DragEvent;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -63,31 +61,9 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
         findViewById(R.id.top_c).setOnDragListener(this);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_banana, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
     //play the sound of the picture displayed on the screen after "Speaker" button is clicked
     public void play(View view) {
-        // sound.play(soundID, 1, 1, 1, 0, 1);
+        sound.play(soundID, 1, 1, 1, 0, 1);
     }
 
     //play the "Home" button click sound and redirection to "Home" screen
@@ -258,21 +234,43 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
         ImageView a28 = (ImageView) b_a28.findViewById(R.id.ban_a2);
 
         LinearLayout b_a29 = (LinearLayout) findViewById(R.id.bottom_a2);
-        ImageView a29 = (ImageView) b_a29.findViewById(R.id.ban_a);
+        ImageView a29 = (ImageView) b_a29.findViewById(R.id.ban_a3);
 
         LinearLayout b_a30 = (LinearLayout) findViewById(R.id.bottom_a3);
-        ImageView a30 = (ImageView) b_a30.findViewById(R.id.ban_a3);
+        ImageView a30 = (ImageView) b_a30.findViewById(R.id.ban_a);
 
         //a11------------------------------------------------------------
 
-        LinearLayout b_a31 = (LinearLayout) findViewById(R.id.bottom_a);
-        ImageView a31 = (ImageView) b_a31.findViewById(R.id.ban_a3);
+        LinearLayout b_a31 = (LinearLayout) findViewById(R.id.bottom_a2);
+        ImageView a31 = (ImageView) b_a31.findViewById(R.id.ban_a2);
 
-        LinearLayout b_a32 = (LinearLayout) findViewById(R.id.bottom_a2);
-        ImageView a32 = (ImageView) b_a32.findViewById(R.id.ban_a2);
+        LinearLayout b_a32 = (LinearLayout) findViewById(R.id.bottom_a3);
+        ImageView a32 = (ImageView) b_a32.findViewById(R.id.ban_a3);
 
-        LinearLayout b_a33 = (LinearLayout) findViewById(R.id.bottom_a3);
+        LinearLayout b_a33 = (LinearLayout) findViewById(R.id.bottom_a);
         ImageView a33 = (ImageView) b_a33.findViewById(R.id.ban_a);
+
+        //a12------------------------------------------------------------
+
+        LinearLayout b_a34 = (LinearLayout) findViewById(R.id.bottom_a3);
+        ImageView a34 = (ImageView) b_a34.findViewById(R.id.ban_a2);
+
+        LinearLayout b_a35 = (LinearLayout) findViewById(R.id.bottom_a2);
+        ImageView a35 = (ImageView) b_a35.findViewById(R.id.ban_a3);
+
+        LinearLayout b_a36 = (LinearLayout) findViewById(R.id.bottom_a);
+        ImageView a36 = (ImageView) b_a36.findViewById(R.id.ban_a);
+
+        //a13------------------------------------------------------------
+
+        LinearLayout b_a37 = (LinearLayout) findViewById(R.id.bottom_a3);
+        ImageView a37 = (ImageView) b_a37.findViewById(R.id.ban_a2);
+
+        LinearLayout b_a38 = (LinearLayout) findViewById(R.id.bottom_a);
+        ImageView a38 = (ImageView) b_a38.findViewById(R.id.ban_a3);
+
+        LinearLayout b_a39 = (LinearLayout) findViewById(R.id.bottom_a2);
+        ImageView a39 = (ImageView) b_a39.findViewById(R.id.ban_a);
 
 
         //check if containers are not empty and all letters are in proper place
@@ -307,6 +305,12 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
             approved();
         }
         else if((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a31!= null && a32!= null && a33!= null)){
+            approved();
+        }
+        else if((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a34!= null && a35!= null && a36!= null)){
+            approved();
+        }
+        else if((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a37!= null && a38!= null && a39!= null)){
             approved();
         }
         else {
