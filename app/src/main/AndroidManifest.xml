@@ -21,6 +21,14 @@
             android:screenOrientation="landscape" >
         </activity>
         <activity
+            android:name=".one_completed"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".game_timer"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
             android:name=".categories"
             android:screenOrientation="landscape" >
         </activity>
@@ -77,10 +85,6 @@
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name=".one_completed"
-            android:screenOrientation="landscape" >
-        </activity>
-        <activity
             android:name=".categories2"
             android:screenOrientation="landscape" >
         </activity>
@@ -133,9 +137,12 @@
             android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".categories3"
+            android:screenOrientation="landscape" >
         </activity>
     </application>
 

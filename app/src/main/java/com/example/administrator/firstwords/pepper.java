@@ -195,6 +195,17 @@ public class pepper extends Activity implements View.OnTouchListener, View.OnDra
         LinearLayout b_a18 = (LinearLayout) findViewById(R.id.bottom_p3);
         ImageView a18 = (ImageView) b_a18.findViewById(R.id.pepper_p3);
 
+        //p6-------------------------------------------------------------
+
+        LinearLayout b_a19 = (LinearLayout) findViewById(R.id.bottom_p);
+        ImageView a19 = (ImageView) b_a19.findViewById(R.id.pepper_p);
+
+        LinearLayout b_a20 = (LinearLayout) findViewById(R.id.bottom_p3);
+        ImageView a20 = (ImageView) b_a20.findViewById(R.id.pepper_p2);
+
+        LinearLayout b_a21 = (LinearLayout) findViewById(R.id.bottom_p2);
+        ImageView a21 = (ImageView) b_a21.findViewById(R.id.pepper_p3);
+
 
 
         //check if containers are not empty and all letters are in proper place
@@ -214,6 +225,9 @@ public class pepper extends Activity implements View.OnTouchListener, View.OnDra
             approved();
         }
         else if ((r != null) && ((e1 != null && e2 != null) || (e3 != null && e4 != null)) && (a16!= null && a17!= null && a18!= null)){
+            approved();
+        }
+        else if ((r != null) && ((e1 != null && e2 != null) || (e3 != null && e4 != null)) && (a19!= null && a20!= null && a21!= null)){
             approved();
         }
         else {

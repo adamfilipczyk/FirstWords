@@ -195,6 +195,17 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
         LinearLayout b_a18 = (LinearLayout) findViewById(R.id.bottom_a3);
         ImageView a18 = (ImageView) b_a18.findViewById(R.id.ban_a3);
 
+        //a6-------------------------------------------------------------
+
+        LinearLayout b_a19 = (LinearLayout) findViewById(R.id.bottom_a);
+        ImageView a19 = (ImageView) b_a19.findViewById(R.id.ban_a);
+
+        LinearLayout b_a20 = (LinearLayout) findViewById(R.id.bottom_a3);
+        ImageView a20 = (ImageView) b_a20.findViewById(R.id.ban_a2);
+
+        LinearLayout b_a21 = (LinearLayout) findViewById(R.id.bottom_a2);
+        ImageView a21 = (ImageView) b_a21.findViewById(R.id.ban_a3);
+
 
         //check if containers are not empty and all letters are in proper place
         if ((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a1!= null && a2!= null && a3!= null)){
@@ -213,6 +224,9 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
             approved();
         }
         else if ((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a16!= null && a17!= null && a18!= null)){
+            approved();
+        }
+        else if ((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a19!= null && a20!= null && a21!= null)){
             approved();
         }
         else {

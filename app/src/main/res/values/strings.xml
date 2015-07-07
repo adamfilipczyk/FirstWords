@@ -39,5 +39,9 @@
     <string name="title_activity_pumpkin">pumpkin</string>
     <string name="title_activity_radish">radish</string>
     <string name="title_activity_strawberry">strawberry</string>
+    <string name="title_activity_timer">timer</string>
+    <string name="title_activity_categories3">categories3</string>
+
+
 
 </resources>

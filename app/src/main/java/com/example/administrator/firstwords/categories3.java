@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 
-public class categories2 extends Activity {
+public class categories3 extends Activity {
 
     SoundPool sound, click;
     int soundID;
@@ -16,7 +16,7 @@ public class categories2 extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_categories2);
+        setContentView(R.layout.activity_categories3);
 
         //object for the check sound
         click = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
@@ -45,5 +45,13 @@ public class categories2 extends Activity {
         finish();
         Intent cat2 = new Intent(this, apple.class);
         startActivity(cat2);
+    }
+
+    public void btn3(View view) {
+
+        click.play(soundID, 1, 1, 1, 0, 1);
+        //finish();
+        //Intent cat2 = new Intent(this, apple.class);
+        //startActivity(cat2);
     }
 }
