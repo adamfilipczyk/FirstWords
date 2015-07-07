@@ -13,11 +13,11 @@ import android.widget.TextView;
 
 public class game_timer extends Activity {
 
-    MediaPlayer mPlayer;
+    MediaPlayer mPlayer, buzz;
     public TextView gTimer;
     private CountDownTimer countDownTimer;
-    private final int startTime = 120 * 1000;
-    private final int interval = 1 * 1000;
+    private final int startTime = (120 * 1000);
+    private final int interval = (1 * 1000);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class game_timer extends Activity {
         setContentView(R.layout.activity_game_timer);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
+        buzz = MediaPlayer.create(this, R.raw.buzz);
         mPlayer = MediaPlayer.create(this, R.raw.takeabreak);
         mPlayer.start();
 
@@ -44,12 +45,13 @@ public class game_timer extends Activity {
 
         @Override
         public void onTick(long millisUntilFinished) {
-            gTimer.setText("2 minutes break");
+
             gTimer.setText("Seconds left: " + " " + millisUntilFinished/1000);
         }
 
         @Override
         public void onFinish() {
+            buzz.start();
             gTimer.setText("Time's Up !");
 
             //read the value from the Save.xml
