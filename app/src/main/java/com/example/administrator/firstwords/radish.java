@@ -142,36 +142,39 @@ public class radish extends Activity implements View.OnTouchListener, View.OnDra
             switch (eventNumber){
                 case 1:
                     correct1.start();
+                    /*
                     correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent str = new Intent(getApplicationContext(), radish.class);
-                            startActivity(str);
+                            Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                            startActivity(compl);
                         }
-                    });
+                    });*/
                     break;
                 case 2:
                     correct2.start();
+                    /*
                     correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent str = new Intent(getApplicationContext(), radish.class);
-                            startActivity(str);
+                            Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                            startActivity(compl);
                         }
-                    });
+                    });*/
                     break;
                 case 3:
                     correct3.start();
+                    /*
                     correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent str = new Intent(getApplicationContext(), radish.class);
-                            startActivity(str);
+                            Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                            startActivity(compl);
                         }
-                    });
+                    });*/
                     break;
                 default:
                     //do nothing
