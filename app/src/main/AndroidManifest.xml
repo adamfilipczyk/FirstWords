@@ -119,8 +119,21 @@
         <activity
             android:name=".pepper"
             android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".potato"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".pumpkin"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".radish"
+            android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

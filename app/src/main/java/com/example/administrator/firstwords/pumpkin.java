@@ -7,6 +7,8 @@ import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.DragEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +18,7 @@ import android.widget.LinearLayout;
 import java.util.Random;
 
 
-public class apple extends Activity implements View.OnTouchListener, View.OnDragListener {
+public class pumpkin extends Activity implements View.OnTouchListener, View.OnDragListener {
 
     SoundPool sound, click;
     int soundID;
@@ -25,16 +27,16 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_apple);
+        setContentView(R.layout.activity_pumpkin);
 
         //player
-       mMediaPlayer = MediaPlayer.create(this, R.raw.apple);
-       mMediaPlayer.start();
+        mMediaPlayer = MediaPlayer.create(this, R.raw.pumpkin);
+        mMediaPlayer.start();
 
 
         //object for the speaker sound
         sound = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
-        soundID = sound.load(this, R.raw.apple, 1);
+        soundID = sound.load(this, R.raw.pumpkin, 1);
 
         //object for the check sound
         click = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
@@ -42,29 +44,32 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
 
 
         //letters
-        findViewById(R.id.apple_a).setOnTouchListener(this);
-        findViewById(R.id.apple_p).setOnTouchListener(this);
-        findViewById(R.id.apple_p2).setOnTouchListener(this);
-        findViewById(R.id.apple_l).setOnTouchListener(this);
-        findViewById(R.id.apple_e).setOnTouchListener(this);
+        findViewById(R.id.pumpkin_p).setOnTouchListener(this);
+        findViewById(R.id.pumpkin_u).setOnTouchListener(this);
+        findViewById(R.id.pumpkin_m).setOnTouchListener(this);
+        findViewById(R.id.pumpkin_p2).setOnTouchListener(this);
+        findViewById(R.id.pumpkin_k).setOnTouchListener(this);
+        findViewById(R.id.pumpkin_i).setOnTouchListener(this);
+        findViewById(R.id.pumpkin_n).setOnTouchListener(this);
 
         //bottom containers drag listener
-        findViewById(R.id.bottom_a).setOnDragListener(this);
         findViewById(R.id.bottom_p).setOnDragListener(this);
+        findViewById(R.id.bottom_u).setOnDragListener(this);
+        findViewById(R.id.bottom_m).setOnDragListener(this);
         findViewById(R.id.bottom_p2).setOnDragListener(this);
-        findViewById(R.id.bottom_l).setOnDragListener(this);
-        findViewById(R.id.bottom_e).setOnDragListener(this);
+        findViewById(R.id.bottom_k).setOnDragListener(this);
+        findViewById(R.id.bottom_i).setOnDragListener(this);
+        findViewById(R.id.bottom_n).setOnDragListener(this);
 
         //top container drag listener
         findViewById(R.id.top_c).setOnDragListener(this);
     }
-
-    //method to play the sound of the picture displayed on the screen
+    //play the sound of the picture displayed on the screen after "Speaker" button is clicked
     public void play(View view) {
-       sound.play(soundID, 1, 1, 1, 0, 1);
+        sound.play(soundID, 1, 1, 1, 0, 1);
     }
 
-    //method to play the sound of the picture displayed on the screen
+    //play the "Home" button click sound and redirection to "Home" screen
     public void back(View view) {
         click.play(soundID, 1, 1, 1, 0, 1);
         finish();
@@ -73,10 +78,10 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
     }
 
 
-    //method for dragging object
+    //dragging object
     @Override
     public boolean onDrag(View v, DragEvent event) {
-        if (event.getAction() == DragEvent.ACTION_DROP){
+        if (event.getAction() == DragEvent.ACTION_DROP) {
             View view = (View) event.getLocalState();
             ViewGroup group = (ViewGroup) view.getParent();
             group.removeView(view);
@@ -87,47 +92,53 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
         return true;
     }
 
-    //method to set object moving
+    //set object movement
     @Override
     public boolean onTouch(View v, MotionEvent event) {
-        if (event.getAction() == MotionEvent.ACTION_DOWN){
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
             View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
             v.startDrag(null, shadowBuilder, v, 0);
             return true;
-        }
-        else {
+        } else {
             return false;
         }
     }
 
-
+    //final check
     public void check (View view) {
 
         click.play(soundID, 1, 1, 1, 0, 1);
 
-        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_a);
-        ImageView a = (ImageView) b_a.findViewById(R.id.apple_a);
+        LinearLayout b_u = (LinearLayout) findViewById(R.id.bottom_u);
+        ImageView u = (ImageView) b_u.findViewById(R.id.pumpkin_u);
 
-        LinearLayout b_l = (LinearLayout)findViewById(R.id.bottom_l);
-        ImageView l = (ImageView) b_l.findViewById(R.id.apple_l);
+        LinearLayout b_m = (LinearLayout) findViewById(R.id.bottom_m);
+        ImageView m = (ImageView) b_m.findViewById(R.id.pumpkin_m);
 
-        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
-        ImageView e = (ImageView) b_e.findViewById(R.id.apple_e);
+        LinearLayout b_k = (LinearLayout) findViewById(R.id.bottom_k);
+        ImageView k = (ImageView) b_k.findViewById(R.id.pumpkin_k);
 
-        //p---------------------------------------------------------
+        LinearLayout b_i = (LinearLayout) findViewById(R.id.bottom_i);
+        ImageView i = (ImageView) b_i.findViewById(R.id.pumpkin_i);
 
-        LinearLayout b_p = (LinearLayout)findViewById(R.id.bottom_p);
-        ImageView p = (ImageView) b_p.findViewById(R.id.apple_p);
+        LinearLayout b_n = (LinearLayout) findViewById(R.id.bottom_n);
+        ImageView n = (ImageView) b_n.findViewById(R.id.pumpkin_n);
 
-        LinearLayout b_p2 = (LinearLayout)findViewById(R.id.bottom_p2);
-        ImageView p2 = (ImageView) b_p2.findViewById(R.id.apple_p2);
 
-        LinearLayout b_p3 = (LinearLayout)findViewById(R.id.bottom_p);
-        ImageView p3 = (ImageView) b_p3.findViewById(R.id.apple_p2);
+        //p-------------------------------------------------------------
 
-        LinearLayout b_p4 = (LinearLayout)findViewById(R.id.bottom_p2);
-        ImageView p4 = (ImageView) b_p4.findViewById(R.id.apple_p);
-    
+        LinearLayout b_p1 = (LinearLayout) findViewById(R.id.bottom_p);
+        ImageView p1 = (ImageView) b_p1.findViewById(R.id.pumpkin_p);
+
+        LinearLayout b_p2 = (LinearLayout) findViewById(R.id.bottom_p2);
+        ImageView p2 = (ImageView) b_p2.findViewById(R.id.pumpkin_p2);
+
+        LinearLayout b_p3 = (LinearLayout) findViewById(R.id.bottom_p);
+        ImageView p3 = (ImageView) b_p3.findViewById(R.id.pumpkin_p2);
+
+        LinearLayout b_p4 = (LinearLayout) findViewById(R.id.bottom_p2);
+        ImageView p4 = (ImageView) b_p4.findViewById(R.id.pumpkin_p);
+
 
         correct1 = MediaPlayer.create(this, R.raw.welldone);
         correct2 = MediaPlayer.create(this, R.raw.congrats);
@@ -137,20 +148,20 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((a!= null) && (l!= null) && (e!=null) && ((p!=null && p2!=null) || (p3!=null && p4!=null))) {
+        if ((u != null) && (m != null) && (k != null) && (i != null) && (n != null) && ((p1 != null && p2 != null) || (p3 != null && p4 != null))) {
 
             Random generate = new Random();
-            int eventNumber = generate.nextInt(3)+1;
+            int eventNumber = generate.nextInt(3) + 1;
 
-            switch (eventNumber){
+            switch (eventNumber) {
                 case 1:
                     correct1.start();
                     correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent banana = new Intent(getApplicationContext(), banana.class);
-                            startActivity(banana);
+                            Intent rad = new Intent(getApplicationContext(), radish.class);
+                            startActivity(rad);
                         }
                     });
                     break;
@@ -160,8 +171,8 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent banana = new Intent(getApplicationContext(), banana.class);
-                            startActivity(banana);
+                            Intent rad = new Intent(getApplicationContext(), radish.class);
+                            startActivity(rad);
                         }
                     });
                     break;
@@ -171,8 +182,8 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent banana = new Intent(getApplicationContext(), banana.class);
-                            startActivity(banana);
+                            Intent rad = new Intent(getApplicationContext(), radish.class);
+                            startActivity(rad);
                         }
                     });
                     break;
@@ -180,13 +191,12 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
                     //do nothing
                     break;
             }
-        }
-        else {
+        } else {
 
             Random generate = new Random();
-            int eventNumber = generate.nextInt(3)+1;
+            int eventNumber = generate.nextInt(3) + 1;
 
-            switch (eventNumber){
+            switch (eventNumber) {
                 case 1:
                     incorr1.start();
                     break;

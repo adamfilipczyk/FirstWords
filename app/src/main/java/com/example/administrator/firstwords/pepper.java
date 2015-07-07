@@ -7,7 +7,6 @@ import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.DragEvent;
-import android.view.Menu;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -109,7 +108,7 @@ public class pepper extends Activity implements View.OnTouchListener, View.OnDra
         click.play(soundID, 1, 1, 1, 0, 1);
 
         //all possible combinations of letters and containers
-        //b------------------------------------------------------------
+        //r------------------------------------------------------------
 
         LinearLayout b_r = (LinearLayout) findViewById(R.id.bottom_r);
         ImageView r = (ImageView) b_r.findViewById(R.id.pepper_r);
@@ -241,7 +240,7 @@ public class pepper extends Activity implements View.OnTouchListener, View.OnDra
                     public void onCompletion(MediaPlayer mp) {
                         mp.release();
                         finish();
-                        Intent pot = new Intent(getApplicationContext(), pepper.class);
+                        Intent pot = new Intent(getApplicationContext(), potato.class);
                         startActivity(pot);
                     }
                 });
@@ -252,7 +251,7 @@ public class pepper extends Activity implements View.OnTouchListener, View.OnDra
                     public void onCompletion(MediaPlayer mp) {
                         mp.release();
                         finish();
-                        Intent pot = new Intent(getApplicationContext(), pepper.class);
+                        Intent pot = new Intent(getApplicationContext(), potato.class);
                         startActivity(pot);
                     }
                 });
@@ -263,7 +262,7 @@ public class pepper extends Activity implements View.OnTouchListener, View.OnDra
                     public void onCompletion(MediaPlayer mp) {
                         mp.release();
                         finish();
-                        Intent pot = new Intent(getApplicationContext(), pepper.class);
+                        Intent pot = new Intent(getApplicationContext(), potato.class);
                         startActivity(pot);
                     }
                 });

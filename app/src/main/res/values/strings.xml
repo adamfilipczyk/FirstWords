@@ -35,5 +35,9 @@
     <string name="title_activity_onion">onion</string>
     <string name="title_activity_pear">pear</string>
     <string name="title_activity_pepper">pepper</string>
+    <string name="title_activity_potato">potato</string>
+    <string name="title_activity_pumpkin">pumpkin</string>
+    <string name="title_activity_radish">radish</string>
+    <string name="title_activity_strawberry">strawberry</string>
 
 </resources>
