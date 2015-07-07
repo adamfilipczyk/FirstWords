@@ -1,7 +1,9 @@
 package com.example.administrator.firstwords;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -10,6 +12,7 @@ import android.view.DragEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -26,6 +29,7 @@ public class radish extends Activity implements View.OnTouchListener, View.OnDra
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_radish);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         //player
         mMediaPlayer = MediaPlayer.create(this, R.raw.radish);
@@ -134,6 +138,7 @@ public class radish extends Activity implements View.OnTouchListener, View.OnDra
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
+
         if ((r!= null) && (a!= null) && (d!=null) && (i!=null) && (s!=null) && (h!=null)) {
 
             Random generate = new Random();
@@ -142,6 +147,10 @@ public class radish extends Activity implements View.OnTouchListener, View.OnDra
             switch (eventNumber){
                 case 1:
                     correct1.start();
+                    SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                    editor1.putString("category", "3");
+                    editor1.commit();
                     correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
@@ -153,6 +162,10 @@ public class radish extends Activity implements View.OnTouchListener, View.OnDra
                     break;
                 case 2:
                     correct2.start();
+                    SharedPreferences sharedPreferences2 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor2 = sharedPreferences2.edit();
+                    editor2.putString("category", "3");
+                    editor2.commit();
                     correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
@@ -164,6 +177,10 @@ public class radish extends Activity implements View.OnTouchListener, View.OnDra
                     break;
                 case 3:
                     correct3.start();
+                    SharedPreferences sharedPreferences3 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor3 = sharedPreferences3.edit();
+                    editor3.putString("category", "3");
+                    editor3.commit();
                     correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();

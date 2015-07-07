@@ -7,6 +7,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.text.util.Linkify;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 
@@ -20,6 +21,7 @@ public class info extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         link = (TextView) findViewById(R.id.information);
         Linkify.addLinks(link, Linkify.EMAIL_ADDRESSES);

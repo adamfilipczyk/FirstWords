@@ -7,6 +7,7 @@ import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 
 
 public class categories extends Activity {
@@ -23,6 +24,7 @@ public class categories extends Activity {
 
         //object for the animals btn sound
         mPlayer = MediaPlayer.create(this, R.raw.click);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         //object for the check sound
         click = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);

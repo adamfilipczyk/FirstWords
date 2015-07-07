@@ -12,6 +12,7 @@ import android.view.DragEvent;
 import android.view.MotionEvent;
 import android.view.View.DragShadowBuilder;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.app.Activity;
@@ -29,6 +30,7 @@ public class elephant extends Activity implements OnTouchListener, OnDragListene
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_elephant);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         MediaPlayer mMediaPlayer = new MediaPlayer();
         mMediaPlayer = MediaPlayer.create(this, R.raw.elephant);

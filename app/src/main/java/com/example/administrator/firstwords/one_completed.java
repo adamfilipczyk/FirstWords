@@ -1,7 +1,6 @@
 package com.example.administrator.firstwords;
 
 import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
 import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -29,29 +28,21 @@ public class one_completed extends Activity {
                 //read the value from the Save.xml
                 SharedPreferences sharedPreferences = getSharedPreferences("Save", Context.MODE_PRIVATE);
                 String cat = sharedPreferences.getString("category", "");
-                //call savePref method
+
                 savePref(cat);
             }
         });
     }
 
-    public void savePref (String cat){
+    public void savePref (String ca){
 
-        switch (cat){
-            case "2":
-                SharedPreferences sharedPreferences2 = getSharedPreferences("Save", Context.MODE_PRIVATE);
-                Editor editor2 = sharedPreferences2.edit();
-                editor2.putString("category", "3");
-                editor2.commit();
+        switch (ca){
+            case "3":
                 finish();
                 Intent timer = new Intent(this, game_timer.class);
                 startActivity(timer);
                 break;
             default:
-                SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
-                Editor editor1 = sharedPreferences1.edit();
-                editor1.putString("category", "2");
-                editor1.commit();
                 finish();
                 Intent cat2 = new Intent(this, categories2.class);
                 startActivity(cat2);

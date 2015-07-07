@@ -12,6 +12,7 @@ import android.view.DragEvent;
 import android.view.MotionEvent;
 import android.view.View.DragShadowBuilder;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.app.Activity;
@@ -30,6 +31,7 @@ public class mouse extends Activity implements OnTouchListener, OnDragListener  
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mouse);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         mMediaPlayer = MediaPlayer.create(this, R.raw.mouse);
         mMediaPlayer.start();

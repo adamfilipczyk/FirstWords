@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 
@@ -22,10 +23,10 @@ public class game_timer extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_timer);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         mPlayer = MediaPlayer.create(this, R.raw.takeabreak);
         mPlayer.start();
-        mPlayer.release();
 
         gTimer = (TextView) findViewById(R.id.g_timer);
         countDownTimer = new CountDownTimerActivity(startTime, interval);
