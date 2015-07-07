@@ -16,7 +16,7 @@ public class game_timer extends Activity {
     MediaPlayer mPlayer, buzz;
     public TextView gTimer;
     private CountDownTimer countDownTimer;
-    private final int startTime = (120 * 1000);
+    private final int startTime = (121 * 1000);
     private final int interval = (1 * 1000);
 
     @Override
