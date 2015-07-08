@@ -13,8 +13,8 @@
 
     <ImageView
         android:id="@+id/picture"
-        android:layout_width="140dp"
-        android:layout_height="180dp"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
         android:layout_gravity="center_vertical"
         android:background="@drawable/pepper" />
 
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn_check"
         android:layout_below="@+id/listen"
-        android:layout_alignRight="@+id/top_c"
+        android:layout_alignRight="@+id/listen"
         android:layout_alignEnd="@+id/top_c"
         android:onClick="check"
         android:layout_marginTop="10dp"
@@ -57,9 +57,9 @@
         android:layout_height="44dp"
         android:layout_below="@+id/top_c"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@+id/picture"
         android:background="#000000"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/bottom_e">
 
     </LinearLayout>
 
@@ -70,9 +70,9 @@
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@+id/bottom_p"
         android:background="#000000"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/bottom_p2">
 
     </LinearLayout>
 
@@ -83,9 +83,9 @@
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@+id/bottom_e"
         android:background="#000000"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/bottom_p3">
     </LinearLayout>
 
     <LinearLayout
@@ -95,9 +95,9 @@
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@+id/bottom_p2"
         android:background="#000000"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/bottom_e2">
     </LinearLayout>
     <LinearLayout
         android:id="@+id/bottom_e2"
@@ -106,9 +106,9 @@
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@+id/bottom_p3"
         android:background="#000000"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/bottom_r">
     </LinearLayout>
     <LinearLayout
         android:id="@+id/bottom_r"
@@ -117,17 +117,17 @@
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@+id/bottom_e2"
         android:background="#000000"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_alignRight="@+id/listen">
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/top_c"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginTop="140dp"
-        android:layout_toRightOf="@+id/picture">
+        android:layout_alignRight="@+id/listen">
 
         <ImageView
             android:id="@+id/pepper_r"

@@ -59,6 +59,11 @@
             android:excludeFromRecents="true">
         </activity>
         <activity
+            android:name=".hen"
+            android:screenOrientation="landscape"
+            android:excludeFromRecents="true">
+        </activity>
+        <activity
             android:name=".hippo"
             android:screenOrientation="landscape"
             android:excludeFromRecents="true">
@@ -72,16 +77,6 @@
             android:name=".mouse"
             android:screenOrientation="landscape"
             android:excludeFromRecents="true">
-        </activity>
-        <activity
-            android:name=".hen"
-            android:screenOrientation="landscape"
-            android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".owl"
@@ -167,6 +162,11 @@
             android:name=".pumpkin"
             android:screenOrientation="landscape"
             android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".radish"
