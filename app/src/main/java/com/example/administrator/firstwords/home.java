@@ -50,7 +50,7 @@ public class home extends Activity{
                         .setPositiveButton("Yes",new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog,int id) {
                                 // if this button is clicked, close the app
-                                android.os.Process.killProcess(android.os.Process.myPid());
+                                android.os.Process.myPid();
                                 System.exit(0);
                             }
                         })

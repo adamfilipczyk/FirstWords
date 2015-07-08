@@ -4,20 +4,26 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.media.SoundPool;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.WindowManager;
 import android.widget.TextView;
 
 
+
 public class game_timer extends Activity {
+
+    SoundPool tictac;
+    int soundID;
 
     MediaPlayer mPlayer, buzz;
     public TextView gTimer;
     private CountDownTimer countDownTimer;
     private final int startTime = (121 * 1000);
-    private final int interval = (1 * 1000);
+    private final int interval = 1000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,24 +35,30 @@ public class game_timer extends Activity {
         mPlayer = MediaPlayer.create(this, R.raw.takeabreak);
         mPlayer.start();
 
+        //object for the sound
+        tictac = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
+        soundID = tictac.load(this, R.raw.tic, 1);
+
+
         gTimer = (TextView) findViewById(R.id.g_timer);
         countDownTimer = new CountDownTimerActivity(startTime, interval);
         countDownTimer.start();
 
-        gTimer.setText(gTimer.getText() + String.valueOf(startTime/1000));
+        gTimer.setText(gTimer.getText() + String.valueOf(startTime / interval));
     }
 
     public class CountDownTimerActivity extends CountDownTimer {
 
         public CountDownTimerActivity(int starTime, int interval) {
 
+
             super(starTime, interval);
         }
 
         @Override
         public void onTick(long millisUntilFinished) {
-
-            gTimer.setText("Seconds left: " + " " + millisUntilFinished/1000);
+            tictac.play(soundID, 1, 1, 1, 0, 1);
+            gTimer.setText("Seconds left: " + " " + millisUntilFinished / 1000);
         }
 
         @Override
@@ -81,5 +93,18 @@ public class game_timer extends Activity {
                 //startActivity(load7);
                 break;
         }
+    }
+    @Override
+    protected void onUserLeaveHint() {
+        super.onUserLeaveHint();
+        android.os.Process.myPid();
+        System.exit(0);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        android.os.Process.myPid();
+        System.exit(0);
     }
 }

@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn_check"
         android:layout_below="@+id/listen"
-        android:layout_alignRight="@+id/top_c"
+        android:layout_alignRight="@+id/listen"
         android:layout_alignEnd="@+id/top_c"
         android:onClick="check"
         android:layout_marginTop="10dp"
@@ -57,9 +57,9 @@
         android:layout_height="44dp"
         android:layout_below="@+id/top_c"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@+id/picture"
         android:background="#000000"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/bottom_a">
 
     </LinearLayout>
 
@@ -70,9 +70,9 @@
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@+id/bottom_b"
         android:background="#000000"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/bottom_n">
 
     </LinearLayout>
 
@@ -83,9 +83,9 @@
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@+id/bottom_a"
         android:background="#000000"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/bottom_a2">
     </LinearLayout>
 
     <LinearLayout
@@ -95,9 +95,9 @@
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@+id/bottom_n"
         android:background="#000000"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/bottom_n2">
 
     </LinearLayout>
 
@@ -108,30 +108,30 @@
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@+id/bottom_a2"
         android:background="#000000"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/bottom_a3">
 
     </LinearLayout>
     <LinearLayout
         android:id="@+id/bottom_a3"
         android:layout_width="44dp"
         android:layout_height="44dp"
-        android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@+id/bottom_n2"
         android:background="#000000"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_below="@+id/top_c"
+        android:layout_alignRight="@+id/listen">
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/top_c"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginTop="140dp"
-        android:layout_toRightOf="@+id/picture">
+        android:layout_alignRight="@+id/listen">
 
         <ImageView
             android:id="@+id/ban_a"
