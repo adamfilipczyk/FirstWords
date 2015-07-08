@@ -37,15 +37,14 @@
         android:layout_gravity="right"
         android:background="@drawable/listend"
         android:clickable="true"
-        android:onClick="play"
-        android:layout_alignEnd="@+id/top_c" />
+        android:onClick="play" />
 
     <ImageButton
         android:id="@+id/btn_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/top_c"
-        android:layout_alignRight="@+id/top_c"
+        android:layout_alignRight="@+id/listen"
         android:layout_below="@+id/listen"
         android:layout_marginTop="10dp"
         android:background="@drawable/selector"
@@ -54,10 +53,10 @@
 
     <LinearLayout
         android:id="@+id/top_c"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginTop="140dp"
-        android:layout_toRightOf="@+id/picture">
+        android:layout_alignRight="@+id/listen">
 
         <ImageView
             android:id="@+id/owl_w"
@@ -92,9 +91,9 @@
         android:layout_height="44dp"
         android:layout_below="@+id/top_c"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@+id/picture"
         android:background="#000000"
-        android:orientation="horizontal"></LinearLayout>
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/bottom_w"></LinearLayout>
 
     <LinearLayout
         android:id="@+id/bottom_w"
@@ -103,9 +102,9 @@
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@+id/bottom_o"
         android:background="#000000"
-        android:orientation="horizontal"></LinearLayout>
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/bottom_l"></LinearLayout>
 
     <LinearLayout
         android:id="@+id/bottom_l"
@@ -114,8 +113,8 @@
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@+id/bottom_w"
         android:background="#000000"
-        android:orientation="horizontal"></LinearLayout>
+        android:orientation="horizontal"
+        android:layout_alignRight="@+id/listen"></LinearLayout>
 
 </RelativeLayout>
