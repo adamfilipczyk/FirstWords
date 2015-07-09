@@ -17,7 +17,7 @@ import android.widget.LinearLayout;
 import java.util.Random;
 
 
-public class hat extends Activity implements View.OnTouchListener, View.OnDragListener {
+public class jacket extends Activity implements View.OnTouchListener, View.OnDragListener {
 
     SoundPool sound, click;
     int soundID;
@@ -26,17 +26,17 @@ public class hat extends Activity implements View.OnTouchListener, View.OnDragLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hat);
+        setContentView(R.layout.activity_jacket);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         //player
-        mMediaPlayer = MediaPlayer.create(this, R.raw.hat);
+        mMediaPlayer = MediaPlayer.create(this, R.raw.jacket);
         mMediaPlayer.start();
 
 
         //speaker sound
         sound = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
-        soundID = sound.load(this, R.raw.hat, 1);
+        soundID = sound.load(this, R.raw.jacket, 1);
 
         //check sound
         click = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
@@ -44,25 +44,31 @@ public class hat extends Activity implements View.OnTouchListener, View.OnDragLi
 
 
         //letters
-        findViewById(R.id.hat_h).setOnTouchListener(this);
-        findViewById(R.id.hat_a).setOnTouchListener(this);
-        findViewById(R.id.hat_t).setOnTouchListener(this);
+        findViewById(R.id.jacket_j).setOnTouchListener(this);
+        findViewById(R.id.jacket_a).setOnTouchListener(this);
+        findViewById(R.id.jacket_c).setOnTouchListener(this);
+        findViewById(R.id.jacket_k).setOnTouchListener(this);
+        findViewById(R.id.jacket_e).setOnTouchListener(this);
+        findViewById(R.id.jacket_t).setOnTouchListener(this);
 
         //bottom containers drag listener
-        findViewById(R.id.bottom_h).setOnDragListener(this);
+        findViewById(R.id.bottom_j).setOnDragListener(this);
         findViewById(R.id.bottom_a).setOnDragListener(this);
+        findViewById(R.id.bottom_c).setOnDragListener(this);
+        findViewById(R.id.bottom_k).setOnDragListener(this);
+        findViewById(R.id.bottom_e).setOnDragListener(this);
         findViewById(R.id.bottom_t).setOnDragListener(this);
 
         //top container listener
         findViewById(R.id.top_c).setOnDragListener(this);
     }
 
-    //play the sound of the picture displayed on the screen
+    //sound of the picture displayed on the screen
     public void play(View view) {
         sound.play(soundID, 1, 1, 1, 0, 1);
     }
 
-    //play the sound when the button clicked; redirect to home screen
+    //sound when the button clicked; redirect to home screen
     public void back(View view) {
         click.play(soundID, 1, 1, 1, 0, 1);
         finish();
@@ -102,16 +108,25 @@ public class hat extends Activity implements View.OnTouchListener, View.OnDragLi
 
         click.play(soundID, 1, 1, 1, 0, 1);
 
-        LinearLayout b_h = (LinearLayout)findViewById(R.id.bottom_h);
-        ImageView h = (ImageView) b_h.findViewById(R.id.hat_h);
+        LinearLayout b_j = (LinearLayout)findViewById(R.id.bottom_j);
+        ImageView j = (ImageView) b_j.findViewById(R.id.jacket_j);
 
         LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_a);
-        ImageView a = (ImageView) b_a.findViewById(R.id.hat_a);
+        ImageView a = (ImageView) b_a.findViewById(R.id.jacket_a);
+
+        LinearLayout b_c = (LinearLayout)findViewById(R.id.bottom_c);
+        ImageView c = (ImageView) b_c.findViewById(R.id.jacket_c);
+
+        LinearLayout b_k = (LinearLayout)findViewById(R.id.bottom_k);
+        ImageView k = (ImageView) b_k.findViewById(R.id.jacket_k);
+
+        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
+        ImageView e = (ImageView) b_e.findViewById(R.id.jacket_e);
 
         LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_t);
-        ImageView t = (ImageView) b_t.findViewById(R.id.hat_t);
+        ImageView t = (ImageView) b_t.findViewById(R.id.jacket_t);
 
-        if ((h!= null) && (a!= null) && (t!=null)) {
+        if ((j!= null) && (a!= null) && (c!=null) && (k!= null) && (e!= null) && (t!=null)) {
 
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
@@ -127,8 +142,8 @@ public class hat extends Activity implements View.OnTouchListener, View.OnDragLi
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent jacket = new Intent(getApplicationContext(), jacket.class);
-                            startActivity(jacket);
+                            Intent shoes = new Intent(getApplicationContext(), shoes.class);
+                            startActivity(shoes);
                         }
                     });
                     break;
@@ -138,8 +153,8 @@ public class hat extends Activity implements View.OnTouchListener, View.OnDragLi
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent jacket = new Intent(getApplicationContext(), jacket.class);
-                            startActivity(jacket);
+                            Intent shoes = new Intent(getApplicationContext(), shoes.class);
+                            startActivity(shoes);
                         }
                     });
                     break;
@@ -149,8 +164,8 @@ public class hat extends Activity implements View.OnTouchListener, View.OnDragLi
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent jacket = new Intent(getApplicationContext(), jacket.class);
-                            startActivity(jacket);
+                            Intent shoes = new Intent(getApplicationContext(), shoes.class);
+                            startActivity(shoes);
                         }
                     });
                     break;
@@ -184,6 +199,4 @@ public class hat extends Activity implements View.OnTouchListener, View.OnDragLi
             }
         }
     }
-
-
 }

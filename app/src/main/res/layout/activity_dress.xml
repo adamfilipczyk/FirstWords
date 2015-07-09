@@ -116,7 +116,8 @@
 
     <LinearLayout
         android:id="@+id/top_c"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="right"
         android:layout_height="50dp"
         android:layout_marginTop="140dp"
         android:layout_alignRight="@+id/listen">
