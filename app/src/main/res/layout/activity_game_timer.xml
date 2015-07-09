@@ -32,12 +32,13 @@
         android:textStyle="bold"
         android:textSize="20sp" />
 
-    <ImageView
+    <ImageButton
         android:layout_width="230dp"
         android:layout_height="200dp"
         android:id="@+id/imageView4"
-        android:background="@drawable/lazy"
+        android:background="@drawable/btn_lazy"
         android:layout_alignTop="@+id/analogClock"
+        android:onClick="pressed"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 </RelativeLayout>

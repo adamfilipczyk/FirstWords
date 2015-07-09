@@ -9,15 +9,18 @@ import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.view.Gravity;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
 import android.widget.TextView;
-
+import android.widget.Toast;
 
 
 public class game_timer extends Activity {
 
-    SoundPool tictac;
-    int soundID;
+    SoundPool press;
+    int soundID, soundID2;
 
     MediaPlayer mPlayer, buzz;
     public TextView gTimer;
@@ -29,22 +32,38 @@ public class game_timer extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_timer);
+        //keep the screen on
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
+        //final buzz sound
         buzz = MediaPlayer.create(this, R.raw.buzz);
+
+        //take a break sound
         mPlayer = MediaPlayer.create(this, R.raw.takeabreak);
         mPlayer.start();
 
-        //object for the sound
-        tictac = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
-        soundID = tictac.load(this, R.raw.tic, 1);
+
+        //object for the bee pressed sound
+        press = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
+        soundID2 = press.load(this, R.raw.fart, 1);
 
 
+        //timer
         gTimer = (TextView) findViewById(R.id.g_timer);
         countDownTimer = new CountDownTimerActivity(startTime, interval);
         countDownTimer.start();
-
         gTimer.setText(gTimer.getText() + String.valueOf(startTime / interval));
+
+        //toast message
+        Context cont = getApplicationContext();
+        CharSequence message = "Press the belly and skip the break";
+        int duration = Toast.LENGTH_LONG;
+        Toast display = Toast.makeText(cont, message, duration);
+        LinearLayout toastLayout = (LinearLayout) display.getView();
+        TextView toastSize = (TextView) toastLayout.getChildAt(0);
+        toastSize.setTextSize(20);
+        display.setGravity(Gravity.CENTER_HORIZONTAL, 0, 0);
+        display.show();
     }
 
     public class CountDownTimerActivity extends CountDownTimer {
@@ -57,7 +76,6 @@ public class game_timer extends Activity {
 
         @Override
         public void onTick(long millisUntilFinished) {
-            tictac.play(soundID, 1, 1, 1, 0, 1);
             gTimer.setText("Seconds left: " + " " + millisUntilFinished / 1000);
         }
 
@@ -74,23 +92,44 @@ public class game_timer extends Activity {
         }
     }
 
+
+    public void pressed (View view){
+        press.play(soundID2, 1, 1, 1, 0, 1);
+
+        //read the value from the Save.xml
+        SharedPreferences sharedPreferences = getSharedPreferences("Save", Context.MODE_PRIVATE);
+        String cat = sharedPreferences.getString("category", "");
+        //call savePref method
+        loadCategory(cat);
+    }
+
     public void loadCategory (String cat){
 
+        //load category based on variable saved to Save.xml file
         switch (cat){
             case "3":
+                countDownTimer.cancel();
                 finish();
                 Intent load3 = new Intent(this, categories3.class);
                 startActivity(load3);
                 break;
             case "5":
+                countDownTimer.cancel();
                 finish();
                 //Intent load5 = new Intent(this, categories5.class);
                 //startActivity(load5);
                 break;
             case "7":
+                countDownTimer.cancel();
                 finish();
                 //Intent load7 = new Intent(this, categories7.class);
                 //startActivity(load7);
+                break;
+            case "9":
+                countDownTimer.cancel();
+                finish();
+                //Intent load9 = new Intent(this, categories9.class);
+                //startActivity(load9);
                 break;
         }
     }
