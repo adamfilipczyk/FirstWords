@@ -199,6 +199,10 @@
             android:name=".shoes"
             android:label="@string/title_activity_shoes" >
         </activity>
+        <activity
+            android:name=".shorts"
+            android:label="@string/title_activity_shorts" >
+        </activity>
     </application>
 
 </manifest>
