@@ -61,7 +61,7 @@ public class game_timer extends Activity {
         Toast display = Toast.makeText(cont, message, duration);
         LinearLayout toastLayout = (LinearLayout) display.getView();
         TextView toastSize = (TextView) toastLayout.getChildAt(0);
-        toastSize.setTextSize(20);
+        toastSize.setTextSize(18);
         display.setGravity(Gravity.CENTER_HORIZONTAL, 0, 0);
         display.show();
     }

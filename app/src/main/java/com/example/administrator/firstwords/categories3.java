@@ -52,8 +52,8 @@ public class categories3 extends Activity {
     public void btn3(View view) {
 
         click.play(soundID, 1, 1, 1, 0, 1);
-        //finish();
-        //Intent cat2 = new Intent(this, apple.class);
-        //startActivity(cat2);
+        finish();
+        Intent cat3 = new Intent(this, boot.class);
+        startActivity(cat3);
     }
 }
