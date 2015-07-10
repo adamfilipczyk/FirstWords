@@ -56,10 +56,10 @@ public class tiger extends Activity implements OnTouchListener, OnDragListener {
         findViewById(R.id.tiger_r).setOnTouchListener(this);
 
         //bottom containers drag listener
-        findViewById(R.id.bottom_s2).setOnDragListener(this);
+        findViewById(R.id.bottom_t).setOnDragListener(this);
         findViewById(R.id.bottom_i).setOnDragListener(this);
         findViewById(R.id.bottom_g).setOnDragListener(this);
-        findViewById(R.id.bottom_t).setOnDragListener(this);
+        findViewById(R.id.bottom_e).setOnDragListener(this);
         findViewById(R.id.bottom_r).setOnDragListener(this);
 
         //top container drag listener
@@ -110,7 +110,7 @@ public class tiger extends Activity implements OnTouchListener, OnDragListener {
 
         click.play(soundID, 1, 1, 1, 0, 1);
 
-        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_s2);
+        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_t);
         ImageView t = (ImageView) b_t.findViewById(R.id.tiger_t);
 
         LinearLayout b_i = (LinearLayout)findViewById(R.id.bottom_i);
@@ -119,7 +119,7 @@ public class tiger extends Activity implements OnTouchListener, OnDragListener {
         LinearLayout b_g = (LinearLayout)findViewById(R.id.bottom_g);
         ImageView g = (ImageView) b_g.findViewById(R.id.tiger_g);
 
-        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_t);
+        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
         ImageView e = (ImageView) b_e.findViewById(R.id.tiger_e);
 
         LinearLayout b_r = (LinearLayout)findViewById(R.id.bottom_r);

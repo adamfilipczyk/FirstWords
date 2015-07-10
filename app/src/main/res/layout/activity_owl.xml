@@ -1,6 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/listen9"
+    android:id="@+id/listen09"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_yellow"
@@ -18,14 +18,14 @@
         android:background="@drawable/owl" />
 
     <ImageButton
+        android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/back"
-        android:background="@drawable/home_btn"
-        android:onClick="back"
         android:layout_alignParentLeft="false"
         android:layout_alignParentStart="false"
-        android:layout_alignTop="@+id/bottom_o" />
+        android:layout_alignTop="@+id/bottom_o"
+        android:background="@drawable/home_btn"
+        android:onClick="back" />
 
     <ImageButton
         android:id="@+id/listen"
@@ -54,10 +54,10 @@
     <LinearLayout
         android:id="@+id/top_c"
         android:layout_width="match_parent"
-        android:gravity="right"
         android:layout_height="50dp"
+        android:layout_alignRight="@+id/listen"
         android:layout_marginTop="140dp"
-        android:layout_alignRight="@+id/listen">
+        android:gravity="right">
 
         <ImageView
             android:id="@+id/owl_w"
@@ -92,9 +92,11 @@
         android:layout_height="44dp"
         android:layout_below="@+id/top_c"
         android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/bottom_w"
         android:background="#000000"
-        android:orientation="horizontal"
-        android:layout_toLeftOf="@+id/bottom_w"></LinearLayout>
+        android:orientation="horizontal">
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/bottom_w"
@@ -103,19 +105,23 @@
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/bottom_l"
         android:background="#000000"
-        android:orientation="horizontal"
-        android:layout_toLeftOf="@+id/bottom_l"></LinearLayout>
+        android:orientation="horizontal">
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/bottom_l"
         android:layout_width="44dp"
         android:layout_height="44dp"
+        android:layout_alignRight="@+id/listen"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
         android:background="#000000"
-        android:orientation="horizontal"
-        android:layout_alignRight="@+id/listen"></LinearLayout>
+        android:orientation="horizontal">
+
+    </LinearLayout>
 
 </RelativeLayout>

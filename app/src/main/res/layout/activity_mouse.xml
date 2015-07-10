@@ -1,6 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/listen8"
+    android:id="@+id/listen08"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_green"
@@ -113,7 +113,9 @@
         android:layout_marginTop="15dp"
         android:layout_toLeftOf="@+id/bottom_o"
         android:background="#000000"
-        android:orientation="horizontal"></LinearLayout>
+        android:orientation="horizontal">
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/bottom_o"
@@ -124,7 +126,9 @@
         android:layout_marginTop="15dp"
         android:layout_toLeftOf="@+id/bottom_u"
         android:background="#000000"
-        android:orientation="horizontal"></LinearLayout>
+        android:orientation="horizontal">
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/bottom_u"
@@ -135,7 +139,9 @@
         android:layout_marginTop="15dp"
         android:layout_toLeftOf="@+id/bottom_s"
         android:background="#000000"
-        android:orientation="horizontal"></LinearLayout>
+        android:orientation="horizontal">
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/bottom_s"
@@ -146,10 +152,12 @@
         android:layout_marginTop="15dp"
         android:layout_toLeftOf="@+id/bottom_t"
         android:background="#000000"
-        android:orientation="horizontal"></LinearLayout>
+        android:orientation="horizontal">
+
+    </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/bottom_t"
+        android:id="@+id/bottom_e"
         android:layout_width="44dp"
         android:layout_height="44dp"
         android:layout_alignRight="@+id/listen"
@@ -157,6 +165,8 @@
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
         android:background="#000000"
-        android:orientation="horizontal"></LinearLayout>
+        android:orientation="horizontal">
+
+    </LinearLayout>
 
 </RelativeLayout>

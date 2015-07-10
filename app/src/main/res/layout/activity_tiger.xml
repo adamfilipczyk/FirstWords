@@ -1,43 +1,43 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listen12"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:background="@drawable/bg_orange2"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".tiger"
-    android:background="@drawable/bg_orange2"
-    android:id="@+id/listen12">
+    tools:context=".tiger">
 
     <ImageView
+        android:id="@+id/picture"
         android:layout_width="170dp"
         android:layout_height="205dp"
-        android:id="@+id/picture"
         android:layout_gravity="center_vertical"
-        android:background="@drawable/tiger"/>
+        android:background="@drawable/tiger" />
 
     <ImageButton
+        android:id="@+id/imageButton10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton10"
-        android:background="@drawable/home_btn"
-        android:onClick="back"
         android:layout_alignParentLeft="false"
         android:layout_alignParentStart="false"
-        android:layout_alignTop="@+id/bottom_s2" />
+        android:layout_alignTop="@+id/bottom_t"
+        android:background="@drawable/home_btn"
+        android:onClick="back" />
 
     <ImageButton
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:id="@+id/listen"
-            android:clickable="true"
-            android:onClick="play"
-            android:layout_gravity="right"
-            android:background="@drawable/listend"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="false" />
+        android:id="@+id/listen"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="right"
+        android:background="@drawable/listend"
+        android:clickable="true"
+        android:onClick="play" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -51,105 +51,118 @@
         android:clickable="true"
         android:onClick="check" />
 
-        <LinearLayout
-            android:id="@+id/top_c"
-            android:layout_width="match_parent"
-            android:gravity="right"
-            android:layout_height="50dp"
-            android:layout_marginTop="140dp"
-            android:layout_alignRight="@+id/listen">
+    <LinearLayout
+        android:id="@+id/top_c"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/listen"
+        android:layout_marginTop="140dp"
+        android:gravity="right">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/tiger_r"
-                android:background="@drawable/r"
-                android:adjustViewBounds="false"
-                android:layout_alignParentBottom="true" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/tiger_i"
-                android:background="@drawable/i"
-                android:layout_alignTop="@+id/tiger_r" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/tiger_g"
-                android:background="@drawable/g"
-                android:layout_alignTop="@+id/tiger_r"
-                android:layout_toRightOf="@+id/tiger_i" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/tiger_t"
-                android:background="@drawable/t"
-                android:layout_alignTop="@+id/tiger_r"
-                android:layout_centerHorizontal="true"
-                android:layout_toRightOf="@+id/tiger_g" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/tiger_e"
-                android:background="@drawable/e"
-                android:layout_alignTop="@+id/tiger_r"
-                android:layout_centerHorizontal="true"
-                android:layout_toRightOf="@+id/tiger_t" />
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/tiger_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:adjustViewBounds="false"
+            android:background="@drawable/r" />
 
-        <LinearLayout
-            android:id="@+id/bottom_s2"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
-            android:layout_marginTop="15dp"
-            android:background="#000000"
-            android:orientation="horizontal"
-            android:layout_below="@+id/top_c"
-            android:layout_toLeftOf="@+id/bottom_i">
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/bottom_i"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
-            android:layout_marginTop="15dp"
-            android:background="#000000"
-            android:layout_marginLeft="1dp"
-            android:orientation="horizontal"
-            android:layout_below="@+id/top_c"
-            android:layout_toLeftOf="@+id/bottom_g">
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/bottom_g"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
-            android:layout_marginTop="15dp"
-            android:background="#000000"
-            android:layout_marginLeft="1dp"
-            android:orientation="horizontal"
-            android:layout_below="@+id/top_c"
-            android:layout_toLeftOf="@+id/bottom_t">
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/bottom_t"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
-            android:layout_marginTop="15dp"
-            android:background="#000000"
-            android:layout_marginLeft="1dp"
-            android:orientation="horizontal"
-            android:layout_below="@+id/top_c"
-            android:layout_toLeftOf="@+id/bottom_r">
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/bottom_r"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
-            android:layout_marginTop="15dp"
-            android:background="#000000"
-            android:layout_marginLeft="1dp"
-            android:orientation="horizontal"
-            android:layout_below="@+id/top_c"
-            android:layout_alignRight="@+id/listen">
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/tiger_i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tiger_r"
+            android:background="@drawable/i" />
+
+        <ImageView
+            android:id="@+id/tiger_g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tiger_r"
+            android:layout_toRightOf="@+id/tiger_i"
+            android:background="@drawable/g" />
+
+        <ImageView
+            android:id="@+id/tiger_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tiger_r"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/tiger_g"
+            android:background="@drawable/t" />
+
+        <ImageView
+            android:id="@+id/tiger_e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tiger_r"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/tiger_t"
+            android:background="@drawable/e" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_t"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/top_c"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/bottom_i"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_i"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/top_c"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/bottom_g"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_g"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/top_c"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/bottom_e"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_e"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/top_c"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/bottom_r"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_r"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignRight="@+id/listen"
+        android:layout_below="@+id/top_c"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+    </LinearLayout>
 
 </RelativeLayout>

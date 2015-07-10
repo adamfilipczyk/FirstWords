@@ -1,6 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/listen7"
+    android:id="@+id/listen07"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/bg_yellow"
@@ -104,10 +104,10 @@
     <LinearLayout
         android:id="@+id/top_c"
         android:layout_width="match_parent"
-        android:gravity="right"
         android:layout_height="50dp"
+        android:layout_alignRight="@+id/listen"
         android:layout_marginTop="140dp"
-        android:layout_alignRight="@+id/listen">
+        android:gravity="right">
 
         <ImageView
             android:id="@+id/lion_n"

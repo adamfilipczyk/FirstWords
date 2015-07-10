@@ -58,11 +58,11 @@ public class rabbit extends Activity implements OnTouchListener, OnDragListener 
 
         //bottom containers drag listener
         findViewById(R.id.bottom_r).setOnDragListener(this);
-        findViewById(R.id.bottom_h).setOnDragListener(this);
+        findViewById(R.id.bottom_a).setOnDragListener(this);
         findViewById(R.id.bottom_b).setOnDragListener(this);
         findViewById(R.id.bottom_b2).setOnDragListener(this);
         findViewById(R.id.bottom_i).setOnDragListener(this);
-        findViewById(R.id.bottom_s2).setOnDragListener(this);
+        findViewById(R.id.bottom_t).setOnDragListener(this);
 
         //top container drag listener
         findViewById(R.id.top_c).setOnDragListener(this);
@@ -115,7 +115,7 @@ public class rabbit extends Activity implements OnTouchListener, OnDragListener 
         LinearLayout b_r = (LinearLayout)findViewById(R.id.bottom_r);
         ImageView r = (ImageView) b_r.findViewById(R.id.rabbit_r);
 
-        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_h);
+        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_a);
         ImageView a = (ImageView) b_a.findViewById(R.id.rabbit_a);
 
         //b-----------------------------------------------------------
@@ -137,7 +137,7 @@ public class rabbit extends Activity implements OnTouchListener, OnDragListener 
         LinearLayout b_i = (LinearLayout)findViewById(R.id.bottom_i);
         ImageView i = (ImageView) b_i.findViewById(R.id.rabbit_i);
 
-        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_s2);
+        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_t);
         ImageView t = (ImageView) b_t.findViewById(R.id.rabbit_t);
 
         if ((r!= null) && (a!= null) && (i!=null) && (t!= null) && ((b!= null && b2!=null) || (b3!=null && b4!=null))) {

@@ -55,7 +55,7 @@ public class hen extends  Activity implements OnTouchListener, OnDragListener {
 
         //bottom containers drag listener
         findViewById(R.id.bottom_h).setOnDragListener(this);
-        findViewById(R.id.bottom_t).setOnDragListener(this);
+        findViewById(R.id.bottom_e).setOnDragListener(this);
         findViewById(R.id.bottom_n).setOnDragListener(this);
 
         //top container drag listener
@@ -110,7 +110,7 @@ public class hen extends  Activity implements OnTouchListener, OnDragListener {
         LinearLayout b_h = (LinearLayout)findViewById(R.id.bottom_h);
         ImageView h = (ImageView) b_h.findViewById(R.id.hen_h);
 
-        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_t);
+        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
         ImageView e = (ImageView) b_e.findViewById(R.id.hen_e);
 
         LinearLayout b_n = (LinearLayout)findViewById(R.id.bottom_n);

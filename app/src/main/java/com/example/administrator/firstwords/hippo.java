@@ -116,6 +116,9 @@ public class hippo extends Activity implements OnTouchListener, OnDragListener  
         LinearLayout b_i = (LinearLayout)findViewById(R.id.bottom_i);
         ImageView i = (ImageView) b_i.findViewById(R.id.hippo_i);
 
+        LinearLayout b_o = (LinearLayout)findViewById(R.id.bottom_o);
+        ImageView o = (ImageView) b_o.findViewById(R.id.hippo_o);
+
         //p-----------------------------------------------------------
 
         LinearLayout b_p = (LinearLayout)findViewById(R.id.bottom_p);
@@ -130,10 +133,7 @@ public class hippo extends Activity implements OnTouchListener, OnDragListener  
         LinearLayout b_p4 = (LinearLayout)findViewById(R.id.bottom_p2);
         ImageView p4 = (ImageView) b_p4.findViewById(R.id.hippo_p);
 
-        //-----------------------------------------------------------
 
-        LinearLayout b_o = (LinearLayout)findViewById(R.id.bottom_o);
-        ImageView o = (ImageView) b_o.findViewById(R.id.hippo_o);
 
         if ((h!= null) && (i!= null) && ((p!=null && p2!=null) || (p3!=null && p4!=null)) && (o!=null)) {
             approved();

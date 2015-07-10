@@ -60,8 +60,8 @@ public class donkey extends Activity implements OnTouchListener, OnDragListener 
         findViewById(R.id.bottom_d).setOnDragListener(this);
         findViewById(R.id.bottom_o).setOnDragListener(this);
         findViewById(R.id.bottom_n).setOnDragListener(this);
-        findViewById(R.id.bottom_r).setOnDragListener(this);
-        findViewById(R.id.bottom_t).setOnDragListener(this);
+        findViewById(R.id.bottom_k).setOnDragListener(this);
+        findViewById(R.id.bottom_e).setOnDragListener(this);
         findViewById(R.id.bottom_y).setOnDragListener(this);
 
         //top container drag listener
@@ -124,10 +124,10 @@ public class donkey extends Activity implements OnTouchListener, OnDragListener 
         LinearLayout b_n = (LinearLayout)findViewById(R.id.bottom_n);
         ImageView n = (ImageView) b_n.findViewById(R.id.donkey_n);
 
-        LinearLayout b_k = (LinearLayout)findViewById(R.id.bottom_r);
+        LinearLayout b_k = (LinearLayout)findViewById(R.id.bottom_k);
         ImageView k = (ImageView) b_k.findViewById(R.id.donkey_k);
 
-        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_t);
+        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
         ImageView e = (ImageView) b_e.findViewById(R.id.donkey_e);
 
         LinearLayout b_y = (LinearLayout)findViewById(R.id.bottom_y);
