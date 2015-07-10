@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="false"
         android:layout_alignParentStart="false"
-        android:layout_alignTop="@+id/bottom_h"
+        android:layout_alignTop="@+id/bottom_a"
         android:background="@drawable/home_btn"
         android:onClick="back" />
 
