@@ -118,6 +118,12 @@ public class rabbit extends Activity implements OnTouchListener, OnDragListener 
         LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_a);
         ImageView a = (ImageView) b_a.findViewById(R.id.rabbit_a);
 
+        LinearLayout b_i = (LinearLayout)findViewById(R.id.bottom_i);
+        ImageView i = (ImageView) b_i.findViewById(R.id.rabbit_i);
+
+        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_t);
+        ImageView t = (ImageView) b_t.findViewById(R.id.rabbit_t);
+
         //b-----------------------------------------------------------
 
         LinearLayout b_b = (LinearLayout)findViewById(R.id.bottom_b);
@@ -132,13 +138,6 @@ public class rabbit extends Activity implements OnTouchListener, OnDragListener 
         LinearLayout b_b4 = (LinearLayout)findViewById(R.id.bottom_b2);
         ImageView b4 = (ImageView) b_b4.findViewById(R.id.rabbit_b);
 
-        //-----------------------------------------------------------
-
-        LinearLayout b_i = (LinearLayout)findViewById(R.id.bottom_i);
-        ImageView i = (ImageView) b_i.findViewById(R.id.rabbit_i);
-
-        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_t);
-        ImageView t = (ImageView) b_t.findViewById(R.id.rabbit_t);
 
         if ((r!= null) && (a!= null) && (i!=null) && (t!= null) && ((b!= null && b2!=null) || (b3!=null && b4!=null))) {
             approved();

@@ -35,9 +35,7 @@ public class donkey extends Activity implements OnTouchListener, OnDragListener 
         setContentView(R.layout.activity_donkey);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        MediaPlayer mMediaPlayer = new MediaPlayer();
         mMediaPlayer = MediaPlayer.create(this, R.raw.donkey);
-        mMediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
         mMediaPlayer.start();
 
         //object for the sound

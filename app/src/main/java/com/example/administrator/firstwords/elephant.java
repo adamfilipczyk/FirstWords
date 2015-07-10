@@ -35,9 +35,7 @@ public class elephant extends Activity implements OnTouchListener, OnDragListene
         setContentView(R.layout.activity_elephant);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        MediaPlayer mMediaPlayer = new MediaPlayer();
         mMediaPlayer = MediaPlayer.create(this, R.raw.elephant);
-        mMediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
         mMediaPlayer.start();
 
         //object for the sound

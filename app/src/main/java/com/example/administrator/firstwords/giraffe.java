@@ -35,9 +35,7 @@ public class giraffe extends Activity implements OnTouchListener, OnDragListener
         setContentView(R.layout.activity_giraffe);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        MediaPlayer mMediaPlayer = new MediaPlayer();
         mMediaPlayer = MediaPlayer.create(this, R.raw.giraffe);
-        mMediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
         mMediaPlayer.start();
 
         //object for the sound
