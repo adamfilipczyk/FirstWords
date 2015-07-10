@@ -17,7 +17,7 @@ import android.widget.LinearLayout;
 import java.util.Random;
 
 
-public class shoes extends Activity implements View.OnTouchListener, View.OnDragListener {
+public class tshirt extends Activity implements View.OnTouchListener, View.OnDragListener {
 
     SoundPool sound, click;
     int soundID;
@@ -26,17 +26,17 @@ public class shoes extends Activity implements View.OnTouchListener, View.OnDrag
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shoes);
+        setContentView(R.layout.activity_tshirt);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         //player
-        mMediaPlayer = MediaPlayer.create(this, R.raw.shoes);
+        mMediaPlayer = MediaPlayer.create(this, R.raw.tshirt);
         mMediaPlayer.start();
 
 
         //speaker sound
         sound = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
-        soundID = sound.load(this, R.raw.shoes, 1);
+        soundID = sound.load(this, R.raw.tshirt, 1);
 
         //check sound
         click = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
@@ -44,18 +44,23 @@ public class shoes extends Activity implements View.OnTouchListener, View.OnDrag
 
 
         //letters
-        findViewById(R.id.shoes_s).setOnTouchListener(this);
-        findViewById(R.id.shoes_o).setOnTouchListener(this);
-        findViewById(R.id.shoes_e).setOnTouchListener(this);
-        findViewById(R.id.shoes_h).setOnTouchListener(this);
-        findViewById(R.id.shoes_s2).setOnTouchListener(this);
+        findViewById(R.id.tshirt_t).setOnTouchListener(this);
+        findViewById(R.id.tshirt_hyphen).setOnTouchListener(this);
+        findViewById(R.id.tshirt_s).setOnTouchListener(this);
+        findViewById(R.id.tshirt_h).setOnTouchListener(this);
+        findViewById(R.id.tshirt_i).setOnTouchListener(this);
+        findViewById(R.id.tshirt_r).setOnTouchListener(this);
+        findViewById(R.id.tshirt_t2).setOnTouchListener(this);
 
         //bottom containers drag listener
+        findViewById(R.id.bottom_t).setOnDragListener(this);
+        findViewById(R.id.bottom_hyphen).setOnDragListener(this);
         findViewById(R.id.bottom_s).setOnDragListener(this);
         findViewById(R.id.bottom_h).setOnDragListener(this);
-        findViewById(R.id.bottom_o).setOnDragListener(this);
-        findViewById(R.id.bottom_t).setOnDragListener(this);
-        findViewById(R.id.bottom_s2).setOnDragListener(this);
+        findViewById(R.id.bottom_i).setOnDragListener(this);
+        findViewById(R.id.bottom_r).setOnDragListener(this);
+        findViewById(R.id.bottom_t2).setOnDragListener(this);
+
 
         //top container listener
         findViewById(R.id.top_c).setOnDragListener(this);
@@ -106,30 +111,40 @@ public class shoes extends Activity implements View.OnTouchListener, View.OnDrag
 
         click.play(soundID, 1, 1, 1, 0, 1);
 
-        LinearLayout b_o = (LinearLayout)findViewById(R.id.bottom_o);
-        ImageView o = (ImageView) b_o.findViewById(R.id.shoes_o);
 
-        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_t);
-        ImageView e = (ImageView) b_e.findViewById(R.id.shoes_e);
-
-        LinearLayout b_h = (LinearLayout)findViewById(R.id.bottom_h);
-        ImageView h = (ImageView) b_h.findViewById(R.id.shoes_h);
-
-        //s----------------------------------------------------------
 
         LinearLayout b_s = (LinearLayout)findViewById(R.id.bottom_s);
-        ImageView s1 = (ImageView) b_s.findViewById(R.id.shoes_s);
+        ImageView s = (ImageView) b_s.findViewById(R.id.tshirt_s);
 
-        LinearLayout b_s2 = (LinearLayout)findViewById(R.id.bottom_s2);
-        ImageView s2 = (ImageView) b_s2.findViewById(R.id.shoes_s2);
+        LinearLayout b_h = (LinearLayout)findViewById(R.id.bottom_h);
+        ImageView h = (ImageView) b_h.findViewById(R.id.tshirt_h);
 
-        LinearLayout b_s3 = (LinearLayout)findViewById(R.id.bottom_s);
-        ImageView s3 = (ImageView) b_s3.findViewById(R.id.shoes_s2);
+        LinearLayout b_i = (LinearLayout)findViewById(R.id.bottom_i);
+        ImageView i = (ImageView) b_i.findViewById(R.id.tshirt_i);
 
-        LinearLayout b_s4 = (LinearLayout)findViewById(R.id.bottom_s2);
-        ImageView s4 = (ImageView) b_s4.findViewById(R.id.shoes_s);
+        LinearLayout b_r = (LinearLayout)findViewById(R.id.bottom_r);
+        ImageView r = (ImageView) b_r.findViewById(R.id.tshirt_r);
 
-        if ((h!= null) && (o!= null) && (e!=null) && ((s1!=null && s2!=null) || (s3!=null && s4!=null))) {
+        LinearLayout b_hy = (LinearLayout)findViewById(R.id.bottom_hyphen);
+        ImageView hy = (ImageView) b_hy.findViewById(R.id.tshirt_hyphen);
+
+
+        //t----------------------------------------------------------
+
+        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_t);
+        ImageView t1 = (ImageView) b_t.findViewById(R.id.tshirt_t);
+
+        LinearLayout b_t2 = (LinearLayout)findViewById(R.id.bottom_t2);
+        ImageView t2 = (ImageView) b_t2.findViewById(R.id.tshirt_t2);
+
+        LinearLayout b_t3 = (LinearLayout)findViewById(R.id.bottom_t);
+        ImageView t3 = (ImageView) b_t3.findViewById(R.id.tshirt_t2);
+
+        LinearLayout b_t4 = (LinearLayout)findViewById(R.id.bottom_t2);
+        ImageView t4 = (ImageView) b_t4.findViewById(R.id.tshirt_t);
+
+
+        if ((s!= null) && (h!=null) && (i!= null) && (r!=null) && (hy!= null) && ((t1!=null && t2!=null) || (t3!=null && t4!=null))) {
 
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
@@ -145,8 +160,8 @@ public class shoes extends Activity implements View.OnTouchListener, View.OnDrag
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent shorts = new Intent(getApplicationContext(), shorts.class);
-                            startActivity(shorts);
+                            Intent tshirt = new Intent(getApplicationContext(), tshirt.class);
+                            startActivity(tshirt);
                         }
                     });
                     break;
@@ -156,8 +171,8 @@ public class shoes extends Activity implements View.OnTouchListener, View.OnDrag
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent shorts = new Intent(getApplicationContext(), shorts.class);
-                            startActivity(shorts);
+                            Intent tshirt = new Intent(getApplicationContext(), tshirt.class);
+                            startActivity(tshirt);
                         }
                     });
                     break;
@@ -167,8 +182,8 @@ public class shoes extends Activity implements View.OnTouchListener, View.OnDrag
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent shorts = new Intent(getApplicationContext(), shorts.class);
-                            startActivity(shorts);
+                            Intent tshirt = new Intent(getApplicationContext(), tshirt.class);
+                            startActivity(tshirt);
                         }
                     });
                     break;

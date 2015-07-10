@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.DragEvent;
 import android.view.MotionEvent;
@@ -54,7 +53,7 @@ public class boot extends Activity implements View.OnTouchListener, View.OnDragL
         findViewById(R.id.bottom_b).setOnDragListener(this);
         findViewById(R.id.bottom_o).setOnDragListener(this);
         findViewById(R.id.bottom_o2).setOnDragListener(this);
-        findViewById(R.id.bottom_t).setOnDragListener(this);
+        findViewById(R.id.bottom_s2).setOnDragListener(this);
 
 
         //top container drag listener
@@ -110,7 +109,7 @@ public class boot extends Activity implements View.OnTouchListener, View.OnDragL
         LinearLayout b_b = (LinearLayout)findViewById(R.id.bottom_b);
         ImageView b = (ImageView) b_b.findViewById(R.id.boot_b);
 
-        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_t);
+        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_s2);
         ImageView t = (ImageView) b_t.findViewById(R.id.boot_t);
 
         //o---------------------------------------------------------

@@ -84,12 +84,12 @@
         android:layout_marginTop="15dp"
         android:background="#000000"
         android:orientation="horizontal"
-        android:layout_toLeftOf="@+id/bottom_e">
+        android:layout_toLeftOf="@+id/bottom_t">
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/bottom_e"
+        android:id="@+id/bottom_t"
         android:layout_width="44dp"
         android:layout_height="44dp"
         android:layout_below="@+id/top_c"

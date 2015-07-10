@@ -50,8 +50,8 @@ public class hat extends Activity implements View.OnTouchListener, View.OnDragLi
 
         //bottom containers drag listener
         findViewById(R.id.bottom_h).setOnDragListener(this);
-        findViewById(R.id.bottom_a).setOnDragListener(this);
-        findViewById(R.id.bottom_t).setOnDragListener(this);
+        findViewById(R.id.bottom_h).setOnDragListener(this);
+        findViewById(R.id.bottom_s2).setOnDragListener(this);
 
         //top container listener
         findViewById(R.id.top_c).setOnDragListener(this);
@@ -105,10 +105,10 @@ public class hat extends Activity implements View.OnTouchListener, View.OnDragLi
         LinearLayout b_h = (LinearLayout)findViewById(R.id.bottom_h);
         ImageView h = (ImageView) b_h.findViewById(R.id.hat_h);
 
-        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_a);
+        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_h);
         ImageView a = (ImageView) b_a.findViewById(R.id.hat_a);
 
-        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_t);
+        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_s2);
         ImageView t = (ImageView) b_t.findViewById(R.id.hat_t);
 
         if ((h!= null) && (a!= null) && (t!=null)) {

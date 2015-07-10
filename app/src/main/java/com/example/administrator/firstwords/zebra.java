@@ -57,10 +57,10 @@ public class zebra extends Activity implements OnTouchListener, OnDragListener {
 
         //bottom containers drag listener
         findViewById(R.id.bottom_z).setOnDragListener(this);
-        findViewById(R.id.bottom_e).setOnDragListener(this);
+        findViewById(R.id.bottom_t).setOnDragListener(this);
         findViewById(R.id.bottom_b).setOnDragListener(this);
         findViewById(R.id.bottom_r).setOnDragListener(this);
-        findViewById(R.id.bottom_a).setOnDragListener(this);
+        findViewById(R.id.bottom_h).setOnDragListener(this);
 
         //top container drag listener
         findViewById(R.id.top_c).setOnDragListener(this);
@@ -115,7 +115,7 @@ public class zebra extends Activity implements OnTouchListener, OnDragListener {
         LinearLayout b_z = (LinearLayout)findViewById(R.id.bottom_z);
         ImageView z = (ImageView) b_z.findViewById(R.id.zebra_z);
 
-        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
+        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_t);
         ImageView e = (ImageView) b_e.findViewById(R.id.zebra_e);
 
         LinearLayout b_b = (LinearLayout)findViewById(R.id.bottom_b);
@@ -124,7 +124,7 @@ public class zebra extends Activity implements OnTouchListener, OnDragListener {
         LinearLayout b_r = (LinearLayout)findViewById(R.id.bottom_r);
         ImageView r = (ImageView) b_r.findViewById(R.id.zebra_r);
 
-        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_a);
+        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_h);
         ImageView a = (ImageView) b_a.findViewById(R.id.zebra_a);
 
 

@@ -61,10 +61,10 @@ public class giraffe extends Activity implements OnTouchListener, OnDragListener
         findViewById(R.id.bottom_g).setOnDragListener(this);
         findViewById(R.id.bottom_i).setOnDragListener(this);
         findViewById(R.id.bottom_r).setOnDragListener(this);
-        findViewById(R.id.bottom_a).setOnDragListener(this);
+        findViewById(R.id.bottom_h).setOnDragListener(this);
         findViewById(R.id.bottom_f).setOnDragListener(this);
         findViewById(R.id.bottom_f2).setOnDragListener(this);
-        findViewById(R.id.bottom_e).setOnDragListener(this);
+        findViewById(R.id.bottom_t).setOnDragListener(this);
         //top container drag listener
         findViewById(R.id.top_c).setOnDragListener(this);
     }
@@ -122,7 +122,7 @@ public class giraffe extends Activity implements OnTouchListener, OnDragListener
         LinearLayout b_r = (LinearLayout)findViewById(R.id.bottom_r);
         ImageView r = (ImageView) b_r.findViewById(R.id.giraffe_r);
 
-        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_a);
+        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_h);
         ImageView a = (ImageView) b_a.findViewById(R.id.giraffe_a);
 
         //f--------------------------------------------------------
@@ -141,7 +141,7 @@ public class giraffe extends Activity implements OnTouchListener, OnDragListener
 
         //----------------------------------------------------------
 
-        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
+        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_t);
         ImageView e = (ImageView) b_e.findViewById(R.id.giraffe_e);
 
         if ((g!= null) && (i!= null) && (r!=null) && (a!= null) && ((f!= null && f2!=null) || (f3!=null && f4!=null)) && (e!= null)) {

@@ -47,6 +47,10 @@
     <string name="title_activity_jacket">jacket</string>
     <string name="title_activity_shoes">shoes</string>
     <string name="title_activity_shorts">shorts</string>
+    <string name="title_activity_socks">socks</string>
+    <string name="title_activity_trousers">trousers</string>
+    <string name="title_activity_tie">tie</string>
+    <string name="title_activity_tshirt">tshirt</string>
 
 
 

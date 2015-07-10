@@ -52,12 +52,12 @@ public class carrot extends Activity implements View.OnTouchListener, View.OnDra
         findViewById(R.id.carrot_t).setOnTouchListener(this);
 
         //bottom containers drag listener
-        findViewById(R.id.bottom_c).setOnDragListener(this);
-        findViewById(R.id.bottom_a).setOnDragListener(this);
+        findViewById(R.id.bottom_o).setOnDragListener(this);
+        findViewById(R.id.bottom_h).setOnDragListener(this);
         findViewById(R.id.bottom_r).setOnDragListener(this);
         findViewById(R.id.bottom_r2).setOnDragListener(this);
         findViewById(R.id.bottom_o).setOnDragListener(this);
-        findViewById(R.id.bottom_t).setOnDragListener(this);
+        findViewById(R.id.bottom_s2).setOnDragListener(this);
         //top container drag listener
         findViewById(R.id.top_c).setOnDragListener(this);
     }
@@ -108,13 +108,13 @@ public class carrot extends Activity implements View.OnTouchListener, View.OnDra
 
         click.play(soundID, 1, 1, 1, 0, 1);
 
-        LinearLayout b_c = (LinearLayout)findViewById(R.id.bottom_c);
+        LinearLayout b_c = (LinearLayout)findViewById(R.id.bottom_o);
         ImageView c = (ImageView) b_c.findViewById(R.id.carrot_c);
 
         LinearLayout b_o = (LinearLayout)findViewById(R.id.bottom_o);
         ImageView o = (ImageView) b_o.findViewById(R.id.carrot_o);
 
-        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_t);
+        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_s2);
         ImageView t = (ImageView) b_t.findViewById(R.id.carrot_t);
 
         //r----------------------------------------------------------

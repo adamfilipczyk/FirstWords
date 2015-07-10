@@ -58,7 +58,7 @@ public class blueberry extends Activity implements View.OnTouchListener, View.On
         findViewById(R.id.bottom_b).setOnDragListener(this);
         findViewById(R.id.bottom_l).setOnDragListener(this);
         findViewById(R.id.bottom_u).setOnDragListener(this);
-        findViewById(R.id.bottom_e).setOnDragListener(this);
+        findViewById(R.id.bottom_t).setOnDragListener(this);
         findViewById(R.id.bottom_b2).setOnDragListener(this);
         findViewById(R.id.bottom_e2).setOnDragListener(this);
         findViewById(R.id.bottom_r).setOnDragListener(this);
@@ -141,13 +141,13 @@ public class blueberry extends Activity implements View.OnTouchListener, View.On
 
         //e--------------------------------------------------------------
 
-        LinearLayout b_e1 = (LinearLayout)findViewById(R.id.bottom_e);
+        LinearLayout b_e1 = (LinearLayout)findViewById(R.id.bottom_t);
         ImageView e1 = (ImageView) b_e1.findViewById(R.id.blueberry_e);
 
         LinearLayout b_e2 = (LinearLayout)findViewById(R.id.bottom_e2);
         ImageView e2 = (ImageView) b_e2.findViewById(R.id.blueberry_e2);
 
-        LinearLayout b_e3 = (LinearLayout)findViewById(R.id.bottom_e);
+        LinearLayout b_e3 = (LinearLayout)findViewById(R.id.bottom_t);
         ImageView e3 = (ImageView) b_e3.findViewById(R.id.blueberry_e2);
 
         LinearLayout b_e4 = (LinearLayout)findViewById(R.id.bottom_e2);

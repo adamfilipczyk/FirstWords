@@ -53,7 +53,7 @@ public class pepper extends Activity implements View.OnTouchListener, View.OnDra
 
         //bottom containers drag listener
         findViewById(R.id.bottom_p).setOnDragListener(this);
-        findViewById(R.id.bottom_e).setOnDragListener(this);
+        findViewById(R.id.bottom_t).setOnDragListener(this);
         findViewById(R.id.bottom_p2).setOnDragListener(this);
         findViewById(R.id.bottom_p3).setOnDragListener(this);
         findViewById(R.id.bottom_e2).setOnDragListener(this);
@@ -117,7 +117,7 @@ public class pepper extends Activity implements View.OnTouchListener, View.OnDra
 
         //e1------------------------------------------------------------
 
-        LinearLayout b_e1 = (LinearLayout) findViewById(R.id.bottom_e);
+        LinearLayout b_e1 = (LinearLayout) findViewById(R.id.bottom_t);
         ImageView e1 = (ImageView) b_e1.findViewById(R.id.pepper_e);
 
         LinearLayout b_e2 = (LinearLayout) findViewById(R.id.bottom_e2);
@@ -125,7 +125,7 @@ public class pepper extends Activity implements View.OnTouchListener, View.OnDra
 
         //e2-------------------------------------------------------------
 
-        LinearLayout b_e3 = (LinearLayout) findViewById(R.id.bottom_e);
+        LinearLayout b_e3 = (LinearLayout) findViewById(R.id.bottom_t);
         ImageView e3 = (ImageView) b_e3.findViewById(R.id.pepper_e2);
 
         LinearLayout b_e4 = (LinearLayout) findViewById(R.id.bottom_e2);

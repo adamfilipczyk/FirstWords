@@ -177,6 +177,10 @@
             android:name=".boot"
             android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".dress"
@@ -185,11 +189,6 @@
         <activity
             android:name=".hat"
             android:screenOrientation="landscape" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".jacket"
@@ -197,11 +196,27 @@
         </activity>
         <activity
             android:name=".shoes"
-            android:label="@string/title_activity_shoes" >
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".shorts"
-            android:label="@string/title_activity_shorts" >
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".socks"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".trousers"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".tie"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".tshirt"
+            android:screenOrientation="landscape" >
         </activity>
     </application>
 

@@ -56,14 +56,14 @@ public class elephant extends Activity implements OnTouchListener, OnDragListene
         findViewById(R.id.elephant_t).setOnTouchListener(this);
 
         //bottom containers drag listener
-        findViewById(R.id.bottom_e).setOnDragListener(this);
+        findViewById(R.id.bottom_t).setOnDragListener(this);
         findViewById(R.id.bottom_l).setOnDragListener(this);
         findViewById(R.id.bottom_e2).setOnDragListener(this);
         findViewById(R.id.bottom_p).setOnDragListener(this);
         findViewById(R.id.bottom_h).setOnDragListener(this);
-        findViewById(R.id.bottom_a).setOnDragListener(this);
+        findViewById(R.id.bottom_h).setOnDragListener(this);
         findViewById(R.id.bottom_n).setOnDragListener(this);
-        findViewById(R.id.bottom_t).setOnDragListener(this);
+        findViewById(R.id.bottom_s2).setOnDragListener(this);
 
         //top container drag listener
         findViewById(R.id.top_c).setOnDragListener(this);
@@ -115,13 +115,13 @@ public class elephant extends Activity implements OnTouchListener, OnDragListene
 
         //e----------------------------------------------------------
 
-        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
+        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_t);
         ImageView e = (ImageView) b_e.findViewById(R.id.elephant_e);
 
         LinearLayout b_e2 = (LinearLayout)findViewById(R.id.bottom_e2);
         ImageView e2 = (ImageView) b_e2.findViewById(R.id.elephant_e2);
 
-        LinearLayout b_e3 = (LinearLayout)findViewById(R.id.bottom_e);
+        LinearLayout b_e3 = (LinearLayout)findViewById(R.id.bottom_t);
         ImageView e3 = (ImageView) b_e3.findViewById(R.id.elephant_e2);
 
         LinearLayout b_e4 = (LinearLayout)findViewById(R.id.bottom_e2);
@@ -139,13 +139,13 @@ public class elephant extends Activity implements OnTouchListener, OnDragListene
         LinearLayout b_h = (LinearLayout)findViewById(R.id.bottom_h);
         ImageView h = (ImageView) b_h.findViewById(R.id.elephant_h);
 
-        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_a);
+        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_h);
         ImageView a = (ImageView) b_a.findViewById(R.id.elephant_a);
 
         LinearLayout b_n = (LinearLayout)findViewById(R.id.bottom_n);
         ImageView n = (ImageView) b_n.findViewById(R.id.elephant_n);
 
-        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_t);
+        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_s2);
         ImageView t = (ImageView) b_t.findViewById(R.id.elephant_t);
 
         if (((e!= null && e2!=null) || (e3!= null && e4!=null)) && (l!=null) && (p!= null) && (h!= null) && (a!=null) && (n!= null) && (t!=null)) {

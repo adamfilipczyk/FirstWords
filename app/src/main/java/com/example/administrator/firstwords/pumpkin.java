@@ -57,7 +57,7 @@ public class pumpkin extends Activity implements View.OnTouchListener, View.OnDr
         findViewById(R.id.bottom_u).setOnDragListener(this);
         findViewById(R.id.bottom_m).setOnDragListener(this);
         findViewById(R.id.bottom_p2).setOnDragListener(this);
-        findViewById(R.id.bottom_k).setOnDragListener(this);
+        findViewById(R.id.bottom_r).setOnDragListener(this);
         findViewById(R.id.bottom_i).setOnDragListener(this);
         findViewById(R.id.bottom_n).setOnDragListener(this);
 
@@ -115,7 +115,7 @@ public class pumpkin extends Activity implements View.OnTouchListener, View.OnDr
         LinearLayout b_m = (LinearLayout) findViewById(R.id.bottom_m);
         ImageView m = (ImageView) b_m.findViewById(R.id.pumpkin_m);
 
-        LinearLayout b_k = (LinearLayout) findViewById(R.id.bottom_k);
+        LinearLayout b_k = (LinearLayout) findViewById(R.id.bottom_r);
         ImageView k = (ImageView) b_k.findViewById(R.id.pumpkin_k);
 
         LinearLayout b_i = (LinearLayout) findViewById(R.id.bottom_i);

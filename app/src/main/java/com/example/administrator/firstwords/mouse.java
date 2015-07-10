@@ -57,7 +57,7 @@ public class mouse extends Activity implements OnTouchListener, OnDragListener  
         findViewById(R.id.bottom_o).setOnDragListener(this);
         findViewById(R.id.bottom_u).setOnDragListener(this);
         findViewById(R.id.bottom_s).setOnDragListener(this);
-        findViewById(R.id.bottom_e).setOnDragListener(this);
+        findViewById(R.id.bottom_t).setOnDragListener(this);
 
         //top container drag listener
         findViewById(R.id.top_c).setOnDragListener(this);
@@ -120,7 +120,7 @@ public class mouse extends Activity implements OnTouchListener, OnDragListener  
         LinearLayout b_s = (LinearLayout)findViewById(R.id.bottom_s);
         ImageView s = (ImageView) b_s.findViewById(R.id.mouse_s);
 
-        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
+        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_t);
         ImageView e = (ImageView) b_e.findViewById(R.id.mouse_e);
 
         if ((m!= null) && (o!= null) && (u!=null) && (s!=null) && (e!=null)) {

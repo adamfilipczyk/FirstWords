@@ -53,7 +53,7 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
 
         //bottom containers drag listener
         findViewById(R.id.bottom_b).setOnDragListener(this);
-        findViewById(R.id.bottom_a).setOnDragListener(this);
+        findViewById(R.id.bottom_h).setOnDragListener(this);
         findViewById(R.id.bottom_n).setOnDragListener(this);
         findViewById(R.id.bottom_a2).setOnDragListener(this);
         findViewById(R.id.bottom_n2).setOnDragListener(this);
@@ -133,7 +133,7 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
 
         //a1------------------------------------------------------------
 
-        LinearLayout b_a1 = (LinearLayout) findViewById(R.id.bottom_a);
+        LinearLayout b_a1 = (LinearLayout) findViewById(R.id.bottom_h);
         ImageView a1 = (ImageView) b_a1.findViewById(R.id.ban_a);
 
         LinearLayout b_a2 = (LinearLayout) findViewById(R.id.bottom_a2);
@@ -150,7 +150,7 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
         LinearLayout b_a5 = (LinearLayout) findViewById(R.id.bottom_a3);
         ImageView a5 = (ImageView) b_a5.findViewById(R.id.ban_a2);
 
-        LinearLayout b_a6 = (LinearLayout) findViewById(R.id.bottom_a);
+        LinearLayout b_a6 = (LinearLayout) findViewById(R.id.bottom_h);
         ImageView a6 = (ImageView) b_a6.findViewById(R.id.ban_a3);
 
         //a3-------------------------------------------------------------
@@ -158,7 +158,7 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
         LinearLayout b_a7 = (LinearLayout) findViewById(R.id.bottom_a3);
         ImageView a7 = (ImageView) b_a7.findViewById(R.id.ban_a);
 
-        LinearLayout b_a8 = (LinearLayout) findViewById(R.id.bottom_a);
+        LinearLayout b_a8 = (LinearLayout) findViewById(R.id.bottom_h);
         ImageView a8 = (ImageView) b_a8.findViewById(R.id.ban_a2);
 
         LinearLayout b_a9 = (LinearLayout) findViewById(R.id.bottom_a2);
@@ -166,7 +166,7 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
 
         //a4-------------------------------------------------------------
 
-        LinearLayout b_a10 = (LinearLayout) findViewById(R.id.bottom_a);
+        LinearLayout b_a10 = (LinearLayout) findViewById(R.id.bottom_h);
         ImageView a10 = (ImageView) b_a10.findViewById(R.id.ban_a);
 
         LinearLayout b_a11 = (LinearLayout) findViewById(R.id.bottom_a2);
@@ -177,7 +177,7 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
 
         //a5-------------------------------------------------------------
 
-        LinearLayout b_a13 = (LinearLayout) findViewById(R.id.bottom_a);
+        LinearLayout b_a13 = (LinearLayout) findViewById(R.id.bottom_h);
         ImageView a13 = (ImageView) b_a13.findViewById(R.id.ban_a3);
 
         LinearLayout b_a14 = (LinearLayout) findViewById(R.id.bottom_a2);
@@ -188,7 +188,7 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
 
         //a5-------------------------------------------------------------
 
-        LinearLayout b_a16 = (LinearLayout) findViewById(R.id.bottom_a);
+        LinearLayout b_a16 = (LinearLayout) findViewById(R.id.bottom_h);
         ImageView a16 = (ImageView) b_a16.findViewById(R.id.ban_a2);
 
         LinearLayout b_a17 = (LinearLayout) findViewById(R.id.bottom_a2);
@@ -199,7 +199,7 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
 
         //a6-------------------------------------------------------------
 
-        LinearLayout b_a19 = (LinearLayout) findViewById(R.id.bottom_a);
+        LinearLayout b_a19 = (LinearLayout) findViewById(R.id.bottom_h);
         ImageView a19 = (ImageView) b_a19.findViewById(R.id.ban_a);
 
         LinearLayout b_a20 = (LinearLayout) findViewById(R.id.bottom_a3);

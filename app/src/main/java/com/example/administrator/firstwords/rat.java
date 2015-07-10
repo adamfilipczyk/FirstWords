@@ -52,8 +52,8 @@ public class rat extends Activity implements OnTouchListener, OnDragListener {
 
         //bottom containers drag listener
         findViewById(R.id.bottom_r).setOnDragListener(this);
-        findViewById(R.id.bottom_a).setOnDragListener(this);
-        findViewById(R.id.bottom_t).setOnDragListener(this);
+        findViewById(R.id.bottom_h).setOnDragListener(this);
+        findViewById(R.id.bottom_s2).setOnDragListener(this);
 
 
         //top container drag listener
@@ -107,10 +107,10 @@ public class rat extends Activity implements OnTouchListener, OnDragListener {
         LinearLayout b_r = (LinearLayout)findViewById(R.id.bottom_r);
         ImageView r = (ImageView) b_r.findViewById(R.id.rat_r);
 
-        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_a);
+        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_h);
         ImageView a = (ImageView) b_a.findViewById(R.id.rat_a);
 
-        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_t);
+        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_s2);
         ImageView t = (ImageView) b_t.findViewById(R.id.rat_t);
 
         if ((r!= null) && (a!= null) && (t!=null)) {
