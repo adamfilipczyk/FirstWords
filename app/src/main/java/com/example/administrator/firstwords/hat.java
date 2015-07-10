@@ -108,10 +108,10 @@ public class hat extends Activity implements View.OnTouchListener, View.OnDragLi
         LinearLayout b_h = (LinearLayout)findViewById(R.id.bottom_h);
         ImageView h = (ImageView) b_h.findViewById(R.id.hat_h);
 
-        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_h);
+        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_a);
         ImageView a = (ImageView) b_a.findViewById(R.id.hat_a);
 
-        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_s2);
+        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_t);
         ImageView t = (ImageView) b_t.findViewById(R.id.hat_t);
 
         if ((h!= null) && (a!= null) && (t!=null)) {
