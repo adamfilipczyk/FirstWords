@@ -58,7 +58,7 @@ public class radish extends Activity implements View.OnTouchListener, View.OnDra
 
         //bottom containers drag listener
         findViewById(R.id.bottom_r).setOnDragListener(this);
-        findViewById(R.id.bottom_h).setOnDragListener(this);
+        findViewById(R.id.bottom_a).setOnDragListener(this);
         findViewById(R.id.bottom_d).setOnDragListener(this);
         findViewById(R.id.bottom_i).setOnDragListener(this);
         findViewById(R.id.bottom_s).setOnDragListener(this);
@@ -117,7 +117,7 @@ public class radish extends Activity implements View.OnTouchListener, View.OnDra
         LinearLayout b_r = (LinearLayout)findViewById(R.id.bottom_r);
         ImageView r = (ImageView) b_r.findViewById(R.id.radish_r);
 
-        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_h);
+        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_a);
         ImageView a = (ImageView) b_a.findViewById(R.id.radish_a);
 
         LinearLayout b_d = (LinearLayout)findViewById(R.id.bottom_d);

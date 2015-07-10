@@ -33,13 +33,13 @@ public class socks extends Activity implements View.OnTouchListener, View.OnDrag
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         //player
-        mMediaPlayer = MediaPlayer.create(this, R.raw.shorts);
+        mMediaPlayer = MediaPlayer.create(this, R.raw.socks);
         mMediaPlayer.start();
 
 
         //speaker sound
         sound = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
-        soundID = sound.load(this, R.raw.shorts, 1);
+        soundID = sound.load(this, R.raw.socks, 1);
 
         //check sound
         click = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);

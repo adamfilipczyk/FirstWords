@@ -33,16 +33,16 @@ public class carrot extends Activity implements View.OnTouchListener, View.OnDra
         setContentView(R.layout.activity_carrot);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        //player
+        //initial sound
         mMediaPlayer = MediaPlayer.create(this, R.raw.carrot);
         mMediaPlayer.start();
 
 
-        //object for the speaker sound
+        //speaker btn sound
         sound = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
         soundID = sound.load(this, R.raw.carrot, 1);
 
-        //object for the check sound
+        //check btn sound
         click = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
         soundID = click.load(this, R.raw.click, 1);
 
@@ -56,22 +56,23 @@ public class carrot extends Activity implements View.OnTouchListener, View.OnDra
         findViewById(R.id.carrot_t).setOnTouchListener(this);
 
         //bottom containers drag listener
-        findViewById(R.id.bottom_o).setOnDragListener(this);
-        findViewById(R.id.bottom_h).setOnDragListener(this);
+        findViewById(R.id.bottom_c).setOnDragListener(this);
+        findViewById(R.id.bottom_a).setOnDragListener(this);
         findViewById(R.id.bottom_r).setOnDragListener(this);
         findViewById(R.id.bottom_r2).setOnDragListener(this);
         findViewById(R.id.bottom_o).setOnDragListener(this);
-        findViewById(R.id.bottom_s2).setOnDragListener(this);
+        findViewById(R.id.bottom_t).setOnDragListener(this);
+
         //top container drag listener
         findViewById(R.id.top_c).setOnDragListener(this);
     }
 
-    //method to play the sound of the picture displayed on the screen
+    //sound of the picture displayed
     public void play(View view) {
         sound.play(soundID, 1, 1, 1, 0, 1);
     }
 
-    //method to play the sound of the picture displayed on the screen
+    //back home btn sound; redirection to home
     public void back(View view) {
         click.play(soundID, 1, 1, 1, 0, 1);
         finish();
@@ -80,7 +81,7 @@ public class carrot extends Activity implements View.OnTouchListener, View.OnDra
     }
 
 
-    //method for dragging object
+    //dragging object
     @Override
     public boolean onDrag(View v, DragEvent event) {
         if (event.getAction() == DragEvent.ACTION_DROP){
@@ -94,7 +95,7 @@ public class carrot extends Activity implements View.OnTouchListener, View.OnDra
         return true;
     }
 
-    //method to set object moving
+    //object moving shadow
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_DOWN){
@@ -107,18 +108,21 @@ public class carrot extends Activity implements View.OnTouchListener, View.OnDra
         }
     }
 
-
+    //final check
     public void check (View view) {
 
         click.play(soundID, 1, 1, 1, 0, 1);
 
-        LinearLayout b_c = (LinearLayout)findViewById(R.id.bottom_o);
+        LinearLayout b_c = (LinearLayout)findViewById(R.id.bottom_c);
         ImageView c = (ImageView) b_c.findViewById(R.id.carrot_c);
+
+        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_a);
+        ImageView a = (ImageView) b_a.findViewById(R.id.carrot_a);
 
         LinearLayout b_o = (LinearLayout)findViewById(R.id.bottom_o);
         ImageView o = (ImageView) b_o.findViewById(R.id.carrot_o);
 
-        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_s2);
+        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_t);
         ImageView t = (ImageView) b_t.findViewById(R.id.carrot_t);
 
         //r----------------------------------------------------------
@@ -144,7 +148,7 @@ public class carrot extends Activity implements View.OnTouchListener, View.OnDra
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((c!= null) && (o!= null) && (t!=null) && ((r1!=null && r2!=null) || (r3!=null && r4!=null))) {
+        if ((c!= null) && (a!= null) && (o!= null) && (t!=null) && ((r1!=null && r2!=null) || (r3!=null && r4!=null))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
