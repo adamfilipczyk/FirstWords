@@ -16,6 +16,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * @author Adam Filipczyk
+ */
 
 public class game_timer extends Activity {
 

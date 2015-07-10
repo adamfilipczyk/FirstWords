@@ -10,6 +10,9 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
 
+/**
+ * @author Adam Filipczyk
+ */
 
 public class info extends ActionBarActivity {
 

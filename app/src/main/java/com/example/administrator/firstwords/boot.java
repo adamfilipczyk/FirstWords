@@ -16,6 +16,9 @@ import android.widget.LinearLayout;
 
 import java.util.Random;
 
+/**
+ * @author Adam Filipczyk
+ */
 
 public class boot extends Activity implements View.OnTouchListener, View.OnDragListener {
 

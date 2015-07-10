@@ -8,6 +8,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
+/**
+ * @author Adam Filipczyk
+ */
 
 public class categories2 extends Activity {
 

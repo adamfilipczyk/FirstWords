@@ -16,6 +16,9 @@ import android.widget.LinearLayout;
 
 import java.util.Random;
 
+/**
+ * @author Adam Filipczyk
+ */
 
 public class trousers extends Activity implements View.OnTouchListener, View.OnDragListener {
 

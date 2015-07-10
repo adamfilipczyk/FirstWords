@@ -5,11 +5,8 @@ import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.DragEvent;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +16,9 @@ import android.widget.LinearLayout;
 
 import java.util.Random;
 
+/**
+ * @author Adam Filipczyk
+ */
 
 public class tie extends Activity implements View.OnTouchListener, View.OnDragListener {
 

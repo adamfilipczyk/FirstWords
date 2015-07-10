@@ -16,6 +16,9 @@ import android.widget.LinearLayout;
 
 import java.util.Random;
 
+/**
+ * @author Adam Filipczyk
+ */
 
 public class pepper extends Activity implements View.OnTouchListener, View.OnDragListener {
 

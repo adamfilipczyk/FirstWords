@@ -7,7 +7,9 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.app.Activity;
 
-
+/**
+ * @author Adam Filipczyk
+ */
 
 public class one_completed extends Activity {
 

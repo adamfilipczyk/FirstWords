@@ -13,6 +13,9 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageButton;
 
+/**
+ * @author Adam Filipczyk
+ */
 
 public class home extends Activity{
 

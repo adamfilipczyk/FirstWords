@@ -19,6 +19,10 @@ import android.app.Activity;
 
 import java.util.Random;
 
+/**
+ * @author Adam Filipczyk
+ */
+
 public class tiger extends Activity implements OnTouchListener, OnDragListener {
 
     MediaPlayer mMediaPlayer, correct1, correct2, correct3, incorr1, incorr2, incorr3;

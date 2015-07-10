@@ -16,6 +16,9 @@ import android.widget.LinearLayout;
 
 import java.util.Random;
 
+/**
+ * @author Adam Filipczyk
+ */
 
 public class hat extends Activity implements View.OnTouchListener, View.OnDragListener {
 
@@ -50,8 +53,8 @@ public class hat extends Activity implements View.OnTouchListener, View.OnDragLi
 
         //bottom containers drag listener
         findViewById(R.id.bottom_h).setOnDragListener(this);
-        findViewById(R.id.bottom_h).setOnDragListener(this);
-        findViewById(R.id.bottom_s2).setOnDragListener(this);
+        findViewById(R.id.bottom_a).setOnDragListener(this);
+        findViewById(R.id.bottom_t).setOnDragListener(this);
 
         //top container listener
         findViewById(R.id.top_c).setOnDragListener(this);

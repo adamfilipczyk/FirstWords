@@ -16,6 +16,10 @@ import android.widget.LinearLayout;
 
 import java.util.Random;
 
+/**
+ * @author Adam Filipczyk
+ */
+
 
 public class blueberry extends Activity implements View.OnTouchListener, View.OnDragListener {
 

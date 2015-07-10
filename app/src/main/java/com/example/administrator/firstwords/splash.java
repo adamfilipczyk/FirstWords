@@ -6,6 +6,9 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.WindowManager;
 
+/**
+ * @author Adam Filipczyk
+ */
 
 public class splash extends ActionBarActivity {
 

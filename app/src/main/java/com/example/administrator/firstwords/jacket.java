@@ -16,6 +16,9 @@ import android.widget.LinearLayout;
 
 import java.util.Random;
 
+/**
+ * @author Adam Filipczyk
+ */
 
 public class jacket extends Activity implements View.OnTouchListener, View.OnDragListener {
 

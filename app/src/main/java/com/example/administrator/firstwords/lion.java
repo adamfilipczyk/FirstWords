@@ -19,6 +19,9 @@ import android.app.Activity;
 
 import java.util.Random;
 
+/**
+ * @author Adam Filipczyk
+ */
 
 public class lion extends  Activity implements OnTouchListener, OnDragListener {
 

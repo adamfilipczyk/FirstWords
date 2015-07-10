@@ -18,6 +18,10 @@ import android.widget.LinearLayout;
 import android.app.Activity;
 import java.util.Random;
 
+/**
+ * @author Adam Filipczyk
+ */
+
 public class cow extends Activity implements OnTouchListener, OnDragListener{
 
     SoundPool sound, click;

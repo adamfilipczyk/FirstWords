@@ -19,6 +19,10 @@ import android.app.Activity;
 
 import java.util.Random;
 
+/**
+ * @author Adam Filipczyk
+ */
+
 public class giraffe extends Activity implements OnTouchListener, OnDragListener {
 
     SoundPool sound, click, back;
