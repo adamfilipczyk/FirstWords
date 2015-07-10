@@ -57,7 +57,7 @@ public class shoes extends Activity implements View.OnTouchListener, View.OnDrag
         findViewById(R.id.bottom_s).setOnDragListener(this);
         findViewById(R.id.bottom_h).setOnDragListener(this);
         findViewById(R.id.bottom_o).setOnDragListener(this);
-        findViewById(R.id.bottom_t).setOnDragListener(this);
+        findViewById(R.id.bottom_e).setOnDragListener(this);
         findViewById(R.id.bottom_s2).setOnDragListener(this);
 
         //top container listener
@@ -112,7 +112,7 @@ public class shoes extends Activity implements View.OnTouchListener, View.OnDrag
         LinearLayout b_o = (LinearLayout)findViewById(R.id.bottom_o);
         ImageView o = (ImageView) b_o.findViewById(R.id.shoes_o);
 
-        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_t);
+        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
         ImageView e = (ImageView) b_e.findViewById(R.id.shoes_e);
 
         LinearLayout b_h = (LinearLayout)findViewById(R.id.bottom_h);

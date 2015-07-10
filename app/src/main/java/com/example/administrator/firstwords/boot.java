@@ -56,7 +56,7 @@ public class boot extends Activity implements View.OnTouchListener, View.OnDragL
         findViewById(R.id.bottom_b).setOnDragListener(this);
         findViewById(R.id.bottom_o).setOnDragListener(this);
         findViewById(R.id.bottom_o2).setOnDragListener(this);
-        findViewById(R.id.bottom_s2).setOnDragListener(this);
+        findViewById(R.id.bottom_t).setOnDragListener(this);
 
 
         //top container drag listener
@@ -112,7 +112,7 @@ public class boot extends Activity implements View.OnTouchListener, View.OnDragL
         LinearLayout b_b = (LinearLayout)findViewById(R.id.bottom_b);
         ImageView b = (ImageView) b_b.findViewById(R.id.boot_b);
 
-        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_s2);
+        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_t);
         ImageView t = (ImageView) b_t.findViewById(R.id.boot_t);
 
         //o---------------------------------------------------------

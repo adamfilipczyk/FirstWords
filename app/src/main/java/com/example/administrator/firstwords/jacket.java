@@ -55,12 +55,12 @@ public class jacket extends Activity implements View.OnTouchListener, View.OnDra
         findViewById(R.id.jacket_t).setOnTouchListener(this);
 
         //bottom containers drag listener
-        findViewById(R.id.bottom_s).setOnDragListener(this);
-        findViewById(R.id.bottom_h).setOnDragListener(this);
-        findViewById(R.id.bottom_o).setOnDragListener(this);
-        findViewById(R.id.bottom_r).setOnDragListener(this);
+        findViewById(R.id.bottom_j).setOnDragListener(this);
+        findViewById(R.id.bottom_a).setOnDragListener(this);
+        findViewById(R.id.bottom_c).setOnDragListener(this);
+        findViewById(R.id.bottom_k).setOnDragListener(this);
+        findViewById(R.id.bottom_e).setOnDragListener(this);
         findViewById(R.id.bottom_t).setOnDragListener(this);
-        findViewById(R.id.bottom_s2).setOnDragListener(this);
 
         //top container listener
         findViewById(R.id.top_c).setOnDragListener(this);
@@ -111,22 +111,22 @@ public class jacket extends Activity implements View.OnTouchListener, View.OnDra
 
         click.play(soundID, 1, 1, 1, 0, 1);
 
-        LinearLayout b_j = (LinearLayout)findViewById(R.id.bottom_s);
+        LinearLayout b_j = (LinearLayout)findViewById(R.id.bottom_j);
         ImageView j = (ImageView) b_j.findViewById(R.id.jacket_j);
 
-        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_h);
+        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_a);
         ImageView a = (ImageView) b_a.findViewById(R.id.jacket_a);
 
-        LinearLayout b_c = (LinearLayout)findViewById(R.id.bottom_o);
+        LinearLayout b_c = (LinearLayout)findViewById(R.id.bottom_c);
         ImageView c = (ImageView) b_c.findViewById(R.id.jacket_c);
 
-        LinearLayout b_k = (LinearLayout)findViewById(R.id.bottom_r);
+        LinearLayout b_k = (LinearLayout)findViewById(R.id.bottom_k);
         ImageView k = (ImageView) b_k.findViewById(R.id.jacket_k);
 
-        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_t);
+        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
         ImageView e = (ImageView) b_e.findViewById(R.id.jacket_e);
 
-        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_s2);
+        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_t);
         ImageView t = (ImageView) b_t.findViewById(R.id.jacket_t);
 
         if ((j!= null) && (a!= null) && (c!=null) && (k!= null) && (e!= null) && (t!=null)) {

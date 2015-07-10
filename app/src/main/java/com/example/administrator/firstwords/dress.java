@@ -56,7 +56,7 @@ public class dress extends Activity implements View.OnTouchListener, View.OnDrag
         //bottom containers drag listener
         findViewById(R.id.bottom_d).setOnDragListener(this);
         findViewById(R.id.bottom_r).setOnDragListener(this);
-        findViewById(R.id.bottom_t).setOnDragListener(this);
+        findViewById(R.id.bottom_e).setOnDragListener(this);
         findViewById(R.id.bottom_s).setOnDragListener(this);
         findViewById(R.id.bottom_s2).setOnDragListener(this);
 
@@ -116,7 +116,7 @@ public class dress extends Activity implements View.OnTouchListener, View.OnDrag
         LinearLayout b_r = (LinearLayout)findViewById(R.id.bottom_r);
         ImageView r = (ImageView) b_r.findViewById(R.id.dress_r);
 
-        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_t);
+        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
         ImageView e = (ImageView) b_e.findViewById(R.id.dress_e);
 
         //s---------------------------------------------------------
