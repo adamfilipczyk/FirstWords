@@ -58,8 +58,8 @@ public class potato extends Activity implements View.OnTouchListener, View.OnDra
         //bottom containers drag listener
         findViewById(R.id.bottom_p).setOnDragListener(this);
         findViewById(R.id.bottom_o).setOnDragListener(this);
-        findViewById(R.id.bottom_s2).setOnDragListener(this);
-        findViewById(R.id.bottom_h).setOnDragListener(this);
+        findViewById(R.id.bottom_t).setOnDragListener(this);
+        findViewById(R.id.bottom_a).setOnDragListener(this);
         findViewById(R.id.bottom_t2).setOnDragListener(this);
         findViewById(R.id.bottom_o2).setOnDragListener(this);
 
@@ -114,7 +114,7 @@ public class potato extends Activity implements View.OnTouchListener, View.OnDra
         LinearLayout b_p = (LinearLayout) findViewById(R.id.bottom_p);
         ImageView p = (ImageView) b_p.findViewById(R.id.potato_p);
 
-        LinearLayout b_a = (LinearLayout) findViewById(R.id.bottom_h);
+        LinearLayout b_a = (LinearLayout) findViewById(R.id.bottom_a);
         ImageView a = (ImageView) b_a.findViewById(R.id.potato_a);
 
 
@@ -134,13 +134,13 @@ public class potato extends Activity implements View.OnTouchListener, View.OnDra
 
         //t--------------------------------------------------------------
 
-        LinearLayout b_t1 = (LinearLayout) findViewById(R.id.bottom_s2);
+        LinearLayout b_t1 = (LinearLayout) findViewById(R.id.bottom_t);
         ImageView t1 = (ImageView) b_t1.findViewById(R.id.potato_t);
 
         LinearLayout b_t2 = (LinearLayout) findViewById(R.id.bottom_t2);
         ImageView t2 = (ImageView) b_t2.findViewById(R.id.potato_t2);
 
-        LinearLayout b_t3 = (LinearLayout) findViewById(R.id.bottom_s2);
+        LinearLayout b_t3 = (LinearLayout) findViewById(R.id.bottom_t);
         ImageView t3 = (ImageView) b_t3.findViewById(R.id.potato_t2);
 
         LinearLayout b_t4 = (LinearLayout) findViewById(R.id.bottom_t2);

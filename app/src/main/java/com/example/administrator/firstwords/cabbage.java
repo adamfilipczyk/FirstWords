@@ -56,13 +56,13 @@ public class cabbage extends Activity implements View.OnTouchListener, View.OnDr
         findViewById(R.id.cabbage_e).setOnTouchListener(this);
 
         //bottom containers drag listener
-        findViewById(R.id.bottom_o).setOnDragListener(this);
-        findViewById(R.id.bottom_h).setOnDragListener(this);
+        findViewById(R.id.bottom_c).setOnDragListener(this);
+        findViewById(R.id.bottom_a).setOnDragListener(this);
         findViewById(R.id.bottom_b).setOnDragListener(this);
         findViewById(R.id.bottom_b2).setOnDragListener(this);
         findViewById(R.id.bottom_a2).setOnDragListener(this);
         findViewById(R.id.bottom_g).setOnDragListener(this);
-        findViewById(R.id.bottom_t).setOnDragListener(this);
+        findViewById(R.id.bottom_e).setOnDragListener(this);
 
         //top container drag listener
         findViewById(R.id.top_c).setOnDragListener(this);
@@ -114,13 +114,13 @@ public class cabbage extends Activity implements View.OnTouchListener, View.OnDr
 
         click.play(soundID, 1, 1, 1, 0, 1);
 
-        LinearLayout b_c = (LinearLayout) findViewById(R.id.bottom_o);
+        LinearLayout b_c = (LinearLayout) findViewById(R.id.bottom_c);
         ImageView c = (ImageView) b_c.findViewById(R.id.cabbage_c);
 
         LinearLayout b_g = (LinearLayout) findViewById(R.id.bottom_g);
         ImageView g = (ImageView) b_g.findViewById(R.id.cabbage_g);
 
-        LinearLayout b_e = (LinearLayout) findViewById(R.id.bottom_t);
+        LinearLayout b_e = (LinearLayout) findViewById(R.id.bottom_e);
         ImageView e = (ImageView) b_e.findViewById(R.id.cabbage_e);
 
 
@@ -140,13 +140,13 @@ public class cabbage extends Activity implements View.OnTouchListener, View.OnDr
 
         //a--------------------------------------------------------------
 
-        LinearLayout b_a1 = (LinearLayout) findViewById(R.id.bottom_h);
+        LinearLayout b_a1 = (LinearLayout) findViewById(R.id.bottom_a);
         ImageView a1 = (ImageView) b_a1.findViewById(R.id.cabbage_a);
 
         LinearLayout b_a2 = (LinearLayout) findViewById(R.id.bottom_a2);
         ImageView a2 = (ImageView) b_a2.findViewById(R.id.cabbage_a2);
 
-        LinearLayout b_a3 = (LinearLayout) findViewById(R.id.bottom_h);
+        LinearLayout b_a3 = (LinearLayout) findViewById(R.id.bottom_a);
         ImageView a3 = (ImageView) b_a3.findViewById(R.id.cabbage_a2);
 
         LinearLayout b_a4 = (LinearLayout) findViewById(R.id.bottom_a2);

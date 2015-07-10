@@ -54,8 +54,8 @@ public class pear extends Activity implements View.OnTouchListener, View.OnDragL
 
         //bottom containers drag listener
         findViewById(R.id.bottom_p).setOnDragListener(this);
-        findViewById(R.id.bottom_t).setOnDragListener(this);
-        findViewById(R.id.bottom_h).setOnDragListener(this);
+        findViewById(R.id.bottom_e).setOnDragListener(this);
+        findViewById(R.id.bottom_a).setOnDragListener(this);
         findViewById(R.id.bottom_r).setOnDragListener(this);
 
         //top container drag listener
@@ -111,10 +111,10 @@ public class pear extends Activity implements View.OnTouchListener, View.OnDragL
         LinearLayout b_p = (LinearLayout)findViewById(R.id.bottom_p);
         ImageView p = (ImageView) b_p.findViewById(R.id.pear_p);
 
-        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_t);
+        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
         ImageView e = (ImageView) b_e.findViewById(R.id.pear_e);
 
-        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_h);
+        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_a);
         ImageView a = (ImageView) b_a.findViewById(R.id.pear_a);
 
         LinearLayout b_r = (LinearLayout)findViewById(R.id.bottom_r);

@@ -55,11 +55,11 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
         findViewById(R.id.apple_e).setOnTouchListener(this);
 
         //bottom containers drag listener
-        findViewById(R.id.bottom_h).setOnDragListener(this);
+        findViewById(R.id.bottom_a).setOnDragListener(this);
         findViewById(R.id.bottom_p).setOnDragListener(this);
         findViewById(R.id.bottom_p2).setOnDragListener(this);
         findViewById(R.id.bottom_l).setOnDragListener(this);
-        findViewById(R.id.bottom_t).setOnDragListener(this);
+        findViewById(R.id.bottom_e).setOnDragListener(this);
 
         //top container drag listener
         findViewById(R.id.top_c).setOnDragListener(this);
@@ -113,13 +113,13 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
         click.play(soundID, 1, 1, 1, 0, 1);
 
         //letters to containers
-        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_h);
+        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_a);
         ImageView a = (ImageView) b_a.findViewById(R.id.apple_a);
 
         LinearLayout b_l = (LinearLayout)findViewById(R.id.bottom_l);
         ImageView l = (ImageView) b_l.findViewById(R.id.apple_l);
 
-        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_t);
+        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
         ImageView e = (ImageView) b_e.findViewById(R.id.apple_e);
 
         //p---------------------------------------------------------

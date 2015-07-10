@@ -56,13 +56,13 @@ public class cucumber extends Activity implements View.OnTouchListener, View.OnD
         findViewById(R.id.cucumber_r).setOnTouchListener(this);
 
         //bottom containers drag listener
-        findViewById(R.id.bottom_o).setOnDragListener(this);
+        findViewById(R.id.bottom_c).setOnDragListener(this);
         findViewById(R.id.bottom_u).setOnDragListener(this);
         findViewById(R.id.bottom_c2).setOnDragListener(this);
         findViewById(R.id.bottom_u2).setOnDragListener(this);
         findViewById(R.id.bottom_m).setOnDragListener(this);
         findViewById(R.id.bottom_b).setOnDragListener(this);
-        findViewById(R.id.bottom_t).setOnDragListener(this);
+        findViewById(R.id.bottom_e).setOnDragListener(this);
         findViewById(R.id.bottom_r).setOnDragListener(this);
         //top container drag listener
         findViewById(R.id.top_c).setOnDragListener(this);
@@ -116,7 +116,7 @@ public class cucumber extends Activity implements View.OnTouchListener, View.OnD
         LinearLayout b_m = (LinearLayout)findViewById(R.id.bottom_m);
         ImageView m = (ImageView) b_m.findViewById(R.id.cucumber_m);
 
-        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_t);
+        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
         ImageView e = (ImageView) b_e.findViewById(R.id.cucumber_e);
 
         LinearLayout b_r = (LinearLayout)findViewById(R.id.bottom_r);
@@ -127,13 +127,13 @@ public class cucumber extends Activity implements View.OnTouchListener, View.OnD
 
         //c----------------------------------------------------------
 
-        LinearLayout b_c1 = (LinearLayout)findViewById(R.id.bottom_o);
+        LinearLayout b_c1 = (LinearLayout)findViewById(R.id.bottom_c);
         ImageView c1 = (ImageView) b_c1.findViewById(R.id.cucumber_c);
 
         LinearLayout b_c2 = (LinearLayout)findViewById(R.id.bottom_c2);
         ImageView c2 = (ImageView) b_c2.findViewById(R.id.cucumber_c2);
 
-        LinearLayout b_c3 = (LinearLayout)findViewById(R.id.bottom_o);
+        LinearLayout b_c3 = (LinearLayout)findViewById(R.id.bottom_c);
         ImageView c3 = (ImageView) b_c3.findViewById(R.id.cucumber_c2);
 
         LinearLayout b_c4 = (LinearLayout)findViewById(R.id.bottom_c2);
