@@ -130,60 +130,109 @@ public class zebra extends Activity implements OnTouchListener, OnDragListener {
         LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_h);
         ImageView a = (ImageView) b_a.findViewById(R.id.zebra_a);
 
+        correct1 = MediaPlayer.create(this, R.raw.welldone);
+        correct2 = MediaPlayer.create(this, R.raw.congrats);
+        correct3 = MediaPlayer.create(this, R.raw.didit);
+
+        incorr1 = MediaPlayer.create(this, R.raw.rusure);
+        incorr2 = MediaPlayer.create(this, R.raw.incorrect);
+        incorr3 = MediaPlayer.create(this, R.raw.tryagain);
+
 
         if ((z!= null) && (e!= null) && (b!=null) && (r!= null) && (a!= null)) {
-            correct1 = MediaPlayer.create(this, R.raw.welldone);
-            correct2 = MediaPlayer.create(this, R.raw.congrats);
-            correct3 = MediaPlayer.create(this, R.raw.didit);
+
+
+            SharedPreferences sharedPreferences = getSharedPreferences("Save", Context.MODE_PRIVATE);
+            String cat = sharedPreferences.getString("category", "");
+            int toInt = Integer.parseInt(cat);
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
             switch (eventNumber){
                 case 1:
-                    correct1.start();
-                    SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
-                    SharedPreferences.Editor editor1 = sharedPreferences1.edit();
-                    editor1.putString("category", value);
-                    editor1.commit();
-                    correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                        public void onCompletion(MediaPlayer mp) {
-                            mp.release();
-                            finish();
-                            Intent cpl = new Intent(getApplicationContext(), one_completed.class);
-                            startActivity(cpl);
-                        }
-                    });
+                    if (toInt >= 2){
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                                startActivity(compl);
+                            }
+                        });
+                    }
+                    else {
+                        correct1.start();
+                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                        editor1.putString("category", value);
+                        editor1.commit();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                                startActivity(compl);
+                            }
+                        });
+                    }
                     break;
                 case 2:
-                    correct2.start();
-                    SharedPreferences sharedPreferences2 = getSharedPreferences("Save", Context.MODE_PRIVATE);
-                    SharedPreferences.Editor editor2 = sharedPreferences2.edit();
-                    editor2.putString("category", value);
-                    editor2.commit();
-                    correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                        public void onCompletion(MediaPlayer mp) {
-                            mp.release();
-                            finish();
-                            Intent cpl = new Intent(getApplicationContext(), one_completed.class);
-                            startActivity(cpl);
-                        }
-                    });
+                    if (toInt >= 2){
+                        correct2.start();
+                        correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                                startActivity(compl);
+                            }
+                        });
+                    }
+                    else {
+                        correct2.start();
+                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                        editor1.putString("category", value);
+                        editor1.commit();
+                        correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                                startActivity(compl);
+                            }
+                        });
+                    }
                     break;
                 case 3:
-                    correct3.start();
-                    SharedPreferences sharedPreferences3 = getSharedPreferences("Save", Context.MODE_PRIVATE);
-                    SharedPreferences.Editor editor3 = sharedPreferences3.edit();
-                    editor3.putString("category", value);
-                    editor3.commit();
-                    correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                        public void onCompletion(MediaPlayer mp) {
-                            mp.release();
-                            finish();
-                            Intent cpl = new Intent(getApplicationContext(), one_completed.class);
-                            startActivity(cpl);
-                        }
-                    });
+                    if (toInt >= 2){
+                        correct3.start();
+                        correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                                startActivity(compl);
+                            }
+                        });
+                    }
+                    else {
+                        correct3.start();
+                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                        editor1.putString("category", value);
+                        editor1.commit();
+                        correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                                startActivity(compl);
+                            }
+                        });
+                    }
                     break;
                 default:
                     //do nothing
@@ -191,10 +240,6 @@ public class zebra extends Activity implements OnTouchListener, OnDragListener {
             }
         }
         else {
-
-            incorr1 = MediaPlayer.create(this, R.raw.rusure);
-            incorr2 = MediaPlayer.create(this, R.raw.incorrect);
-            incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;

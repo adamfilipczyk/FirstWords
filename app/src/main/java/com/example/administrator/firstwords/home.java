@@ -48,7 +48,7 @@ public class home extends Activity{
 
                 // set dialog message
                 alertDialogBuilder
-                        .setMessage("Click \"Yes\" to exit\nClick \"No\" to get back to game")
+                        .setMessage("\"Yes\" - exit game\n\"No\" - back to game")
                         .setCancelable(false)
                         .setPositiveButton("Yes",new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog,int id) {
@@ -82,6 +82,11 @@ public class home extends Activity{
         String cat = sharedPreferences.getString("category", "");
 
         switch (cat){
+            case "4":
+                finish();
+                Intent cat4 = new Intent(this, categories4.class);
+                startActivity(cat4);
+                break;
             case "3":
                 finish();
                 Intent cat3 = new Intent(this, categories3.class);

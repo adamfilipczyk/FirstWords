@@ -29,16 +29,15 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
         setContentView(R.layout.activity_banana);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        //player
+        //initial sound
         mMediaPlayer = MediaPlayer.create(this, R.raw.banana);
         mMediaPlayer.start();
 
-
-        //object for the speaker sound
+        //speaker btn sound
         sound = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
         soundID = sound.load(this, R.raw.banana, 1);
 
-        //object for the check sound
+        //check btn sound
         click = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
         soundID = click.load(this, R.raw.click, 1);
 
@@ -63,12 +62,12 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
         findViewById(R.id.top_c).setOnDragListener(this);
     }
 
-    //play the sound of the picture displayed on the screen after "Speaker" button is clicked
+    //sound of the picture displayed
     public void play(View view) {
         sound.play(soundID, 1, 1, 1, 0, 1);
     }
 
-    //play the "Home" button click sound and redirection to "Home" screen
+    //click btn sound; redirection to home screen
     public void back(View view) {
         click.play(soundID, 1, 1, 1, 0, 1);
         finish();
@@ -91,7 +90,7 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
         return true;
     }
 
-    //set object movement
+    //moving object shadow
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
@@ -109,8 +108,7 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
         //click sound for "Check" button
         click.play(soundID, 1, 1, 1, 0, 1);
 
-        //all possible combinations of letters and containers
-        //b------------------------------------------------------------
+        //letters to containers
 
         LinearLayout b_b = (LinearLayout) findViewById(R.id.bottom_b);
         ImageView b = (ImageView) b_b.findViewById(R.id.ban_b);
@@ -208,8 +206,17 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
         LinearLayout b_a21 = (LinearLayout) findViewById(R.id.bottom_a2);
         ImageView a21 = (ImageView) b_a21.findViewById(R.id.ban_a3);
 
+        //approval / disapproval sounds
+        correct1 = MediaPlayer.create(this, R.raw.welldone);
+        correct2 = MediaPlayer.create(this, R.raw.congrats);
+        correct3 = MediaPlayer.create(this, R.raw.didit);
 
-        //check if containers are not empty and all letters are in proper place
+        incorr1 = MediaPlayer.create(this, R.raw.rusure);
+        incorr2 = MediaPlayer.create(this, R.raw.incorrect);
+        incorr3 = MediaPlayer.create(this, R.raw.tryagain);
+
+
+        //redirection to the methods if the letters are properly ordered
         if ((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a1!= null && a2!= null && a3!= null)){
             approved();
         }
@@ -238,10 +245,6 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
 
     //approvals
     public void approved (){
-        //objects for approval sounds
-        correct1 = MediaPlayer.create(this, R.raw.welldone);
-        correct2 = MediaPlayer.create(this, R.raw.congrats);
-        correct3 = MediaPlayer.create(this, R.raw.didit);
 
         //sounds random generator
         Random generate = new Random();
@@ -290,10 +293,6 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
 
     //disapprovals
     public void disapproved (){
-        //objects for disapproval sounds
-        incorr1 = MediaPlayer.create(this, R.raw.rusure);
-        incorr2 = MediaPlayer.create(this, R.raw.incorrect);
-        incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
         //sounds random generator
         Random generate = new Random();

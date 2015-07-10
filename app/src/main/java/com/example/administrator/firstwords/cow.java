@@ -54,7 +54,7 @@ public class cow extends Activity implements OnTouchListener, OnDragListener{
         findViewById(R.id.cow_w).setOnTouchListener(this);
 
         //bottom containers drag listener
-        findViewById(R.id.bottom_o).setOnDragListener(this);
+        findViewById(R.id.bottom_c).setOnDragListener(this);
         findViewById(R.id.bottom_o).setOnDragListener(this);
         findViewById(R.id.bottom_w).setOnDragListener(this);
 
@@ -108,7 +108,7 @@ public class cow extends Activity implements OnTouchListener, OnDragListener{
 
        click.play(soundID, 1, 1, 1, 0, 1);
 
-       LinearLayout b_c = (LinearLayout)findViewById(R.id.bottom_o);
+       LinearLayout b_c = (LinearLayout)findViewById(R.id.bottom_c);
         ImageView c = (ImageView) b_c.findViewById(R.id.cow_c);
 
         LinearLayout b_o = (LinearLayout)findViewById(R.id.bottom_o);

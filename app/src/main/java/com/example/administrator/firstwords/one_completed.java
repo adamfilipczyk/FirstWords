@@ -53,11 +53,10 @@ public class one_completed extends Activity {
                 startActivity(timer);
                 break;
             case "4":
-                /*
                 finish();
                 Intent load4 = new Intent(this, categories4.class);
                 startActivity(load4);
-                break;*/
+                break;
             case "5":
                 finish();
                 Intent timer2 = new Intent(this, game_timer.class);

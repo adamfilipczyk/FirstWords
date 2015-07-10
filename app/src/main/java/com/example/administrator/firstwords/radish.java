@@ -112,6 +112,8 @@ public class radish extends Activity implements View.OnTouchListener, View.OnDra
 
     public void check (View view) {
 
+        String value = "3";
+
         click.play(soundID, 1, 1, 1, 0, 1);
 
         LinearLayout b_r = (LinearLayout)findViewById(R.id.bottom_r);
@@ -144,54 +146,97 @@ public class radish extends Activity implements View.OnTouchListener, View.OnDra
 
         if ((r!= null) && (a!= null) && (d!=null) && (i!=null) && (s!=null) && (h!=null)) {
 
+            SharedPreferences sharedPreferences = getSharedPreferences("Save", Context.MODE_PRIVATE);
+            String cat = sharedPreferences.getString("category", "");
+            int toInt = Integer.parseInt(cat);
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
             switch (eventNumber){
                 case 1:
-                    correct1.start();
-                    SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
-                    SharedPreferences.Editor editor1 = sharedPreferences1.edit();
-                    editor1.putString("category", "3");
-                    editor1.commit();
-                    correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                        public void onCompletion(MediaPlayer mp) {
-                            mp.release();
-                            finish();
-                            Intent compl = new Intent(getApplicationContext(), one_completed.class);
-                            startActivity(compl);
-                        }
-                    });
+                    if (toInt >= 3){
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                                startActivity(compl);
+                            }
+                        });
+                    }
+                    else {
+                        correct2.start();
+                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                        editor1.putString("category", value);
+                        editor1.commit();
+                        correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                                startActivity(compl);
+                            }
+                        });
+                    }
                     break;
                 case 2:
-                    correct2.start();
-                    SharedPreferences sharedPreferences2 = getSharedPreferences("Save", Context.MODE_PRIVATE);
-                    SharedPreferences.Editor editor2 = sharedPreferences2.edit();
-                    editor2.putString("category", "3");
-                    editor2.commit();
-                    correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                        public void onCompletion(MediaPlayer mp) {
-                            mp.release();
-                            finish();
-                            Intent compl = new Intent(getApplicationContext(), one_completed.class);
-                            startActivity(compl);
-                        }
-                    });
+                    if (toInt >= 3){
+                        correct2.start();
+                        correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                                startActivity(compl);
+                            }
+                        });
+                    }
+                    else {
+                        correct1.start();
+                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                        editor1.putString("category", value);
+                        editor1.commit();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                                startActivity(compl);
+                            }
+                        });
+                    }
                     break;
                 case 3:
-                    correct3.start();
-                    SharedPreferences sharedPreferences3 = getSharedPreferences("Save", Context.MODE_PRIVATE);
-                    SharedPreferences.Editor editor3 = sharedPreferences3.edit();
-                    editor3.putString("category", "3");
-                    editor3.commit();
-                    correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                        public void onCompletion(MediaPlayer mp) {
-                            mp.release();
-                            finish();
-                            Intent compl = new Intent(getApplicationContext(), one_completed.class);
-                            startActivity(compl);
-                        }
-                    });
+                    if (toInt >= 3){
+                        correct3.start();
+                        correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                                startActivity(compl);
+                            }
+                        });
+                    }
+                    else {
+                        correct3.start();
+                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                        editor1.putString("category", value);
+                        editor1.commit();
+                        correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                                startActivity(compl);
+                            }
+                        });
+                    }
                     break;
                 default:
                     //do nothing

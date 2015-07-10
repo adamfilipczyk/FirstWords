@@ -33,16 +33,16 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
         setContentView(R.layout.activity_apple);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        //player
+        //initial sound
        mMediaPlayer = MediaPlayer.create(this, R.raw.apple);
        mMediaPlayer.start();
 
 
-        //object for the speaker sound
+        //speaker btn sound
         sound = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
         soundID = sound.load(this, R.raw.apple, 1);
 
-        //object for the check sound
+        //check btn sound
         click = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
         soundID = click.load(this, R.raw.click, 1);
 
@@ -65,12 +65,12 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
         findViewById(R.id.top_c).setOnDragListener(this);
     }
 
-    //method to play the sound of the picture displayed on the screen
+    //sound of the picture displayed
     public void play(View view) {
        sound.play(soundID, 1, 1, 1, 0, 1);
     }
 
-    //method to play the sound of the picture displayed on the screen
+    //click btn sound; redirection to home screen
     public void back(View view) {
         click.play(soundID, 1, 1, 1, 0, 1);
         finish();
@@ -79,7 +79,7 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
     }
 
 
-    //method for dragging object
+    //dragging object
     @Override
     public boolean onDrag(View v, DragEvent event) {
         if (event.getAction() == DragEvent.ACTION_DROP){
@@ -93,7 +93,7 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
         return true;
     }
 
-    //method to set object moving
+    //moving object shadow
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_DOWN){
@@ -107,10 +107,12 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
     }
 
 
+    //final check
     public void check (View view) {
 
         click.play(soundID, 1, 1, 1, 0, 1);
 
+        //letters to containers
         LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_h);
         ImageView a = (ImageView) b_a.findViewById(R.id.apple_a);
 
@@ -134,7 +136,7 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
         LinearLayout b_p4 = (LinearLayout)findViewById(R.id.bottom_p2);
         ImageView p4 = (ImageView) b_p4.findViewById(R.id.apple_p);
     
-
+        //approval / disapproval sounds
         correct1 = MediaPlayer.create(this, R.raw.welldone);
         correct2 = MediaPlayer.create(this, R.raw.congrats);
         correct3 = MediaPlayer.create(this, R.raw.didit);
@@ -143,8 +145,10 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
+        //redirection to the next screen if the letters are properly ordered
         if ((a!= null) && (l!= null) && (e!=null) && ((p!=null && p2!=null) || (p3!=null && p4!=null))) {
 
+            //sounds random generator
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
@@ -189,6 +193,7 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
         }
         else {
 
+            //disapproval sounds random generator
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 

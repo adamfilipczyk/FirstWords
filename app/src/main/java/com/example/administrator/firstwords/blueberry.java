@@ -33,16 +33,16 @@ public class blueberry extends Activity implements View.OnTouchListener, View.On
         setContentView(R.layout.activity_blueberry);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        //player
+        //initial sound
         mMediaPlayer = MediaPlayer.create(this, R.raw.blueberry);
         mMediaPlayer.start();
 
 
-        //object for the speaker sound
+        //speaker btn sound
         sound = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
         soundID = sound.load(this, R.raw.blueberry, 1);
 
-        //object for the check sound
+        //check btn sound
         click = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
         soundID = click.load(this, R.raw.click, 1);
 

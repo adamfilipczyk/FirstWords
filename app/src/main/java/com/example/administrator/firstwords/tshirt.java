@@ -1,7 +1,9 @@
 package com.example.administrator.firstwords;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -112,9 +114,9 @@ public class tshirt extends Activity implements View.OnTouchListener, View.OnDra
     //final check
     public void check (View view) {
 
+        String value = "4";
+
         click.play(soundID, 1, 1, 1, 0, 1);
-
-
 
         LinearLayout b_s = (LinearLayout)findViewById(R.id.bottom_s);
         ImageView s = (ImageView) b_s.findViewById(R.id.tshirt_s);
@@ -146,49 +148,106 @@ public class tshirt extends Activity implements View.OnTouchListener, View.OnDra
         LinearLayout b_t4 = (LinearLayout)findViewById(R.id.bottom_t2);
         ImageView t4 = (ImageView) b_t4.findViewById(R.id.tshirt_t);
 
+        correct1 = MediaPlayer.create(this, R.raw.welldone);
+        correct2 = MediaPlayer.create(this, R.raw.congrats);
+        correct3 = MediaPlayer.create(this, R.raw.didit);
+
+        incorr1 = MediaPlayer.create(this, R.raw.rusure);
+        incorr2 = MediaPlayer.create(this, R.raw.incorrect);
+        incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
         if ((s!= null) && (h!=null) && (i!= null) && (r!=null) && (hy!= null) && ((t1!=null && t2!=null) || (t3!=null && t4!=null))) {
 
-            correct1 = MediaPlayer.create(this, R.raw.welldone);
-            correct2 = MediaPlayer.create(this, R.raw.congrats);
-            correct3 = MediaPlayer.create(this, R.raw.didit);
+            SharedPreferences sharedPreferences = getSharedPreferences("Save", Context.MODE_PRIVATE);
+            String cat = sharedPreferences.getString("category", "");
+            int toInt = Integer.parseInt(cat);
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
             switch (eventNumber){
                 case 1:
-                    correct1.start();
-                    correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                        public void onCompletion(MediaPlayer mp) {
-                            mp.release();
-                            finish();
-                            Intent tshirt = new Intent(getApplicationContext(), tshirt.class);
-                            startActivity(tshirt);
-                        }
-                    });
+                    if (toInt >= 4){
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                                startActivity(compl);
+                            }
+                        });
+                    }
+                    else {
+                        correct1.start();
+                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                        editor1.putString("category", value);
+                        editor1.commit();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                                startActivity(compl);
+                            }
+                        });
+                    }
                     break;
                 case 2:
-                    correct2.start();
-                    correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                        public void onCompletion(MediaPlayer mp) {
-                            mp.release();
-                            finish();
-                            Intent tshirt = new Intent(getApplicationContext(), tshirt.class);
-                            startActivity(tshirt);
-                        }
-                    });
-                    break;
+                    if (toInt >= 4){
+                        correct2.start();
+                        correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                                startActivity(compl);
+                            }
+                        });
+                    }
+                    else {
+                        correct2.start();
+                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                        editor1.putString("category", value);
+                        editor1.commit();
+                        correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                                startActivity(compl);
+                            }
+                        });
+                    }
                 case 3:
-                    correct3.start();
-                    correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                        public void onCompletion(MediaPlayer mp) {
-                            mp.release();
-                            finish();
-                            Intent tshirt = new Intent(getApplicationContext(), tshirt.class);
-                            startActivity(tshirt);
-                        }
-                    });
+                    if (toInt >= 4){
+                        correct3.start();
+                        correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                                startActivity(compl);
+                            }
+                        });
+                    }
+                    else {
+                        correct3.start();
+                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                        editor1.putString("category", value);
+                        editor1.commit();
+                        correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent compl = new Intent(getApplicationContext(), one_completed.class);
+                                startActivity(compl);
+                            }
+                        });
+                    }
                     break;
                 default:
                     //do nothing
@@ -196,10 +255,6 @@ public class tshirt extends Activity implements View.OnTouchListener, View.OnDra
             }
         }
         else {
-
-            incorr1 = MediaPlayer.create(this, R.raw.rusure);
-            incorr2 = MediaPlayer.create(this, R.raw.incorrect);
-            incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
@@ -220,5 +275,4 @@ public class tshirt extends Activity implements View.OnTouchListener, View.OnDra
             }
         }
     }
-
 }
