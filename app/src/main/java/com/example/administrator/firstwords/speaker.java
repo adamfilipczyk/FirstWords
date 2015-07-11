@@ -20,48 +20,45 @@ import java.util.Random;
  * @author Adam Filipczyk
  */
 
-public class computer extends Activity implements View.OnTouchListener, View.OnDragListener {
+public class speaker extends Activity implements View.OnTouchListener, View.OnDragListener {
 
     MediaPlayer mMediaPlayer, correct1, correct2, correct3, incorr1, incorr2, incorr3;
     SoundPool sound, click;
     int soundID;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_computer);
+        setContentView(R.layout.activity_speaker);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        mMediaPlayer = MediaPlayer.create(this, R.raw.computer);
+        mMediaPlayer = MediaPlayer.create(this, R.raw.speaker);
         mMediaPlayer.start();
 
         //object for the sound
         sound = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
-        soundID = sound.load(this, R.raw.computer, 1);
+        soundID = sound.load(this, R.raw.speaker, 1);
 
         //object for the check sound
         click = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
         soundID = click.load(this, R.raw.click, 1);
 
         //letters
-        findViewById(R.id.computer_c).setOnTouchListener(this);
-        findViewById(R.id.computer_o).setOnTouchListener(this);
-        findViewById(R.id.computer_m).setOnTouchListener(this);
-        findViewById(R.id.computer_p).setOnTouchListener(this);
-        findViewById(R.id.computer_u).setOnTouchListener(this);
-        findViewById(R.id.computer_t).setOnTouchListener(this);
-        findViewById(R.id.computer_e).setOnTouchListener(this);
-        findViewById(R.id.computer_r).setOnTouchListener(this);
+        findViewById(R.id.speaker_s).setOnTouchListener(this);
+        findViewById(R.id.speaker_p).setOnTouchListener(this);
+        findViewById(R.id.speaker_e).setOnTouchListener(this);
+        findViewById(R.id.speaker_a).setOnTouchListener(this);
+        findViewById(R.id.speaker_k).setOnTouchListener(this);
+        findViewById(R.id.speaker_e2).setOnTouchListener(this);
+        findViewById(R.id.speaker_r).setOnTouchListener(this);
 
         //bottom containers drag listener
-        findViewById(R.id.bottom_c).setOnDragListener(this);
-        findViewById(R.id.bottom_o).setOnDragListener(this);
-        findViewById(R.id.bottom_m).setOnDragListener(this);
+        findViewById(R.id.bottom_s).setOnDragListener(this);
         findViewById(R.id.bottom_p).setOnDragListener(this);
-        findViewById(R.id.bottom_u).setOnDragListener(this);
-        findViewById(R.id.bottom_t).setOnDragListener(this);
         findViewById(R.id.bottom_e).setOnDragListener(this);
+        findViewById(R.id.bottom_a).setOnDragListener(this);
+        findViewById(R.id.bottom_k).setOnDragListener(this);
+        findViewById(R.id.bottom_e2).setOnDragListener(this);
         findViewById(R.id.bottom_r).setOnDragListener(this);
 
         //top container drag listener
@@ -115,33 +112,38 @@ public class computer extends Activity implements View.OnTouchListener, View.OnD
 
         click.play(soundID, 1, 1, 1, 0, 1);
 
-        LinearLayout b_c = (LinearLayout)findViewById(R.id.bottom_c);
-        ImageView c = (ImageView) b_c.findViewById(R.id.computer_c);
-
-        LinearLayout b_o = (LinearLayout)findViewById(R.id.bottom_o);
-        ImageView o = (ImageView) b_o.findViewById(R.id.computer_o);
-
-        LinearLayout b_m = (LinearLayout)findViewById(R.id.bottom_m);
-        ImageView m = (ImageView) b_m.findViewById(R.id.computer_m);
+        LinearLayout b_s = (LinearLayout)findViewById(R.id.bottom_s);
+        ImageView s = (ImageView) b_s.findViewById(R.id.speaker_s);
 
         LinearLayout b_p = (LinearLayout)findViewById(R.id.bottom_p);
-        ImageView p = (ImageView) b_p.findViewById(R.id.computer_p);
+        ImageView p = (ImageView) b_p.findViewById(R.id.speaker_p);
 
-        LinearLayout b_u = (LinearLayout)findViewById(R.id.bottom_u);
-        ImageView u = (ImageView) b_u.findViewById(R.id.computer_u);
+        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_a);
+        ImageView a = (ImageView) b_a.findViewById(R.id.speaker_a);
 
-        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_t);
-        ImageView t = (ImageView) b_t.findViewById(R.id.computer_t);
-
-        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
-        ImageView e = (ImageView) b_e.findViewById(R.id.computer_e);
+        LinearLayout b_k = (LinearLayout)findViewById(R.id.bottom_k);
+        ImageView k = (ImageView) b_k.findViewById(R.id.speaker_k);
 
         LinearLayout b_r = (LinearLayout)findViewById(R.id.bottom_r);
-        ImageView r = (ImageView) b_r.findViewById(R.id.computer_r);
+        ImageView r = (ImageView) b_r.findViewById(R.id.speaker_r);
+
+        //e---------------------------------------------------------
+
+        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
+        ImageView e1 = (ImageView) b_e.findViewById(R.id.speaker_e);
+
+        LinearLayout b_e2 = (LinearLayout)findViewById(R.id.bottom_e2);
+        ImageView e2 = (ImageView) b_e2.findViewById(R.id.speaker_e2);
+
+        LinearLayout b_e3 = (LinearLayout)findViewById(R.id.bottom_e);
+        ImageView e3 = (ImageView) b_e3.findViewById(R.id.speaker_e2);
+
+        LinearLayout b_e4 = (LinearLayout)findViewById(R.id.bottom_e2);
+        ImageView e4 = (ImageView) b_e4.findViewById(R.id.speaker_e);
 
 
 
-        if ((c!= null) && (o!= null) && (m!=null) && (p!= null) && (u!= null) && (t!=null) && (e!= null) && (r!= null) ) {
+        if ((s!= null) && (p!= null) && (a!=null) && (k!=null) &&  (r!= null) && ((e1!=null && e2!=null) || (e3!=null && e4!=null))) {
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
             correct3 = MediaPlayer.create(this, R.raw.didit);
@@ -156,8 +158,8 @@ public class computer extends Activity implements View.OnTouchListener, View.OnD
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent cooker = new Intent(getApplicationContext(), cooker.class);
-                            startActivity(cooker);
+                            Intent telephone = new Intent(getApplicationContext(), telephone.class);
+                            startActivity(telephone);
                         }
                     });
                     break;
@@ -167,8 +169,8 @@ public class computer extends Activity implements View.OnTouchListener, View.OnD
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent cooker = new Intent(getApplicationContext(), cooker.class);
-                            startActivity(cooker);
+                            Intent telephone = new Intent(getApplicationContext(), telephone.class);
+                            startActivity(telephone);
                         }
                     });
                     break;
@@ -178,8 +180,8 @@ public class computer extends Activity implements View.OnTouchListener, View.OnD
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent cooker = new Intent(getApplicationContext(), cooker.class);
-                            startActivity(cooker);
+                            Intent telephone = new Intent(getApplicationContext(), telephone.class);
+                            startActivity(telephone);
                         }
                     });
                     break;

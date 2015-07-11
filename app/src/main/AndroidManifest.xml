@@ -228,7 +228,47 @@
         </activity>
         <activity
             android:name=".computer"
-            android:label="@string/title_activity_computer" >
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".cooker"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".drill"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".fridge"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".hoover"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".printer"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".radio"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".speaker"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".telephone"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".toaster"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".categories5"
+            android:screenOrientation="landscape" >
         </activity>
     </application>
 

@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.administrator.firstwords.categories4">
+    tools:context="com.example.administrator.firstwords.categories5">
 
 
     <TableLayout
@@ -61,7 +61,7 @@
                 android:id="@+id/icon5"
                 android:layout_width="85dp"
                 android:layout_height="85dp"
-                android:background="@drawable/quest"/>
+                android:background="@drawable/cat_home_btn"/>
 
 
         </TableRow>
@@ -157,7 +157,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/s_four"
-            android:background="@drawable/star_small_grey"
+            android:background="@drawable/star_small"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/s_three" />

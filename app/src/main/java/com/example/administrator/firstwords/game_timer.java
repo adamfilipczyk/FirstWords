@@ -125,8 +125,8 @@ public class game_timer extends Activity {
             case "5":
                 countDownTimer.cancel();
                 finish();
-                //Intent load5 = new Intent(this, categories5.class);
-                //startActivity(load5);
+                Intent load5 = new Intent(this, categories5.class);
+                startActivity(load5);
                 break;
             case "7":
                 countDownTimer.cancel();

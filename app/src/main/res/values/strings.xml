@@ -54,6 +54,16 @@
     <string name="title_activity_categories4">categories4</string>
     <string name="title_activity_camera">camera</string>
     <string name="title_activity_computer">computer</string>
+    <string name="title_activity_cooker">cooker</string>
+    <string name="title_activity_drill">drill</string>
+    <string name="title_activity_fridge">fridge</string>
+    <string name="title_activity_hoover">hoover</string>
+    <string name="title_activity_printer">printer</string>
+    <string name="title_activity_radio">radio</string>
+    <string name="title_activity_speaker">speaker</string>
+    <string name="title_activity_telephone">telephone</string>
+    <string name="title_activity_toaster">toaster</string>
+    <string name="title_activity_categorie5">categorie5</string>
 
 
 
