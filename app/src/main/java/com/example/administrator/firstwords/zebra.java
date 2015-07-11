@@ -163,11 +163,11 @@ public class zebra extends Activity implements OnTouchListener, OnDragListener {
                         });
                     }
                     else {
-                        correct1.start();
                         SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
                         SharedPreferences.Editor editor1 = sharedPreferences1.edit();
                         editor1.putString("category", value);
                         editor1.commit();
+                        correct1.start();
                         correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
                                 mp.release();
@@ -191,11 +191,11 @@ public class zebra extends Activity implements OnTouchListener, OnDragListener {
                         });
                     }
                     else {
-                        correct2.start();
                         SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
                         SharedPreferences.Editor editor1 = sharedPreferences1.edit();
                         editor1.putString("category", value);
                         editor1.commit();
+                        correct2.start();
                         correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
                                 mp.release();
@@ -219,11 +219,11 @@ public class zebra extends Activity implements OnTouchListener, OnDragListener {
                         });
                     }
                     else {
-                        correct3.start();
                         SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
                         SharedPreferences.Editor editor1 = sharedPreferences1.edit();
                         editor1.putString("category", value);
                         editor1.commit();
+                        correct3.start();
                         correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
                                 mp.release();

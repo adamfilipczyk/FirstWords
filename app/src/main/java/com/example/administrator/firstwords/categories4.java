@@ -59,12 +59,13 @@ public class categories4 extends Activity {
         Intent cat3 = new Intent(this, boot.class);
         startActivity(cat3);
     }
+
     public void btn4(View view) {
 
         click.play(soundID, 1, 1, 1, 0, 1);
         finish();
-        //Intent cat4 = new Intent(this, camera.class);
-        //startActivity(cat4);
+        Intent cat4 = new Intent(this, camera.class);
+        startActivity(cat4);
     }
 
 }

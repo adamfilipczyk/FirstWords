@@ -54,7 +54,8 @@
                 android:layout_width="85dp"
                 android:layout_height="85dp"
                 android:layout_marginRight="5dp"
-                android:background="@drawable/electronics_btn"/>
+                android:background="@drawable/electronics_btn"
+                android:onClick="btn4" />
 
             <ImageButton
                 android:id="@+id/icon5"

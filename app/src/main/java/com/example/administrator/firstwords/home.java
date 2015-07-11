@@ -65,13 +65,15 @@ public class home extends Activity{
                             }
                         });
 
-                // create alert dialog
+                // create alert dialog box
                 AlertDialog alertDialog = alertDialogBuilder.create();
 
-                // show it
+                // display dialog box
                 alertDialog.show();
             }
         });
+
+
     }
 
     public void play(View view) {
@@ -98,9 +100,24 @@ public class home extends Activity{
                 startActivity(cat2);
                 break;
             default:
-                finish();
-                Intent cat1 = new Intent(this, categories.class);
-                startActivity(cat1);
+                //sharedfPreferences file initial check
+                SharedPreferences initSharedPref = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                String var = initSharedPref.getString("category", "");
+                //if empty save "1"
+                if (var.isEmpty()){
+                    SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                    editor1.putString("category", "1");
+                    editor1.commit();
+                    finish();
+                    Intent cat1 = new Intent(this, categories.class);
+                    startActivity(cat1);
+                }
+                else {
+                    finish();
+                    Intent cat1 = new Intent(this, categories.class);
+                    startActivity(cat1);
+                }
                 break;
         }
 

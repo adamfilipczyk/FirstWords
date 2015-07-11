@@ -1,21 +1,18 @@
 package com.example.administrator.firstwords;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.os.Bundle;
-import android.view.View.OnDragListener;
-import android.view.View.OnTouchListener;
-import android.view.View;
 import android.view.DragEvent;
 import android.view.MotionEvent;
-import android.view.View.DragShadowBuilder;
+import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.app.Activity;
 
 import java.util.Random;
 
@@ -23,7 +20,7 @@ import java.util.Random;
  * @author Adam Filipczyk
  */
 
-public class donkey extends Activity implements OnTouchListener, OnDragListener {
+public class camera extends Activity implements View.OnTouchListener, View.OnDragListener {
 
     MediaPlayer mMediaPlayer, correct1, correct2, correct3, incorr1, incorr2, incorr3;
     SoundPool sound, click;
@@ -32,35 +29,35 @@ public class donkey extends Activity implements OnTouchListener, OnDragListener 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_donkey);
+        setContentView(R.layout.activity_camera);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        mMediaPlayer = MediaPlayer.create(this, R.raw.donkey);
+        mMediaPlayer = MediaPlayer.create(this, R.raw.camera);
         mMediaPlayer.start();
 
         //object for the sound
         sound = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
-        soundID = sound.load(this, R.raw.donkey, 1);
+        soundID = sound.load(this, R.raw.camera, 1);
 
         //object for the check sound
         click = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
         soundID = click.load(this, R.raw.click, 1);
 
         //letters
-        findViewById(R.id.donkey_d).setOnTouchListener(this);
-        findViewById(R.id.donkey_o).setOnTouchListener(this);
-        findViewById(R.id.donkey_n).setOnTouchListener(this);
-        findViewById(R.id.donkey_k).setOnTouchListener(this);
-        findViewById(R.id.donkey_e).setOnTouchListener(this);
-        findViewById(R.id.donkey_y).setOnTouchListener(this);
+        findViewById(R.id.camera_c).setOnTouchListener(this);
+        findViewById(R.id.camera_a).setOnTouchListener(this);
+        findViewById(R.id.camera_m).setOnTouchListener(this);
+        findViewById(R.id.camera_e).setOnTouchListener(this);
+        findViewById(R.id.camera_r).setOnTouchListener(this);
+        findViewById(R.id.camera_a2).setOnTouchListener(this);
 
         //bottom containers drag listener
-        findViewById(R.id.bottom_d).setOnDragListener(this);
-        findViewById(R.id.bottom_o).setOnDragListener(this);
-        findViewById(R.id.bottom_n).setOnDragListener(this);
-        findViewById(R.id.bottom_k).setOnDragListener(this);
+        findViewById(R.id.bottom_c).setOnDragListener(this);
+        findViewById(R.id.bottom_a).setOnDragListener(this);
+        findViewById(R.id.bottom_m).setOnDragListener(this);
         findViewById(R.id.bottom_e).setOnDragListener(this);
-        findViewById(R.id.bottom_y).setOnDragListener(this);
+        findViewById(R.id.bottom_r).setOnDragListener(this);
+        findViewById(R.id.bottom_a2).setOnDragListener(this);
 
         //top container drag listener
         findViewById(R.id.top_c).setOnDragListener(this);
@@ -99,7 +96,7 @@ public class donkey extends Activity implements OnTouchListener, OnDragListener 
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_DOWN){
-            DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
+            View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
             v.startDrag(null, shadowBuilder, v, 0);
             return true;
         }
@@ -113,25 +110,35 @@ public class donkey extends Activity implements OnTouchListener, OnDragListener 
 
         click.play(soundID, 1, 1, 1, 0, 1);
 
-        LinearLayout b_d = (LinearLayout)findViewById(R.id.bottom_d);
-        ImageView d = (ImageView) b_d.findViewById(R.id.donkey_d);
+        LinearLayout b_c = (LinearLayout)findViewById(R.id.bottom_c);
+        ImageView c = (ImageView) b_c.findViewById(R.id.camera_c);
 
-        LinearLayout b_o = (LinearLayout)findViewById(R.id.bottom_o);
-        ImageView o = (ImageView) b_o.findViewById(R.id.donkey_o);
-
-        LinearLayout b_n = (LinearLayout)findViewById(R.id.bottom_n);
-        ImageView n = (ImageView) b_n.findViewById(R.id.donkey_n);
-
-        LinearLayout b_k = (LinearLayout)findViewById(R.id.bottom_k);
-        ImageView k = (ImageView) b_k.findViewById(R.id.donkey_k);
+        LinearLayout b_m = (LinearLayout)findViewById(R.id.bottom_m);
+        ImageView m = (ImageView) b_m.findViewById(R.id.camera_m);
 
         LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
-        ImageView e = (ImageView) b_e.findViewById(R.id.donkey_e);
+        ImageView e = (ImageView) b_e.findViewById(R.id.camera_e);
 
-        LinearLayout b_y = (LinearLayout)findViewById(R.id.bottom_y);
-        ImageView y = (ImageView) b_y.findViewById(R.id.donkey_y);
+        LinearLayout b_r = (LinearLayout)findViewById(R.id.bottom_r);
+        ImageView r = (ImageView) b_r.findViewById(R.id.camera_r);
 
-        if ((d!= null) && (o!= null) && (n!=null) && (k!= null) && (e!= null) && (y!=null)) {
+        //a---------------------------------------------------------
+
+        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_a);
+        ImageView a1 = (ImageView) b_a.findViewById(R.id.camera_a);
+
+        LinearLayout b_a2 = (LinearLayout)findViewById(R.id.bottom_a2);
+        ImageView a2 = (ImageView) b_a2.findViewById(R.id.camera_a2);
+
+        LinearLayout b_a3 = (LinearLayout)findViewById(R.id.bottom_a);
+        ImageView a3 = (ImageView) b_a3.findViewById(R.id.camera_a2);
+
+        LinearLayout b_a4 = (LinearLayout)findViewById(R.id.bottom_a2);
+        ImageView a4 = (ImageView) b_a4.findViewById(R.id.camera_a);
+
+
+
+        if ((c!= null) && (m!= null) && (e!=null) && (r!= null) && (e!= null) && ((a1!=null && a2!=null) || (a3!=null && a4!=null))) {
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
             correct3 = MediaPlayer.create(this, R.raw.didit);
@@ -146,8 +153,8 @@ public class donkey extends Activity implements OnTouchListener, OnDragListener 
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent eleph = new Intent(getApplicationContext(), elephant.class);
-                            startActivity(eleph);
+                            Intent computer = new Intent(getApplicationContext(), computer.class);
+                            startActivity(computer);
                         }
                     });
                     break;
@@ -157,8 +164,8 @@ public class donkey extends Activity implements OnTouchListener, OnDragListener 
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent eleph = new Intent(getApplicationContext(), elephant.class);
-                            startActivity(eleph);
+                            Intent computer = new Intent(getApplicationContext(), computer.class);
+                            startActivity(computer);
                         }
                     });
                     break;
@@ -168,8 +175,8 @@ public class donkey extends Activity implements OnTouchListener, OnDragListener 
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent eleph = new Intent(getApplicationContext(), elephant.class);
-                            startActivity(eleph);
+                            Intent computer = new Intent(getApplicationContext(), computer.class);
+                            startActivity(computer);
                         }
                     });
                     break;
