@@ -65,11 +65,10 @@ public class one_completed extends Activity {
 
                 break;
             case 6:
-                /*
                 finish();
                 Intent load6 = new Intent(this, categories6.class);
                 startActivity(load6);
-                break;*/
+                break;
             case 7:
                 finish();
                 Intent timer3 = new Intent(this, game_timer.class);

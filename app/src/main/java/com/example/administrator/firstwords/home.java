@@ -84,6 +84,11 @@ public class home extends Activity{
         String cat = sharedPreferences.getString("category", "");
 
         switch (cat){
+            case "6":
+                finish();
+                Intent cat6 = new Intent(this, categories6.class);
+                startActivity(cat6);
+                break;
             case "5":
                 finish();
                 Intent cat5 = new Intent(this, categories5.class);

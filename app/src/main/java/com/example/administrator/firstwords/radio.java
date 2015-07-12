@@ -195,6 +195,4 @@ public class radio extends Activity implements View.OnTouchListener, View.OnDrag
             }
         }
     }
-
-
 }

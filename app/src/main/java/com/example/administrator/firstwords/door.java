@@ -5,8 +5,11 @@ import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
+import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.DragEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +23,7 @@ import java.util.Random;
  * @author Adam Filipczyk
  */
 
-public class boot extends Activity implements View.OnTouchListener, View.OnDragListener {
+public class door extends Activity implements View.OnTouchListener, View.OnDragListener {
 
     SoundPool sound, click;
     int soundID;
@@ -29,17 +32,17 @@ public class boot extends Activity implements View.OnTouchListener, View.OnDragL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_boot);
+        setContentView(R.layout.activity_door);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         //player
-        mMediaPlayer = MediaPlayer.create(this, R.raw.boot);
+        mMediaPlayer = MediaPlayer.create(this, R.raw.door);
         mMediaPlayer.start();
 
 
         //object for the speaker sound
         sound = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
-        soundID = sound.load(this, R.raw.boot, 1);
+        soundID = sound.load(this, R.raw.door, 1);
 
         //object for the check sound
         click = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
@@ -47,16 +50,16 @@ public class boot extends Activity implements View.OnTouchListener, View.OnDragL
 
 
         //letters
-        findViewById(R.id.boot_b).setOnTouchListener(this);
-        findViewById(R.id.boot_o).setOnTouchListener(this);
-        findViewById(R.id.boot_o2).setOnTouchListener(this);
-        findViewById(R.id.boot_t).setOnTouchListener(this);
+        findViewById(R.id.door_d).setOnTouchListener(this);
+        findViewById(R.id.door_o).setOnTouchListener(this);
+        findViewById(R.id.door_o2).setOnTouchListener(this);
+        findViewById(R.id.door_r).setOnTouchListener(this);
 
         //bottom containers drag listener
-        findViewById(R.id.bottom_b).setOnDragListener(this);
+        findViewById(R.id.bottom_d).setOnDragListener(this);
         findViewById(R.id.bottom_o).setOnDragListener(this);
         findViewById(R.id.bottom_o2).setOnDragListener(this);
-        findViewById(R.id.bottom_t).setOnDragListener(this);
+        findViewById(R.id.bottom_r).setOnDragListener(this);
 
 
         //top container drag listener
@@ -109,25 +112,25 @@ public class boot extends Activity implements View.OnTouchListener, View.OnDragL
 
         click.play(soundID, 1, 1, 1, 0, 1);
 
-        LinearLayout b_b = (LinearLayout)findViewById(R.id.bottom_b);
-        ImageView b = (ImageView) b_b.findViewById(R.id.boot_b);
+        LinearLayout b_d = (LinearLayout)findViewById(R.id.bottom_d);
+        ImageView d = (ImageView) b_d.findViewById(R.id.door_d);
 
-        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_t);
-        ImageView t = (ImageView) b_t.findViewById(R.id.boot_t);
+        LinearLayout b_r = (LinearLayout)findViewById(R.id.bottom_r);
+        ImageView r = (ImageView) b_r.findViewById(R.id.door_r);
 
         //o---------------------------------------------------------
 
         LinearLayout b_o = (LinearLayout)findViewById(R.id.bottom_o);
-        ImageView o1 = (ImageView) b_o.findViewById(R.id.boot_o);
+        ImageView o1 = (ImageView) b_o.findViewById(R.id.door_o);
 
         LinearLayout b_o2 = (LinearLayout)findViewById(R.id.bottom_o2);
-        ImageView o2 = (ImageView) b_o2.findViewById(R.id.boot_o2);
+        ImageView o2 = (ImageView) b_o2.findViewById(R.id.door_o2);
 
         LinearLayout b_o3 = (LinearLayout)findViewById(R.id.bottom_o);
-        ImageView o3 = (ImageView) b_o3.findViewById(R.id.boot_o2);
+        ImageView o3 = (ImageView) b_o3.findViewById(R.id.door_o2);
 
         LinearLayout b_o4 = (LinearLayout)findViewById(R.id.bottom_o2);
-        ImageView o4 = (ImageView) b_o4.findViewById(R.id.boot_o);
+        ImageView o4 = (ImageView) b_o4.findViewById(R.id.door_o);
 
 
         correct1 = MediaPlayer.create(this, R.raw.welldone);
@@ -138,7 +141,7 @@ public class boot extends Activity implements View.OnTouchListener, View.OnDragL
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((b!= null) && (t!= null) && ((o1!=null && o2!=null) || (o3!=null && o4!=null))) {
+        if ((d!= null) && (r!= null) && ((o1!=null && o2!=null) || (o3!=null && o4!=null))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
@@ -150,8 +153,8 @@ public class boot extends Activity implements View.OnTouchListener, View.OnDragL
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent dress = new Intent(getApplicationContext(), dress.class);
-                            startActivity(dress);
+                            Intent lamp = new Intent(getApplicationContext(), lamp.class);
+                            startActivity(lamp);
                         }
                     });
                     break;
@@ -161,8 +164,8 @@ public class boot extends Activity implements View.OnTouchListener, View.OnDragL
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent dress = new Intent(getApplicationContext(), dress.class);
-                            startActivity(dress);
+                            Intent lamp = new Intent(getApplicationContext(), lamp.class);
+                            startActivity(lamp);
                         }
                     });
                     break;
@@ -172,8 +175,8 @@ public class boot extends Activity implements View.OnTouchListener, View.OnDragL
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent dress = new Intent(getApplicationContext(), dress.class);
-                            startActivity(dress);
+                            Intent lamp = new Intent(getApplicationContext(), lamp.class);
+                            startActivity(lamp);
                         }
                     });
                     break;

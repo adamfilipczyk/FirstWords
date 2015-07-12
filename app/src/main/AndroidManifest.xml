@@ -17,10 +17,6 @@
             android:name=".home"
             android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".info"
@@ -184,90 +180,187 @@
         </activity>
         <activity
             android:name=".dress"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".hat"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".jacket"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".shoes"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".shorts"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".socks"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".trousers"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".tie"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".tshirt"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".categories4"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".camera"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".computer"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".cooker"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".drill"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".fridge"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".hoover"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".printer"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".radio"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".speaker"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".telephone"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".toaster"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".categories5"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".bath"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".bed"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".chair"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".door"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".lamp"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".mug"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".plate"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".sink"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".spoon"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".stairs"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".table"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".wardrobe"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".window"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".categories6"
+            android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
     </application>

@@ -20,55 +20,52 @@ import java.util.Random;
  * @author Adam Filipczyk
  */
 
-public class boot extends Activity implements View.OnTouchListener, View.OnDragListener {
+public class sink extends Activity implements View.OnTouchListener, View.OnDragListener {
 
+    MediaPlayer mMediaPlayer, correct1, correct2, correct3, incorr1, incorr2, incorr3;
     SoundPool sound, click;
     int soundID;
-    MediaPlayer mMediaPlayer, correct1, correct2, correct3, incorr1, incorr2, incorr3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_boot);
+        setContentView(R.layout.activity_sink);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        //player
-        mMediaPlayer = MediaPlayer.create(this, R.raw.boot);
+        mMediaPlayer = MediaPlayer.create(this, R.raw.sink);
         mMediaPlayer.start();
 
-
-        //object for the speaker sound
+        //object for the sound
         sound = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
-        soundID = sound.load(this, R.raw.boot, 1);
+        soundID = sound.load(this, R.raw.sink, 1);
 
         //object for the check sound
         click = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
         soundID = click.load(this, R.raw.click, 1);
 
-
         //letters
-        findViewById(R.id.boot_b).setOnTouchListener(this);
-        findViewById(R.id.boot_o).setOnTouchListener(this);
-        findViewById(R.id.boot_o2).setOnTouchListener(this);
-        findViewById(R.id.boot_t).setOnTouchListener(this);
+        findViewById(R.id.sink_s).setOnTouchListener(this);
+        findViewById(R.id.sink_i).setOnTouchListener(this);
+        findViewById(R.id.sink_n).setOnTouchListener(this);
+        findViewById(R.id.sink_k).setOnTouchListener(this);
 
         //bottom containers drag listener
-        findViewById(R.id.bottom_b).setOnDragListener(this);
-        findViewById(R.id.bottom_o).setOnDragListener(this);
-        findViewById(R.id.bottom_o2).setOnDragListener(this);
-        findViewById(R.id.bottom_t).setOnDragListener(this);
-
+        findViewById(R.id.bottom_s).setOnDragListener(this);
+        findViewById(R.id.bottom_i).setOnDragListener(this);
+        findViewById(R.id.bottom_n).setOnDragListener(this);
+        findViewById(R.id.bottom_k).setOnDragListener(this);
 
         //top container drag listener
         findViewById(R.id.top_c).setOnDragListener(this);
+
     }
 
-    //method to play the sound of the picture displayed on the screen
+
+    //method to play the sound
     public void play(View view) {
         sound.play(soundID, 1, 1, 1, 0, 1);
     }
 
-    //method to play the sound of the picture displayed on the screen
     public void back(View view) {
         click.play(soundID, 1, 1, 1, 0, 1);
         finish();
@@ -109,36 +106,26 @@ public class boot extends Activity implements View.OnTouchListener, View.OnDragL
 
         click.play(soundID, 1, 1, 1, 0, 1);
 
-        LinearLayout b_b = (LinearLayout)findViewById(R.id.bottom_b);
-        ImageView b = (ImageView) b_b.findViewById(R.id.boot_b);
+        LinearLayout b_s = (LinearLayout)findViewById(R.id.bottom_s);
+        ImageView s = (ImageView) b_s.findViewById(R.id.sink_s);
 
-        LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_t);
-        ImageView t = (ImageView) b_t.findViewById(R.id.boot_t);
+        LinearLayout b_i = (LinearLayout)findViewById(R.id.bottom_i);
+        ImageView i = (ImageView) b_i.findViewById(R.id.sink_i);
 
-        //o---------------------------------------------------------
+        LinearLayout b_n = (LinearLayout)findViewById(R.id.bottom_n);
+        ImageView n = (ImageView) b_n.findViewById(R.id.sink_n);
 
-        LinearLayout b_o = (LinearLayout)findViewById(R.id.bottom_o);
-        ImageView o1 = (ImageView) b_o.findViewById(R.id.boot_o);
-
-        LinearLayout b_o2 = (LinearLayout)findViewById(R.id.bottom_o2);
-        ImageView o2 = (ImageView) b_o2.findViewById(R.id.boot_o2);
-
-        LinearLayout b_o3 = (LinearLayout)findViewById(R.id.bottom_o);
-        ImageView o3 = (ImageView) b_o3.findViewById(R.id.boot_o2);
-
-        LinearLayout b_o4 = (LinearLayout)findViewById(R.id.bottom_o2);
-        ImageView o4 = (ImageView) b_o4.findViewById(R.id.boot_o);
+        LinearLayout b_k = (LinearLayout)findViewById(R.id.bottom_k);
+        ImageView k = (ImageView) b_k.findViewById(R.id.sink_k);
 
 
-        correct1 = MediaPlayer.create(this, R.raw.welldone);
-        correct2 = MediaPlayer.create(this, R.raw.congrats);
-        correct3 = MediaPlayer.create(this, R.raw.didit);
 
-        incorr1 = MediaPlayer.create(this, R.raw.rusure);
-        incorr2 = MediaPlayer.create(this, R.raw.incorrect);
-        incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((b!= null) && (t!= null) && ((o1!=null && o2!=null) || (o3!=null && o4!=null))) {
+
+        if ((s!= null) && (i!= null) && (n!=null && (k!= null))) {
+            correct1 = MediaPlayer.create(this, R.raw.welldone);
+            correct2 = MediaPlayer.create(this, R.raw.congrats);
+            correct3 = MediaPlayer.create(this, R.raw.didit);
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
@@ -150,8 +137,8 @@ public class boot extends Activity implements View.OnTouchListener, View.OnDragL
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent dress = new Intent(getApplicationContext(), dress.class);
-                            startActivity(dress);
+                            Intent spoon = new Intent(getApplicationContext(), spoon.class);
+                            startActivity(spoon);
                         }
                     });
                     break;
@@ -161,8 +148,8 @@ public class boot extends Activity implements View.OnTouchListener, View.OnDragL
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent dress = new Intent(getApplicationContext(), dress.class);
-                            startActivity(dress);
+                            Intent spoon = new Intent(getApplicationContext(), spoon.class);
+                            startActivity(spoon);
                         }
                     });
                     break;
@@ -172,8 +159,8 @@ public class boot extends Activity implements View.OnTouchListener, View.OnDragL
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
-                            Intent dress = new Intent(getApplicationContext(), dress.class);
-                            startActivity(dress);
+                            Intent spoon = new Intent(getApplicationContext(), spoon.class);
+                            startActivity(spoon);
                         }
                     });
                     break;
@@ -183,6 +170,10 @@ public class boot extends Activity implements View.OnTouchListener, View.OnDragL
             }
         }
         else {
+
+            incorr1 = MediaPlayer.create(this, R.raw.rusure);
+            incorr2 = MediaPlayer.create(this, R.raw.incorrect);
+            incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;

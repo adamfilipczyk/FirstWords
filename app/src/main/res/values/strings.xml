@@ -64,6 +64,20 @@
     <string name="title_activity_telephone">telephone</string>
     <string name="title_activity_toaster">toaster</string>
     <string name="title_activity_categorie5">categorie5</string>
+    <string name="title_activity_bath">bath</string>
+    <string name="title_activity_bed">bed</string>
+    <string name="title_activity_chair">chair</string>
+    <string name="title_activity_door">door</string>
+    <string name="title_activity_lamp">lamp</string>
+    <string name="title_activity_mug">mug</string>
+    <string name="title_activity_plate">plate</string>
+    <string name="title_activity_sink">sink</string>
+    <string name="title_activity_spoon">spoon</string>
+    <string name="title_activity_stairs">stairs</string>
+    <string name="title_activity_table">table</string>
+    <string name="title_activity_wardrobe">wardrobe</string>
+    <string name="title_activity_window">window</string>
+    <string name="title_activity_categories6">categories6</string>
 
 
 
