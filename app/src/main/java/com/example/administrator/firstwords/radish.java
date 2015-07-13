@@ -155,7 +155,11 @@ public class radish extends Activity implements View.OnTouchListener, View.OnDra
 
             switch (eventNumber){
                 case 1:
-                    if (toInt >= 3){
+                    if (toInt < 3){
+                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                        editor1.putString("category", value);
+                        editor1.commit();
                         correct1.start();
                         correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
@@ -167,12 +171,8 @@ public class radish extends Activity implements View.OnTouchListener, View.OnDra
                         });
                     }
                     else {
-                        correct2.start();
-                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
-                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
-                        editor1.putString("category", value);
-                        editor1.commit();
-                        correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
                                 mp.release();
                                 finish();
@@ -183,9 +183,13 @@ public class radish extends Activity implements View.OnTouchListener, View.OnDra
                     }
                     break;
                 case 2:
-                    if (toInt >= 3){
-                        correct2.start();
-                        correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    if (toInt < 3){
+                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                        editor1.putString("category", value);
+                        editor1.commit();
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
                                 mp.release();
                                 finish();
@@ -196,10 +200,6 @@ public class radish extends Activity implements View.OnTouchListener, View.OnDra
                     }
                     else {
                         correct1.start();
-                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
-                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
-                        editor1.putString("category", value);
-                        editor1.commit();
                         correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
                                 mp.release();
@@ -211,9 +211,13 @@ public class radish extends Activity implements View.OnTouchListener, View.OnDra
                     }
                     break;
                 case 3:
-                    if (toInt >= 3){
-                        correct3.start();
-                        correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    if (toInt < 3){
+                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                        editor1.putString("category", value);
+                        editor1.commit();
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
                                 mp.release();
                                 finish();
@@ -223,12 +227,8 @@ public class radish extends Activity implements View.OnTouchListener, View.OnDra
                         });
                     }
                     else {
-                        correct3.start();
-                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
-                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
-                        editor1.putString("category", value);
-                        editor1.commit();
-                        correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
                                 mp.release();
                                 finish();
@@ -264,5 +264,4 @@ public class radish extends Activity implements View.OnTouchListener, View.OnDra
             }
         }
     }
-
 }

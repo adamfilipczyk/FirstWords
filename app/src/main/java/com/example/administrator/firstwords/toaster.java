@@ -168,7 +168,11 @@ public class toaster extends Activity implements View.OnTouchListener, View.OnDr
 
             switch (eventNumber){
                 case 1:
-                    if (toInt >= 5){
+                    if (toInt < 5){
+                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                        editor1.putString("category", value);
+                        editor1.commit();
                         correct1.start();
                         correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
@@ -180,10 +184,6 @@ public class toaster extends Activity implements View.OnTouchListener, View.OnDr
                         });
                     }
                     else {
-                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
-                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
-                        editor1.putString("category", value);
-                        editor1.commit();
                         correct1.start();
                         correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
@@ -196,9 +196,13 @@ public class toaster extends Activity implements View.OnTouchListener, View.OnDr
                     }
                     break;
                 case 2:
-                    if (toInt >= 5){
-                        correct2.start();
-                        correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    if (toInt < 5){
+                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                        editor1.putString("category", value);
+                        editor1.commit();
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
                                 mp.release();
                                 finish();
@@ -208,12 +212,8 @@ public class toaster extends Activity implements View.OnTouchListener, View.OnDr
                         });
                     }
                     else {
-                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
-                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
-                        editor1.putString("category", value);
-                        editor1.commit();
-                        correct2.start();
-                        correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
                                 mp.release();
                                 finish();
@@ -224,9 +224,13 @@ public class toaster extends Activity implements View.OnTouchListener, View.OnDr
                     }
                     break;
                 case 3:
-                    if (toInt >= 5){
-                        correct3.start();
-                        correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    if (toInt < 5){
+                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                        editor1.putString("category", value);
+                        editor1.commit();
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
                                 mp.release();
                                 finish();
@@ -236,12 +240,8 @@ public class toaster extends Activity implements View.OnTouchListener, View.OnDr
                         });
                     }
                     else {
-                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
-                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
-                        editor1.putString("category", value);
-                        editor1.commit();
-                        correct3.start();
-                        correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
                                 mp.release();
                                 finish();

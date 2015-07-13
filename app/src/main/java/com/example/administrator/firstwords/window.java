@@ -164,7 +164,11 @@ public class window extends Activity implements View.OnTouchListener, View.OnDra
 
             switch (eventNumber){
                 case 1:
-                    if (toInt >= 6){
+                    if (toInt < 6){
+                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                        editor1.putString("category", value);
+                        editor1.commit();
                         correct1.start();
                         correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
@@ -176,10 +180,6 @@ public class window extends Activity implements View.OnTouchListener, View.OnDra
                         });
                     }
                     else {
-                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
-                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
-                        editor1.putString("category", value);
-                        editor1.commit();
                         correct1.start();
                         correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
@@ -192,9 +192,13 @@ public class window extends Activity implements View.OnTouchListener, View.OnDra
                     }
                     break;
                 case 2:
-                    if (toInt >= 6){
-                        correct2.start();
-                        correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    if (toInt < 6){
+                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                        editor1.putString("category", value);
+                        editor1.commit();
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
                                 mp.release();
                                 finish();
@@ -204,12 +208,8 @@ public class window extends Activity implements View.OnTouchListener, View.OnDra
                         });
                     }
                     else {
-                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
-                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
-                        editor1.putString("category", value);
-                        editor1.commit();
-                        correct2.start();
-                        correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
                                 mp.release();
                                 finish();
@@ -220,9 +220,13 @@ public class window extends Activity implements View.OnTouchListener, View.OnDra
                     }
                     break;
                 case 3:
-                    if (toInt >= 6){
-                        correct3.start();
-                        correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    if (toInt < 6){
+                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                        editor1.putString("category", value);
+                        editor1.commit();
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
                                 mp.release();
                                 finish();
@@ -232,12 +236,8 @@ public class window extends Activity implements View.OnTouchListener, View.OnDra
                         });
                     }
                     else {
-                        SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
-                        SharedPreferences.Editor editor1 = sharedPreferences1.edit();
-                        editor1.putString("category", value);
-                        editor1.commit();
-                        correct3.start();
-                        correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             public void onCompletion(MediaPlayer mp) {
                                 mp.release();
                                 finish();

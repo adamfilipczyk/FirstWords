@@ -37,13 +37,13 @@ public class december  extends Activity implements View.OnTouchListener, View.On
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         //player
-        mMediaPlayer = MediaPlayer.create(this, R.raw.septemberr);
+        mMediaPlayer = MediaPlayer.create(this, R.raw.december);
         mMediaPlayer.start();
 
 
         //object for the speaker sound
         sound = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
-        soundID = sound.load(this, R.raw.septemberr, 1);
+        soundID = sound.load(this, R.raw.december, 1);
 
         //object for the check sound
         click = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
@@ -261,7 +261,11 @@ public class december  extends Activity implements View.OnTouchListener, View.On
         //load sound based on generated value and redirect to the next screen
         switch (eventNumber) {
             case 1:
-                if (toInt >= 7){
+                if (toInt < 7){
+                    SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                    editor1.putString("category", value);
+                    editor1.commit();
                     correct1.start();
                     correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         public void onCompletion(MediaPlayer mp) {
@@ -273,10 +277,6 @@ public class december  extends Activity implements View.OnTouchListener, View.On
                     });
                 }
                 else {
-                    SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
-                    SharedPreferences.Editor editor1 = sharedPreferences1.edit();
-                    editor1.putString("category", value);
-                    editor1.commit();
                     correct1.start();
                     correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         public void onCompletion(MediaPlayer mp) {
@@ -289,9 +289,13 @@ public class december  extends Activity implements View.OnTouchListener, View.On
                 }
                 break;
             case 2:
-                if (toInt >= 7){
-                    correct2.start();
-                    correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                if (toInt < 7){
+                    SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                    editor1.putString("category", value);
+                    editor1.commit();
+                    correct1.start();
+                    correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
@@ -301,12 +305,8 @@ public class december  extends Activity implements View.OnTouchListener, View.On
                     });
                 }
                 else {
-                    SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
-                    SharedPreferences.Editor editor1 = sharedPreferences1.edit();
-                    editor1.putString("category", value);
-                    editor1.commit();
-                    correct2.start();
-                    correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    correct1.start();
+                    correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
@@ -317,9 +317,13 @@ public class december  extends Activity implements View.OnTouchListener, View.On
                 }
                 break;
             case 3:
-                if (toInt >= 7){
-                    correct3.start();
-                    correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                if (toInt < 7){
+                    SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor1 = sharedPreferences1.edit();
+                    editor1.putString("category", value);
+                    editor1.commit();
+                    correct1.start();
+                    correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();
@@ -329,12 +333,8 @@ public class december  extends Activity implements View.OnTouchListener, View.On
                     });
                 }
                 else {
-                    SharedPreferences sharedPreferences1 = getSharedPreferences("Save", Context.MODE_PRIVATE);
-                    SharedPreferences.Editor editor1 = sharedPreferences1.edit();
-                    editor1.putString("category", value);
-                    editor1.commit();
-                    correct3.start();
-                    correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    correct1.start();
+                    correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         public void onCompletion(MediaPlayer mp) {
                             mp.release();
                             finish();

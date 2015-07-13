@@ -22,7 +22,7 @@
     <string name="title_activity_one_completed">one_completed</string>
     <string name="title_activity_home">home</string>
     <string name="title_activity_info">info</string>
-    <string name="deve_info">First Words 2015\n\nApplication helps kids build the words with the help of drag-n-drop mechanism,
+    <string name="deve_info">First Words 2015\n\nBuild the words with the help of drag-n-drop mechanism,
         pictures and sound\n\nDevelopers: Adam &amp; Natasha Filipczyk\nContact: adamfilipczyk@gmail.com</string>
     <string name="title_activity_splash">splash</string>
     <string name="load">Loading ...</string>
@@ -91,6 +91,19 @@
     <string name="title_activity_november">november</string>
     <string name="title_activity_december">december</string>
     <string name="title_activity_categories7">categories7</string>
+    <string name="title_activity_cactus">cactus</string>
+    <string name="title_activity_flower">flower</string>
+    <string name="title_activity_grass">grass</string>
+    <string name="title_activity_leaf">leaf</string>
+    <string name="title_activity_moon">moon</string>
+    <string name="title_activity_mountain">mountain</string>
+    <string name="title_activity_rain">rain</string>
+    <string name="title_activity_rainbow">rainbow</string>
+    <string name="title_activity_star">star</string>
+    <string name="title_activity_sun">sun</string>
+    <string name="title_activity_tree">tree</string>
+    <string name="title_activity_waterfall">waterfall</string>
+    <string name="title_activity_categories8">categories8</string>
 
 
 

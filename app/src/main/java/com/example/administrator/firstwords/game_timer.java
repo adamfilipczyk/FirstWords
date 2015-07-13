@@ -59,7 +59,7 @@ public class game_timer extends Activity {
 
         //toast message
         Context cont = getApplicationContext();
-        CharSequence message = "Press the belly and skip the break";
+        CharSequence message = "Press the bee and skip the break";
         int duration = Toast.LENGTH_LONG;
         Toast display = Toast.makeText(cont, message, duration);
         LinearLayout toastLayout = (LinearLayout) display.getView();
@@ -115,12 +115,6 @@ public class game_timer extends Activity {
                 finish();
                 Intent load3 = new Intent(this, categories3.class);
                 startActivity(load3);
-                break;
-            case "4":
-                countDownTimer.cancel();
-                finish();
-                Intent load4 = new Intent(this, categories4.class);
-                startActivity(load4);
                 break;
             case "5":
                 countDownTimer.cancel();
