@@ -206,14 +206,6 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
         LinearLayout b_a21 = (LinearLayout) findViewById(R.id.bottom_a2);
         ImageView a21 = (ImageView) b_a21.findViewById(R.id.ban_a3);
 
-        //approval / disapproval sounds
-        correct1 = MediaPlayer.create(this, R.raw.welldone);
-        correct2 = MediaPlayer.create(this, R.raw.congrats);
-        correct3 = MediaPlayer.create(this, R.raw.didit);
-
-        incorr1 = MediaPlayer.create(this, R.raw.rusure);
-        incorr2 = MediaPlayer.create(this, R.raw.incorrect);
-        incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
 
         //redirection to the methods if the letters are properly ordered
@@ -245,6 +237,11 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
 
     //approvals
     public void approved (){
+
+        //approval sounds
+        correct1 = MediaPlayer.create(this, R.raw.welldone);
+        correct2 = MediaPlayer.create(this, R.raw.congrats);
+        correct3 = MediaPlayer.create(this, R.raw.didit);
 
         //sounds random generator
         Random generate = new Random();
@@ -293,6 +290,12 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
 
     //disapprovals
     public void disapproved (){
+
+        //disapproval sounds
+
+        incorr1 = MediaPlayer.create(this, R.raw.rusure);
+        incorr2 = MediaPlayer.create(this, R.raw.incorrect);
+        incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
         //sounds random generator
         Random generate = new Random();

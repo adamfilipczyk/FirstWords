@@ -78,6 +78,19 @@
     <string name="title_activity_wardrobe">wardrobe</string>
     <string name="title_activity_window">window</string>
     <string name="title_activity_categories6">categories6</string>
+    <string name="title_activity_january">january</string>
+    <string name="title_activity_february">february</string>
+    <string name="title_activity_march">march</string>
+    <string name="title_activity_april">april</string>
+    <string name="title_activity_may">may</string>
+    <string name="title_activity_june">june</string>
+    <string name="title_activity_july">july</string>
+    <string name="title_activity_august">august</string>
+    <string name="title_activity_september">september</string>
+    <string name="title_activity_october">october</string>
+    <string name="title_activity_november">november</string>
+    <string name="title_activity_december">december</string>
+    <string name="title_activity_categories7">categories7</string>
 
 
 

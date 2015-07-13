@@ -76,6 +76,14 @@ public class home extends Activity{
 
     }
 
+    public void info(View view) {
+
+        click.play(soundID, 1, 1, 1, 0, 1);
+        finish();
+        Intent home = new Intent(this, info.class);
+        startActivity(home);
+    }
+
     public void play(View view) {
 
         click.play(soundID, 1, 1, 1, 0, 1);
@@ -84,6 +92,11 @@ public class home extends Activity{
         String cat = sharedPreferences.getString("category", "");
 
         switch (cat){
+            case "7":
+                finish();
+                Intent cat7 = new Intent(this, categories7.class);
+                startActivity(cat7);
+                break;
             case "6":
                 finish();
                 Intent cat6 = new Intent(this, categories6.class);
@@ -131,12 +144,5 @@ public class home extends Activity{
                 break;
         }
 
-    }
-    public void info(View view) {
-
-        click.play(soundID, 1, 1, 1, 0, 1);
-        finish();
-        Intent home = new Intent(this, info.class);
-        startActivity(home);
     }
 }

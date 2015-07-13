@@ -8,13 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
-
 /**
  * @author Adam Filipczyk
  */
 
 
-public class categories6  extends Activity {
+public class categories7 extends Activity {
 
     SoundPool sound, click;
     int soundID;
@@ -22,7 +21,7 @@ public class categories6  extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_categories6);
+        setContentView(R.layout.activity_categories7);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         //object for the check sound
@@ -83,5 +82,13 @@ public class categories6  extends Activity {
         finish();
         Intent cat6 = new Intent(this, january.class);
         startActivity(cat6);
+    }
+
+    public void btn7(View view) {
+
+        click.play(soundID, 1, 1, 1, 0, 1);
+        //finish();
+        //Intent cat7 = new Intent(this, january.class);
+        //startActivity(cat7);
     }
 }
