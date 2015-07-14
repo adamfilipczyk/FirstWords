@@ -482,6 +482,66 @@
             android:name=".waterfall"
             android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".categories8"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".zero"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".one"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".two"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".three"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".four"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".five"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".six"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".seven"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".eight"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".nine"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ten"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -489,7 +549,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".categories8"
+            android:name=".categories9"
             android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
         </activity>
