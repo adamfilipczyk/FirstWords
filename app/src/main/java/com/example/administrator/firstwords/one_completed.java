@@ -89,6 +89,11 @@ public class one_completed extends Activity {
                 Intent load10 = new Intent(this, categories10.class);
                 startActivity(load10);
                 break;
+            case 11:
+                finish();
+                Intent load11 = new Intent(this, final_screen.class);
+                startActivity(load11);
+                break;
             default:
                 //do nothing
                 break;

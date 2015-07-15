@@ -12,7 +12,7 @@ import android.view.WindowManager;
  * @author Adam Filipczyk
  */
 
-public class categories10 extends Activity {
+public class categories11 extends Activity {
 
     SoundPool sound, click;
     int soundID;
@@ -20,7 +20,7 @@ public class categories10 extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_categories10);
+        setContentView(R.layout.activity_categories11);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         //object for the check sound

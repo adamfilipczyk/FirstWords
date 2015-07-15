@@ -607,10 +607,66 @@
             android:name=".categories10"
             android:excludeFromRecents="true"
             android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".airplane"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".bicycle"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".bus"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".car"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ship"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".sleigh"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".tractor"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".train"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".truck"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".categories11"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".final_screen"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape" >
         </activity>
     </application>
 
