@@ -146,7 +146,7 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
         //redirection to the next screen if the letters are properly ordered
-        if ((a!= null) && (l!= null) && (e!=null) && ((p!=null && p2!=null) || (p3!=null && p4!=null))) {
+        if ((a!= null) && (l!= null) && (e!=null) && (((p!=null) && (p2!=null)) || ((p3!=null) && (p4!=null)))) {
 
             //sounds random generator
             Random generate = new Random();

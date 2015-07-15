@@ -180,7 +180,7 @@ public class blueberry extends Activity implements View.OnTouchListener, View.On
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((l!= null) && (l!= null) && (u!=null) && ((b1!=null && b2!=null) || (b3!=null && b4!=null)) && ((e1!=null && e2!=null) || (e3!=null && e4!=null)) && ((r1!=null && r2!=null) || (r3!=null && r4!=null))) {
+        if ((l!= null) && (u!= null) && (y!=null) && (((b1!=null) && (b2!=null)) || ((b3!=null) && (b4!=null))) && (((e1!=null) && (e2!=null)) || ((e3!=null) && (e4!=null))) && (((r1!=null) && (r2!=null)) || ((r3!=null) && (r4!=null)))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;

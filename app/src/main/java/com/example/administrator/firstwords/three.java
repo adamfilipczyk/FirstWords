@@ -143,7 +143,7 @@ public class three extends Activity implements View.OnTouchListener, View.OnDrag
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((t != null) && (h != null) && (r != null) && ((e1 != null && e2 != null) || (e3 != null && e4 != null))) {
+        if ((t != null) && (h != null) && (r != null) && (((e1 != null) && (e2 != null)) || ((e3 != null) && (e4 != null)))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;

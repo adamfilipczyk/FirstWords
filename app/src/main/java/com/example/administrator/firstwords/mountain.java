@@ -159,7 +159,7 @@ public class mountain extends Activity implements View.OnTouchListener, View.OnD
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((m!= null) && (o!= null) && (u!= null) && (t!= null) && (a!= null) && (i!= null) && ((n1!=null && n2!=null) || (n3!=null && n4!=null))) {
+        if ((m!= null) && (o!= null) && (u!= null) && (t!= null) && (a!= null) && (i!= null) && (((n1!=null) && (n2!=null)) || ((n3!=null) && (n4!=null)))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;

@@ -154,7 +154,7 @@ public class window extends Activity implements View.OnTouchListener, View.OnDra
 
 
 
-        if ((i!= null) && (n!= null) && (d!=null ) && (o!=null ) && ((w1!=null && w2!=null) || (w3!=null && w4!=null))) {
+        if ((i!= null) && (n!= null) && (d!=null ) && (o!=null ) && (((w1!=null) && (w2!=null)) || ((w3!=null) && (w4!=null)))) {
             SharedPreferences sharedPreferences = getSharedPreferences("Save", Context.MODE_PRIVATE);
             String cat = sharedPreferences.getString("category", "");
             int toInt = Integer.parseInt(cat);

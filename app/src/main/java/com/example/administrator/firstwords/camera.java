@@ -138,7 +138,7 @@ public class camera extends Activity implements View.OnTouchListener, View.OnDra
 
 
 
-        if ((c!= null) && (m!= null) && (e!=null) && (r!= null) && (e!= null) && ((a1!=null && a2!=null) || (a3!=null && a4!=null))) {
+        if ((c!= null) && (m!= null) && (e!=null) && (r!= null) && (((a1!=null) && (a2!=null)) || ((a3!=null) && (a4!=null)))) {
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
             correct3 = MediaPlayer.create(this, R.raw.didit);

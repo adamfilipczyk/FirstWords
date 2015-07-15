@@ -158,7 +158,7 @@ public class toaster extends Activity implements View.OnTouchListener, View.OnDr
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
 
-        if ((o!= null) && (a!= null) && (s!=null) && (e!=null) &&  (r!= null) && ((t1!=null && t2!=null) || (t3!=null && t4!=null))) {
+        if ((o!= null) && (a!= null) && (s!=null) && (e!=null) &&  (r!= null) && (((t1!=null) && (t2!=null)) || ((t3!=null) && (t4!=null)))) {
             SharedPreferences sharedPreferences = getSharedPreferences("Save", Context.MODE_PRIVATE);
             String cat = sharedPreferences.getString("category", "");
             int toInt = Integer.parseInt(cat);

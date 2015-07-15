@@ -162,7 +162,7 @@ public class cucumber extends Activity implements View.OnTouchListener, View.OnD
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((m!= null) && (b!= null) && (e!=null) && (r!=null) && ((c1!=null && c2!=null) || (c3!=null && c4!=null)) && ((u1!=null && u2!=null) || (u3!=null && u4!=null))) {
+        if ((m!= null) && (b!= null) && (e!=null) && (r!=null) && (((c1!=null) && (c2!=null)) || ((c3!=null) && (c4!=null))) && (((u1!=null) && (u2!=null)) || ((u3!=null) && (u4!=null)))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;

@@ -158,7 +158,7 @@ public class teacher  extends Activity implements View.OnTouchListener, View.OnD
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((t!= null) && (a!= null) && (c!= null) && (h!= null) && (r!= null) && ((e1!=null && e2!=null) || (e3!=null && e4!=null))) {
+        if ((t!= null) && (a!= null) && (c!= null) && (h!= null) && (r!= null) && (((e1!=null) && (e2!=null)) || ((e3!=null) && (e4!=null)))) {
 
             SharedPreferences sharedPreferences = getSharedPreferences("Save", Context.MODE_PRIVATE);
             String cat = sharedPreferences.getString("category", "");

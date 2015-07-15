@@ -141,7 +141,7 @@ public class computer extends Activity implements View.OnTouchListener, View.OnD
 
 
 
-        if ((c!= null) && (o!= null) && (m!=null) && (p!= null) && (u!= null) && (t!=null) && (e!= null) && (r!= null) ) {
+        if ((c!= null) && (o!= null) && (m!=null) && (p!= null) && (u!= null) && (t!=null) && (e!= null) && (r!= null)) {
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
             correct3 = MediaPlayer.create(this, R.raw.didit);

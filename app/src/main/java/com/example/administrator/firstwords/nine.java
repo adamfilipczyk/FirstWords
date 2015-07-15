@@ -137,7 +137,7 @@ public class nine  extends Activity implements View.OnTouchListener, View.OnDrag
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((e != null) && (i != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null))) {
+        if ((e != null) && (i != null) && (((n1 != null) && (n2 != null)) || ((n3 != null) && (n4 != null)))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;

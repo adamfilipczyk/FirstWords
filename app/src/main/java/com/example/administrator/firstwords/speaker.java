@@ -143,7 +143,7 @@ public class speaker extends Activity implements View.OnTouchListener, View.OnDr
 
 
 
-        if ((s!= null) && (p!= null) && (a!=null) && (k!=null) &&  (r!= null) && ((e1!=null && e2!=null) || (e3!=null && e4!=null))) {
+        if ((s!= null) && (p!= null) && (a!=null) && (k!=null) &&  (r!= null) && (((e1!=null) && (e2!=null)) || ((e3!=null) && (e4!=null)))) {
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
             correct3 = MediaPlayer.create(this, R.raw.didit);

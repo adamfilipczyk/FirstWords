@@ -150,7 +150,7 @@ public class cactus extends Activity implements View.OnTouchListener, View.OnDra
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((a!= null) && (t!= null) && (u!= null) && (s!= null) && ((c1!=null && c2!=null) || (c3!=null && c4!=null))) {
+        if ((a!= null) && (t!= null) && (u!= null) && (s!= null) && (((c1!=null) && (c2!=null)) || ((c3!=null) && (c4!=null)))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;

@@ -152,7 +152,7 @@ public class january extends Activity implements View.OnTouchListener, View.OnDr
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((j != null) && (n != null) && (u != null) && (r != null) && (y != null) && ((a1 != null && a2 != null) || (a3 != null && a4 != null))) {
+        if ((j != null) && (n != null) && (u != null) && (r != null) && (y != null) && (((a1 != null) && (a2 != null)) || ((a3 != null) && (a4 != null)))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;

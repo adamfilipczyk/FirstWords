@@ -221,25 +221,25 @@ public class september  extends Activity implements View.OnTouchListener, View.O
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
         //redirection to the methods if the letters are properly ordered
-        if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && (e1!= null && e2!= null && e3!= null)){
+        if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && ((e1!= null) && (e2!= null) && (e3!= null))){
             approved();
         }
-        else if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && (e4!= null && e5!= null && e6!= null)){
+        else if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && ((e4!= null) && (e5!= null) && (e6!= null))){
             approved();
         }
-        else if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && (e7!= null && e8!= null && e9!= null)){
+        else if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && ((e7!= null) && (e8!= null) && (e9!= null))){
             approved();
         }
-        else if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && (e10!= null && e11!= null && e12!= null)){
+        else if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && ((e10!= null) && (e11!= null) && (e12!= null))){
             approved();
         }
-        else if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && (e13!= null && e14!= null && e15!= null)){
+        else if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && ((e13!= null) && (e14!= null) && (e15!= null))){
             approved();
         }
-        else if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && (e16!= null && e17!= null && e18!= null)){
+        else if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && ((e16!= null) && (e17!= null) && (e18!= null))){
             approved();
         }
-        else if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && (e19!= null && e20!= null && e21!= null)){
+        else if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && ((e19!= null) && (e20!= null) && (e21!= null))){
             approved();
         }
         else {

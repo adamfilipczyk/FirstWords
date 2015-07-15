@@ -135,7 +135,7 @@ public class hippo extends Activity implements OnTouchListener, OnDragListener  
 
 
 
-        if ((h!= null) && (i!= null) && ((p!=null && p2!=null) || (p3!=null && p4!=null)) && (o!=null)) {
+        if ((h!= null) && (i!= null) && (((p!=null) && (p2!=null)) || ((p3!=null) && (p4!=null))) && (o!=null)) {
             approved();
         }
         else {

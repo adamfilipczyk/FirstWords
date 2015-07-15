@@ -137,7 +137,7 @@ public class socks extends Activity implements View.OnTouchListener, View.OnDrag
         ImageView s4 = (ImageView) b_s4.findViewById(R.id.socks_s);
 
 
-        if ((o!= null) && (c!=null) && (k!= null) && ((s1!=null && s2!=null) || (s3!=null && s4!=null))) {
+        if ((o!= null) && (c!=null) && (k!= null) && (((s1!=null) && (s2!=null)) || ((s3!=null) && (s4!=null)))) {
 
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);

@@ -139,7 +139,7 @@ public class moon extends Activity implements View.OnTouchListener, View.OnDragL
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((m!= null) && (n!= null) && ((o1!=null && o2!=null) || (o3!=null && o4!=null))) {
+        if ((m!= null) && (n!= null) && (((o1!=null) && (o2!=null)) || ((o3!=null) && (o4!=null)))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;

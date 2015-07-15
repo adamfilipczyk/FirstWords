@@ -151,7 +151,7 @@ public class october  extends Activity implements View.OnTouchListener, View.OnD
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((c != null) && (t != null) && (b != null) && (e != null) && (r != null) && ((o1!=null && o2!=null) || (o3!=null && o4!=null))) {
+        if ((c != null) && (t != null) && (b != null) && (e != null) && (r != null) && (((o1!=null) && (o2!=null)) || ((o3!=null) && (o4!=null)))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;

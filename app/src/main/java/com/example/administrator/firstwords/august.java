@@ -144,7 +144,7 @@ public class august  extends Activity implements View.OnTouchListener, View.OnDr
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((a != null) && (g != null) && (s != null) && (t != null) && ((u1!=null && u2!=null) || (u3!=null && u4!=null))) {
+        if ((a != null) && (g != null) && (s != null) && (t != null) && (((u1!=null) && (u2!=null)) || ((u3!=null) && (u4!=null)))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;

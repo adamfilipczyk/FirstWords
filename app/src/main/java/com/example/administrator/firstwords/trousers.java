@@ -156,7 +156,7 @@ public class trousers extends Activity implements View.OnTouchListener, View.OnD
         LinearLayout b_s4 = (LinearLayout)findViewById(R.id.bottom_s2);
         ImageView s4 = (ImageView) b_s4.findViewById(R.id.trousers_s);
 
-        if ((t!= null) && (o!= null) && (u!=null) && (e!= null) && ((s1!=null && s2!=null) || (s3!=null && s4!=null)) && ((r1!=null && r2!=null) || (r3!=null && r4!=null))) {
+        if ((t!= null) && (o!= null) && (u!=null) && (e!= null) && (((s1!=null) && (s2!=null)) || ((s3!=null) && (s4!=null))) && (((r1!=null) && (r2!=null)) || ((r3!=null) && (r4!=null)))) {
 
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);

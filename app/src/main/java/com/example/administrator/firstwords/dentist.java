@@ -154,7 +154,7 @@ public class dentist extends Activity implements View.OnTouchListener, View.OnDr
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((d!= null) && (e!= null) && (n!= null) && (i!= null) && (s!= null) && ((t1!=null && t2!=null) || (t3!=null && t4!=null))) {
+        if ((d!= null) && (e!= null) && (n!= null) && (i!= null) && (s!= null) && (((t1!=null) && (t2!=null)) || ((t3!=null) && (t4!=null)))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;

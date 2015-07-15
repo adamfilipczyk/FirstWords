@@ -139,7 +139,7 @@ public class rabbit extends Activity implements OnTouchListener, OnDragListener 
         ImageView b4 = (ImageView) b_b4.findViewById(R.id.rabbit_b);
 
 
-        if ((r!= null) && (a!= null) && (i!=null) && (t!= null) && ((b!= null && b2!=null) || (b3!=null && b4!=null))) {
+        if ((r!= null) && (a!= null) && (i!=null) && (t!= null) && (((b!= null) && (b2!=null)) || ((b3!=null) && (b4!=null)))) {
             approved();
         }
         else {

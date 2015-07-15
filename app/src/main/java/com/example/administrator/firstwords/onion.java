@@ -151,7 +151,7 @@ public class onion extends Activity implements View.OnTouchListener, View.OnDrag
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((i!= null) && ((n1!=null && n2!=null) || (n3!=null && n4!=null)) && ((o1!=null && o2!=null) || (o3!=null && o4!=null))) {
+        if ((i!= null) && (((n1!=null) && (n2!=null)) || ((n3!=null) && (n4!=null))) && (((o1!=null) && (o2!=null)) || ((o3!=null) && (o4!=null)))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;

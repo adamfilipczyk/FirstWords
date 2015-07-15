@@ -141,7 +141,7 @@ public class door extends Activity implements View.OnTouchListener, View.OnDragL
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((d!= null) && (r!= null) && ((o1!=null && o2!=null) || (o3!=null && o4!=null))) {
+        if ((d!= null) && (r!= null) && (((o1!=null) && (o2!=null)) || ((o3!=null) && (o4!=null)))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;

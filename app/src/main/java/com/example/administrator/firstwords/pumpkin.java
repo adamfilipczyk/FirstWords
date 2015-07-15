@@ -151,7 +151,7 @@ public class pumpkin extends Activity implements View.OnTouchListener, View.OnDr
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((u != null) && (m != null) && (k != null) && (i != null) && (n != null) && ((p1 != null && p2 != null) || (p3 != null && p4 != null))) {
+        if ((u != null) && (m != null) && (k != null) && (i != null) && (n != null) && (((p1 != null) && (p2 != null)) || ((p3 != null) && (p4 != null)))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;

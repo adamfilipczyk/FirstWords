@@ -149,7 +149,7 @@ public class elephant extends Activity implements OnTouchListener, OnDragListene
         LinearLayout b_t = (LinearLayout)findViewById(R.id.bottom_t);
         ImageView t = (ImageView) b_t.findViewById(R.id.elephant_t);
 
-        if (((e!= null && e2!=null) || (e3!= null && e4!=null)) && (l!=null) && (p!= null) && (h!= null) && (a!=null) && (n!= null) && (t!=null)) {
+        if ((((e!= null) && (e2!=null)) || ((e3!= null) && (e4!=null))) && (l!=null) && (p!= null) && (h!= null) && (a!=null) && (n!= null) && (t!=null)) {
             approved();
         }
         else {

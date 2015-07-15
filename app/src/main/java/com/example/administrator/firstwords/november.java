@@ -154,7 +154,7 @@ public class november  extends Activity implements View.OnTouchListener, View.On
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((n != null) && (o != null) && (v != null) && (b != null) && (r != null) && ((e1!=null && e2!=null) || (e3!=null && e4!=null))) {
+        if ((n != null) && (o != null) && (v != null) && (b != null) && (r != null) && (((e1!=null) && (e2!=null)) || ((e3!=null) && (e4!=null)))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;

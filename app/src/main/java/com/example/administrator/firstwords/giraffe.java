@@ -144,7 +144,7 @@ public class giraffe extends Activity implements OnTouchListener, OnDragListener
         ImageView f4 = (ImageView) b_f4.findViewById(R.id.giraffe_f);
 
 
-        if ((g!= null) && (i!= null) && (r!=null) && (a!= null) && ((f!= null && f2!=null) || (f3!=null && f4!=null)) && (e!= null)) {
+        if ((g!= null) && (i!= null) && (r!=null) && (a!= null) && (((f!= null) && (f2!=null)) || ((f3!=null) && (f4!=null))) && (e!= null)) {
             approved();
         }
         else {

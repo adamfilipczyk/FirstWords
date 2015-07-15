@@ -136,80 +136,80 @@ public class telephone extends Activity implements View.OnTouchListener, View.On
 
         //e1------------------------------------------------------------
 
-        LinearLayout b_a1 = (LinearLayout) findViewById(R.id.bottom_e);
-        ImageView a1 = (ImageView) b_a1.findViewById(R.id.telephone_e);
+        LinearLayout b_e1 = (LinearLayout) findViewById(R.id.bottom_e);
+        ImageView e1 = (ImageView) b_e1.findViewById(R.id.telephone_e);
 
-        LinearLayout b_a2 = (LinearLayout) findViewById(R.id.bottom_e2);
-        ImageView a2 = (ImageView) b_a2.findViewById(R.id.telephone_e2);
+        LinearLayout b_e2 = (LinearLayout) findViewById(R.id.bottom_e2);
+        ImageView e2 = (ImageView) b_e2.findViewById(R.id.telephone_e2);
 
-        LinearLayout b_a3 = (LinearLayout) findViewById(R.id.bottom_e3);
-        ImageView a3 = (ImageView) b_a3.findViewById(R.id.telephone_e3);
+        LinearLayout b_e3 = (LinearLayout) findViewById(R.id.bottom_e3);
+        ImageView e3 = (ImageView) b_e3.findViewById(R.id.telephone_e3);
 
         //e2-------------------------------------------------------------
 
-        LinearLayout b_a4 = (LinearLayout) findViewById(R.id.bottom_e2);
-        ImageView a4 = (ImageView) b_a4.findViewById(R.id.telephone_e);
+        LinearLayout b_e4 = (LinearLayout) findViewById(R.id.bottom_e2);
+        ImageView e4 = (ImageView) b_e4.findViewById(R.id.telephone_e);
 
-        LinearLayout b_a5 = (LinearLayout) findViewById(R.id.bottom_e3);
-        ImageView a5 = (ImageView) b_a5.findViewById(R.id.telephone_e2);
+        LinearLayout b_e5 = (LinearLayout) findViewById(R.id.bottom_e3);
+        ImageView e5 = (ImageView) b_e5.findViewById(R.id.telephone_e2);
 
-        LinearLayout b_a6 = (LinearLayout) findViewById(R.id.bottom_e);
-        ImageView a6 = (ImageView) b_a6.findViewById(R.id.telephone_e3);
+        LinearLayout b_e6 = (LinearLayout) findViewById(R.id.bottom_e);
+        ImageView e6 = (ImageView) b_e6.findViewById(R.id.telephone_e3);
 
         //e3-------------------------------------------------------------
 
-        LinearLayout b_a7 = (LinearLayout) findViewById(R.id.bottom_e3);
-        ImageView a7 = (ImageView) b_a7.findViewById(R.id.telephone_e);
+        LinearLayout b_e7 = (LinearLayout) findViewById(R.id.bottom_e3);
+        ImageView e7 = (ImageView) b_e7.findViewById(R.id.telephone_e);
 
-        LinearLayout b_a8 = (LinearLayout) findViewById(R.id.bottom_e);
-        ImageView a8 = (ImageView) b_a8.findViewById(R.id.telephone_e2);
+        LinearLayout b_e8 = (LinearLayout) findViewById(R.id.bottom_e);
+        ImageView e8 = (ImageView) b_e8.findViewById(R.id.telephone_e2);
 
-        LinearLayout b_a9 = (LinearLayout) findViewById(R.id.bottom_e2);
-        ImageView a9 = (ImageView) b_a9.findViewById(R.id.telephone_e3);
+        LinearLayout b_e9 = (LinearLayout) findViewById(R.id.bottom_e2);
+        ImageView e9 = (ImageView) b_e9.findViewById(R.id.telephone_e3);
 
         //e4-------------------------------------------------------------
 
-        LinearLayout b_a10 = (LinearLayout) findViewById(R.id.bottom_e);
-        ImageView a10 = (ImageView) b_a10.findViewById(R.id.telephone_e);
+        LinearLayout b_e10 = (LinearLayout) findViewById(R.id.bottom_e);
+        ImageView e10 = (ImageView) b_e10.findViewById(R.id.telephone_e);
 
-        LinearLayout b_a11 = (LinearLayout) findViewById(R.id.bottom_e2);
-        ImageView a11 = (ImageView) b_a11.findViewById(R.id.telephone_e2);
+        LinearLayout b_e11 = (LinearLayout) findViewById(R.id.bottom_e2);
+        ImageView e11 = (ImageView) b_e11.findViewById(R.id.telephone_e2);
 
-        LinearLayout b_a12 = (LinearLayout) findViewById(R.id.bottom_e3);
-        ImageView a12 = (ImageView) b_a12.findViewById(R.id.telephone_e3);
+        LinearLayout b_e12 = (LinearLayout) findViewById(R.id.bottom_e3);
+        ImageView e12 = (ImageView) b_e12.findViewById(R.id.telephone_e3);
 
         //e5-------------------------------------------------------------
 
-        LinearLayout b_a13 = (LinearLayout) findViewById(R.id.bottom_e);
-        ImageView a13 = (ImageView) b_a13.findViewById(R.id.telephone_e3);
+        LinearLayout b_e13 = (LinearLayout) findViewById(R.id.bottom_e);
+        ImageView e13 = (ImageView) b_e13.findViewById(R.id.telephone_e3);
 
-        LinearLayout b_a14 = (LinearLayout) findViewById(R.id.bottom_e2);
-        ImageView a14 = (ImageView) b_a14.findViewById(R.id.telephone_e2);
+        LinearLayout b_e14 = (LinearLayout) findViewById(R.id.bottom_e2);
+        ImageView e14 = (ImageView) b_e14.findViewById(R.id.telephone_e2);
 
-        LinearLayout b_a15 = (LinearLayout) findViewById(R.id.bottom_e3);
-        ImageView a15 = (ImageView) b_a15.findViewById(R.id.telephone_e);
+        LinearLayout b_e15 = (LinearLayout) findViewById(R.id.bottom_e3);
+        ImageView e15 = (ImageView) b_e15.findViewById(R.id.telephone_e);
 
         //e6-------------------------------------------------------------
 
-        LinearLayout b_a16 = (LinearLayout) findViewById(R.id.bottom_e);
-        ImageView a16 = (ImageView) b_a16.findViewById(R.id.telephone_e2);
+        LinearLayout b_e16 = (LinearLayout) findViewById(R.id.bottom_e);
+        ImageView e16 = (ImageView) b_e16.findViewById(R.id.telephone_e2);
 
-        LinearLayout b_a17 = (LinearLayout) findViewById(R.id.bottom_e2);
-        ImageView a17 = (ImageView) b_a17.findViewById(R.id.telephone_e);
+        LinearLayout b_e17 = (LinearLayout) findViewById(R.id.bottom_e2);
+        ImageView e17 = (ImageView) b_e17.findViewById(R.id.telephone_e);
 
-        LinearLayout b_a18 = (LinearLayout) findViewById(R.id.bottom_e3);
-        ImageView a18 = (ImageView) b_a18.findViewById(R.id.telephone_e3);
+        LinearLayout b_e18 = (LinearLayout) findViewById(R.id.bottom_e3);
+        ImageView e18 = (ImageView) b_e18.findViewById(R.id.telephone_e3);
 
         //a7-------------------------------------------------------------
 
-        LinearLayout b_a19 = (LinearLayout) findViewById(R.id.bottom_e);
-        ImageView a19 = (ImageView) b_a19.findViewById(R.id.telephone_e);
+        LinearLayout b_e19 = (LinearLayout) findViewById(R.id.bottom_e);
+        ImageView e19 = (ImageView) b_e19.findViewById(R.id.telephone_e);
 
-        LinearLayout b_a20 = (LinearLayout) findViewById(R.id.bottom_e3);
-        ImageView a20 = (ImageView) b_a20.findViewById(R.id.telephone_e2);
+        LinearLayout b_e20 = (LinearLayout) findViewById(R.id.bottom_e3);
+        ImageView e20 = (ImageView) b_e20.findViewById(R.id.telephone_e2);
 
-        LinearLayout b_a21 = (LinearLayout) findViewById(R.id.bottom_e2);
-        ImageView a21 = (ImageView) b_a21.findViewById(R.id.telephone_e3);
+        LinearLayout b_e21 = (LinearLayout) findViewById(R.id.bottom_e2);
+        ImageView e21 = (ImageView) b_e21.findViewById(R.id.telephone_e3);
 
 
 //approval / disapproval sounds
@@ -223,25 +223,25 @@ public class telephone extends Activity implements View.OnTouchListener, View.On
 
 
         //redirection to the methods if the letters are properly ordered
-        if ((t != null) && (l != null) && (p != null)&& (h != null) && (o != null) && (a1!= null && a2!= null && a3!= null)){
+        if ((t != null) && (l != null) && (p != null)&& (h != null) && (o != null) && ((e1!= null) && (e2!= null) && (e3!= null))){
             approved();
         }
-        else if ((t != null) && (l != null) && (p != null)&& (h != null) && (o != null) && (a4!= null && a5!= null && a6!= null)){
+        else if ((t != null) && (l != null) && (p != null)&& (h != null) && (o != null) && ((e4!= null) && (e5!= null) && (e6!= null))){
             approved();
         }
-        else if ((t != null) && (l != null) && (p != null)&& (h != null) && (o != null) && (a7!= null && a8!= null && a9!= null)){
+        else if ((t != null) && (l != null) && (p != null)&& (h != null) && (o != null) && ((e7!= null) && (e8!= null) && (e9!= null))) {
             approved();
         }
-        else if ((t != null) && (l != null) && (p != null)&& (h != null) && (o != null) && (a10!= null && a11!= null && a12!= null)){
+        else if ((t != null) && (l != null) && (p != null)&& (h != null) && (o != null) && ((e10!= null) && (e11!= null) && (e12!= null))){
             approved();
         }
-        else if ((t != null) && (l != null) && (p != null)&& (h != null) && (o != null) && (a13!= null && a14!= null && a15!= null)){
+        else if ((t != null) && (l != null) && (p != null)&& (h != null) && (o != null) && ((e13!= null) && (e14!= null) && (e15!= null))){
             approved();
         }
-        else if ((t != null) && (l != null) && (p != null)&& (h != null) && (o != null) && (a16!= null && a17!= null && a18!= null)){
+        else if ((t != null) && (l != null) && (p != null)&& (h != null) && (o != null) && ((e16!= null) && (e17!= null) && (e18!= null))){
             approved();
         }
-        else if ((t != null) && (l != null) && (p != null)&& (h != null) && (o != null) && (a19!= null && a20!= null && a21!= null)){
+        else if ((t != null) && (l != null) && (p != null)&& (h != null) && (o != null) && ((e19!= null) && (e20!= null) && (e21!= null))){
             approved();
         }
         else {

@@ -138,7 +138,7 @@ public class cooker extends Activity implements View.OnTouchListener, View.OnDra
 
 
 
-        if ((c!= null) && (k!= null) && (e!=null) && (r!= null) && ((o1!=null && o2!=null) || (o3!=null && o4!=null))) {
+        if ((c!= null) && (k!= null) && (e!=null) && (r!= null) && (((o1!=null) && (o2!=null)) || ((o3!=null) && (o4!=null)))) {
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
             correct3 = MediaPlayer.create(this, R.raw.didit);

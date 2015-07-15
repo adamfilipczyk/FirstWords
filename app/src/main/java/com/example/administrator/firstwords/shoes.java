@@ -132,7 +132,7 @@ public class shoes extends Activity implements View.OnTouchListener, View.OnDrag
         LinearLayout b_s4 = (LinearLayout)findViewById(R.id.bottom_s2);
         ImageView s4 = (ImageView) b_s4.findViewById(R.id.shoes_s);
 
-        if ((h!= null) && (o!= null) && (e!=null) && ((s1!=null && s2!=null) || (s3!=null && s4!=null))) {
+        if ((h!= null) && (o!= null) && (e!=null) && (((s1!=null) && (s2!=null)) || ((s3!=null) && (s4!=null)))) {
 
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);

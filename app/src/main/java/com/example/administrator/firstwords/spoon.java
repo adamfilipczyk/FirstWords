@@ -134,7 +134,7 @@ public class spoon extends Activity implements View.OnTouchListener, View.OnDrag
 
 
 
-        if ((s!= null) && (p!= null) && (n!=null ) && ((o1!=null && o2!=null) || (o3!=null && o4!=null))) {
+        if ((s!= null) && (p!= null) && (n!=null ) && (((o1!=null) && (o2!=null)) || ((o3!=null) && (o4!=null)))) {
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
             correct3 = MediaPlayer.create(this, R.raw.didit);

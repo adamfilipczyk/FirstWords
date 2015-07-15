@@ -149,7 +149,7 @@ public class wardrobe extends Activity implements View.OnTouchListener, View.OnD
 
 
 
-        if ((w!= null) && (a!= null) && (d!=null ) && (o!= null) && (b!= null) && (e!=null ) && ((r1!=null && r2!=null) || (r3!=null && r4!=null))) {
+        if ((w!= null) && (a!= null) && (d!=null ) && (o!= null) && (b!= null) && (e!=null ) && (((r1!=null) && (r2!=null)) || ((r3!=null) && (r4!=null)))) {
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
             correct3 = MediaPlayer.create(this, R.raw.didit);

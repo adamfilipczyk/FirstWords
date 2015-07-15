@@ -134,7 +134,7 @@ public class drill extends Activity implements View.OnTouchListener, View.OnDrag
 
 
 
-        if ((d!= null) && (r!= null) && (i!=null) && ((l1!=null && l2!=null) || (l3!=null && l4!=null))) {
+        if ((d!= null) && (r!= null) && (i!=null) && (((l1!=null) && (l2!=null)) || ((l3!=null) && (l4!=null)))) {
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
             correct3 = MediaPlayer.create(this, R.raw.didit);

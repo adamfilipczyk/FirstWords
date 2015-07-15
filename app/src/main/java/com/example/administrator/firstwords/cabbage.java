@@ -161,7 +161,7 @@ public class cabbage extends Activity implements View.OnTouchListener, View.OnDr
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((c != null) && (g != null) && (e != null) && ((b1 != null && b2 != null) || (b3 != null && b4 != null)) && ((a1 != null && a2 != null) || (a3 != null && a4 != null))) {
+        if ((c != null) && (g != null) && (e != null) && (((b1 != null) && (b2 != null)) || ((b3 != null) && (b4 != null))) && (((a1 != null) && (a2 != null)) || ((a3 != null) && (a4 != null)))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;

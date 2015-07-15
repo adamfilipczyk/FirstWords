@@ -141,7 +141,7 @@ public class shorts extends Activity implements View.OnTouchListener, View.OnDra
         ImageView s4 = (ImageView) b_s4.findViewById(R.id.shorts_s);
 
 
-        if ((h!= null) && (o!=null) && (r!= null) && (t!= null) && ((s1!=null && s2!=null) || (s3!=null && s4!=null))) {
+        if ((h!= null) && (o!=null) && (r!= null) && (t!= null) && (((s1!=null) && (s2!=null)) || ((s3!=null) && (s4!=null)))) {
 
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);

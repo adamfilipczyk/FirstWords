@@ -126,7 +126,7 @@ public class tiger extends Activity implements OnTouchListener, OnDragListener {
         ImageView r = (ImageView) b_r.findViewById(R.id.tiger_r);
 
 
-        if ((r!= null) && (g!= null) && (i!=null) && (t!= null) && (e!= null)) {
+        if ((t!= null) && (i!= null) && (g!=null) && (e!= null) && (r!= null)) {
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
             correct3 = MediaPlayer.create(this, R.raw.didit);

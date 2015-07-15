@@ -156,7 +156,7 @@ public class february  extends Activity implements View.OnTouchListener, View.On
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((f != null) && (e != null) && (b != null) && (u != null) && (a != null) && (y != null) && ((r1 != null && r2 != null) || (r3 != null && r4 != null))) {
+        if ((f != null) && (e != null) && (b != null) && (u != null) && (a != null) && (y != null) && (((r1 != null) && (r2 != null)) || ((r3 != null) && (r4 != null)))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;

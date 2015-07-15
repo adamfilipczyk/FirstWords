@@ -89,8 +89,10 @@ public class march  extends Activity implements View.OnTouchListener, View.OnDra
             target.addView(view);
             view.setVisibility(View.VISIBLE);
         }
-        return true;
+
+            return true;
     }
+
 
     //set object movement
     @Override

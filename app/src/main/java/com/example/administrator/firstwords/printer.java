@@ -144,7 +144,7 @@ public class printer extends Activity implements View.OnTouchListener, View.OnDr
 
 
 
-        if ((p!= null) && (i!= null) && (n!=null) && (t!= null) && (e!= null)&& ((r1!=null && r2!=null) || (r3!=null && r4!=null))) {
+        if ((p!= null) && (i!= null) && (n!=null) && (t!= null) && (e!= null)&& (((r1!=null) && (r2!=null)) || ((r3!=null) && (r4!=null)))) {
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
             correct3 = MediaPlayer.create(this, R.raw.didit);

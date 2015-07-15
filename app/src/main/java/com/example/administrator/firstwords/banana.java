@@ -209,25 +209,25 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
 
 
         //redirection to the methods if the letters are properly ordered
-        if ((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a1!= null && a2!= null && a3!= null)){
+        if ((b != null) && (((n1 != null) && (n2 != null)) || ((n3 != null) && (n4 != null))) && ((a1!= null) && (a2!= null) && (a3!= null))){
             approved();
         }
-        else if ((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a4!= null && a5!= null && a6!= null)){
+        else if ((b != null) && (((n1 != null) && (n2 != null)) || ((n3 != null) && (n4 != null))) && (a4!= null && a5!= null && a6!= null)){
             approved();
         }
-        else if ((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a7!= null && a8!= null && a9!= null)){
+        else if ((b != null) && (((n1 != null) && (n2 != null)) || ((n3 != null) && (n4 != null))) && ((a7!= null) && (a8!= null) && (a9!= null))){
             approved();
         }
-        else if ((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a10!= null && a11!= null && a12!= null)){
+        else if ((b != null) && (((n1 != null) && (n2 != null)) || ((n3 != null) && (n4 != null))) && ((a10!= null) && (a11!= null) && (a12!= null))){
             approved();
         }
-        else if ((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a13!= null && a14!= null && a15!= null)){
+        else if ((b != null) && (((n1 != null) && (n2 != null)) || ((n3 != null) && (n4 != null))) && ((a13!= null) && (a14!= null) && (a15!= null))){
             approved();
         }
-        else if ((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a16!= null && a17!= null && a18!= null)){
+        else if ((b != null) && (((n1 != null) && (n2 != null)) || ((n3 != null) && (n4 != null))) && ((a16!= null) && (a17!= null) && (a18!= null))){
             approved();
         }
-        else if ((b != null) && ((n1 != null && n2 != null) || (n3 != null && n4 != null)) && (a19!= null && a20!= null && a21!= null)){
+        else if ((b != null) && (((n1 != null) && (n2 != null)) || ((n3 != null) && (n4 != null))) && ((a19!= null) && (a20!= null) && (a21!= null))){
             approved();
         }
         else {

@@ -140,7 +140,7 @@ public class stairs extends Activity implements View.OnTouchListener, View.OnDra
 
 
 
-        if ((t!= null) && (a!= null) && (i!=null ) && (r!=null ) && ((s1!=null && s2!=null) || (s3!=null && s4!=null))) {
+        if ((t!= null) && (a!= null) && (i!=null ) && (r!=null ) && (((s1!=null) && (s2!=null)) || ((s3!=null) && (s4!=null)))) {
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
             correct3 = MediaPlayer.create(this, R.raw.didit);

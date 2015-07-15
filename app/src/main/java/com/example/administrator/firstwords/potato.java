@@ -155,7 +155,7 @@ public class potato extends Activity implements View.OnTouchListener, View.OnDra
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((p != null) && (a != null)&& ((o1 != null && o2 != null) || (o3 != null && o4 != null)) && ((t1 != null && t2 != null) || (t3 != null && t4 != null))) {
+        if ((p != null) && (a != null)&& (((o1 != null) && (o2 != null)) || ((o3 != null) && (o4 != null))) && (((t1 != null) && (t2 != null)) || ((t3 != null) && (t4 != null)))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;

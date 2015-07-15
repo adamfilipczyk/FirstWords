@@ -156,7 +156,7 @@ public class tshirt extends Activity implements View.OnTouchListener, View.OnDra
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((s!= null) && (h!=null) && (i!= null) && (r!=null) && (hy!= null) && ((t1!=null && t2!=null) || (t3!=null && t4!=null))) {
+        if ((s!= null) && (h!=null) && (i!= null) && (r!=null) && (hy!= null) && (((t1!=null) && (t2!=null)) || ((t3!=null) && (t4!=null)))) {
 
             SharedPreferences sharedPreferences = getSharedPreferences("Save", Context.MODE_PRIVATE);
             String cat = sharedPreferences.getString("category", "");

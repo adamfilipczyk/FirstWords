@@ -174,7 +174,7 @@ public class waterfall extends Activity implements View.OnTouchListener, View.On
 
 
 
-        if ((w!= null) && (t!= null) && (e!= null) && (r!= null) && (f!= null) && ((a1!=null && a2!=null) || (a3!=null && a4!=null)) &&  ((l1!=null && l2!=null) || (l3!=null && l4!=null))) {
+        if ((w!= null) && (t!= null) && (e!= null) && (r!= null) && (f!= null) && (((a1!=null) && (a2!=null)) || ((a3!=null) && (a4!=null))) &&  (((l1!=null) && (l2!=null)) || ((l3!=null) && (l4!=null)))) {
 
             SharedPreferences sharedPreferences = getSharedPreferences("Save", Context.MODE_PRIVATE);
             String cat = sharedPreferences.getString("category", "");
