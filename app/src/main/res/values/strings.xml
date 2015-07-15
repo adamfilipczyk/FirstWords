@@ -117,6 +117,18 @@
     <string name="title_activity_ten">ten</string>
     <string name="title_activity_categories9">categories9</string>
     <string name="title_activity_blacsksmith">blacsksmith</string>
+    <string name="title_activity_chief">chief</string>
+    <string name="title_activity_dentist">dentist</string>
+    <string name="title_activity_doctor">doctor</string>
+    <string name="title_activity_farmer">farmer</string>
+    <string name="title_activity_fireman">fireman</string>
+    <string name="title_activity_judge">judge</string>
+    <string name="title_activity_nurse">nurse</string>
+    <string name="title_activity_painter">painter</string>
+    <string name="title_activity_pilot">pilot</string>
+    <string name="title_activity_soldier">soldier</string>
+    <string name="title_activity_teacher">teacher</string>
+    <string name="title_activity_categories10">categories10</string>
 
 
 
