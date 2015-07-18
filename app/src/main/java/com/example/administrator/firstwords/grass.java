@@ -86,6 +86,7 @@ public class grass extends Activity implements View.OnTouchListener, View.OnDrag
             View view = (View) event.getLocalState();
             ViewGroup group = (ViewGroup) view.getParent();
             group.removeView(view);
+            view.invalidate();
             LinearLayout target = (LinearLayout) v;
             target.addView(view);
             view.setVisibility(View.VISIBLE);
@@ -99,7 +100,7 @@ public class grass extends Activity implements View.OnTouchListener, View.OnDrag
         if (event.getAction() == MotionEvent.ACTION_DOWN){
             View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
             v.startDrag(null, shadowBuilder, v, 0);
-            v.setVisibility(View.INVISIBLE);
+            v.invalidate();
             return true;
         }
         else {

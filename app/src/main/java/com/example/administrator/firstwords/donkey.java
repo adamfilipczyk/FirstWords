@@ -88,6 +88,7 @@ public class donkey extends Activity implements OnTouchListener, OnDragListener 
             View view = (View) event.getLocalState();
             ViewGroup group = (ViewGroup) view.getParent();
             group.removeView(view);
+            view.invalidate();
             LinearLayout target = (LinearLayout) v;
             target.addView(view);
             view.setVisibility(View.VISIBLE);
@@ -99,9 +100,9 @@ public class donkey extends Activity implements OnTouchListener, OnDragListener 
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_DOWN){
-            DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
+            View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
             v.startDrag(null, shadowBuilder, v, 0);
-            v.setVisibility(View.INVISIBLE);
+            v.invalidate();
             return true;
         }
         else {

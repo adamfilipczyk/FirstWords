@@ -81,13 +81,14 @@ public class carrot extends Activity implements View.OnTouchListener, View.OnDra
     }
 
 
-    //dragging object
+    //method for dragging object
     @Override
     public boolean onDrag(View v, DragEvent event) {
         if (event.getAction() == DragEvent.ACTION_DROP){
             View view = (View) event.getLocalState();
             ViewGroup group = (ViewGroup) view.getParent();
             group.removeView(view);
+            view.invalidate();
             LinearLayout target = (LinearLayout) v;
             target.addView(view);
             view.setVisibility(View.VISIBLE);
@@ -95,13 +96,13 @@ public class carrot extends Activity implements View.OnTouchListener, View.OnDra
         return true;
     }
 
-    //object moving shadow
+    //method to set object moving
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_DOWN){
             View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
             v.startDrag(null, shadowBuilder, v, 0);
-            v.setVisibility(View.INVISIBLE);
+            v.invalidate();
             return true;
         }
         else {
