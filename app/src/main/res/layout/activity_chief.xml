@@ -72,19 +72,6 @@
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
-        android:layout_toLeftOf="@+id/bottom_i"
-        android:background="#000000"
-        android:orientation="horizontal">
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/bottom_i"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:layout_below="@+id/top_c"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="15dp"
         android:layout_toLeftOf="@+id/bottom_e"
         android:background="#000000"
         android:orientation="horizontal">
@@ -142,12 +129,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/c" />
-
-        <ImageView
-            android:id="@+id/chief_i"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/i" />
 
         <ImageView
             android:id="@+id/chief_h"

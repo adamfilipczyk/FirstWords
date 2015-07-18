@@ -27,7 +27,7 @@ public class info extends ActionBarActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         link = (TextView) findViewById(R.id.information);
-        Linkify.addLinks(link, Linkify.EMAIL_ADDRESSES);
+        Linkify.addLinks(link, Linkify.ALL);
 
         //object for the check sound
         click = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);

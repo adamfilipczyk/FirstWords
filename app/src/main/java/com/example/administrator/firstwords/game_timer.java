@@ -136,17 +136,4 @@ public class game_timer extends Activity {
                 break;
         }
     }
-    @Override
-    protected void onUserLeaveHint() {
-        super.onUserLeaveHint();
-        android.os.Process.myPid();
-        System.exit(0);
-    }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        android.os.Process.myPid();
-        System.exit(0);
-    }
 }

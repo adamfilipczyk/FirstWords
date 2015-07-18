@@ -102,6 +102,7 @@ public class cactus extends Activity implements View.OnTouchListener, View.OnDra
         if (event.getAction() == MotionEvent.ACTION_DOWN){
             View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
             v.startDrag(null, shadowBuilder, v, 0);
+            v.setVisibility(View.INVISIBLE);
             return true;
         }
         else {

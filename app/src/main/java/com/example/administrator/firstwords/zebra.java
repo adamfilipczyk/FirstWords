@@ -102,6 +102,7 @@ public class zebra extends Activity implements OnTouchListener, OnDragListener {
         if (event.getAction() == MotionEvent.ACTION_DOWN){
             DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
             v.startDrag(null, shadowBuilder, v, 0);
+            v.setVisibility(View.INVISIBLE);
             return true;
         }
         else {
@@ -166,6 +167,17 @@ public class zebra extends Activity implements OnTouchListener, OnDragListener {
                             }
                         });
                     }
+                    else if (toInt == 11){
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent fin = new Intent(getApplicationContext(), final_screen.class);
+                                startActivity(fin);
+                            }
+                        });
+                    }
                     else {
                         correct1.start();
                         correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -194,6 +206,17 @@ public class zebra extends Activity implements OnTouchListener, OnDragListener {
                             }
                         });
                     }
+                    else if (toInt == 11){
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent fin = new Intent(getApplicationContext(), final_screen.class);
+                                startActivity(fin);
+                            }
+                        });
+                    }
                     else {
                         correct1.start();
                         correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -219,6 +242,17 @@ public class zebra extends Activity implements OnTouchListener, OnDragListener {
                                 finish();
                                 Intent compl = new Intent(getApplicationContext(), one_completed.class);
                                 startActivity(compl);
+                            }
+                        });
+                    }
+                    else if (toInt == 11){
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent fin = new Intent(getApplicationContext(), final_screen.class);
+                                startActivity(fin);
                             }
                         });
                     }

@@ -103,6 +103,7 @@ public class dentist extends Activity implements View.OnTouchListener, View.OnDr
         if (event.getAction() == MotionEvent.ACTION_DOWN){
             View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
             v.startDrag(null, shadowBuilder, v, 0);
+            v.setVisibility(View.INVISIBLE);
             return true;
         }
         else {
@@ -155,7 +156,6 @@ public class dentist extends Activity implements View.OnTouchListener, View.OnDr
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
         if ((d!= null) && (e!= null) && (n!= null) && (i!= null) && (s!= null) && (((t1!=null) && (t2!=null)) || ((t3!=null) && (t4!=null)))) {
-
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 

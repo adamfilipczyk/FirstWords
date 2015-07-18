@@ -51,14 +51,12 @@ public class chief extends Activity implements View.OnTouchListener, View.OnDrag
         //letters
         findViewById(R.id.chief_c).setOnTouchListener(this);
         findViewById(R.id.chief_h).setOnTouchListener(this);
-        findViewById(R.id.chief_i).setOnTouchListener(this);
         findViewById(R.id.chief_e).setOnTouchListener(this);
         findViewById(R.id.chief_f).setOnTouchListener(this);
 
         //bottom containers drag listener
         findViewById(R.id.bottom_c).setOnDragListener(this);
         findViewById(R.id.bottom_h).setOnDragListener(this);
-        findViewById(R.id.bottom_i).setOnDragListener(this);
         findViewById(R.id.bottom_e).setOnDragListener(this);
         findViewById(R.id.bottom_f).setOnDragListener(this);
 
@@ -101,6 +99,7 @@ public class chief extends Activity implements View.OnTouchListener, View.OnDrag
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
             View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
             v.startDrag(null, shadowBuilder, v, 0);
+            v.setVisibility(View.INVISIBLE);
             return true;
         } else {
             return false;
@@ -119,9 +118,6 @@ public class chief extends Activity implements View.OnTouchListener, View.OnDrag
         LinearLayout b_h = (LinearLayout)findViewById(R.id.bottom_h);
         ImageView h = (ImageView) b_h.findViewById(R.id.chief_h);
 
-        LinearLayout b_i = (LinearLayout)findViewById(R.id.bottom_i);
-        ImageView i = (ImageView) b_i.findViewById(R.id.chief_i);
-
         LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
         ImageView e = (ImageView) b_e.findViewById(R.id.chief_e);
 
@@ -137,7 +133,7 @@ public class chief extends Activity implements View.OnTouchListener, View.OnDrag
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
 
-        if ((c!= null) && (h!= null) && (i!=null) && (e!= null) && (f!=null)) {
+        if ((c!= null) && (h!= null) && (e!= null) && (f!=null)) {
 
 
             Random generate = new Random();

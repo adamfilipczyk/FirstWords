@@ -22,8 +22,11 @@
     <string name="title_activity_one_completed">one_completed</string>
     <string name="title_activity_home">home</string>
     <string name="title_activity_info">info</string>
-    <string name="deve_info">First Words 2015\n\nBuild the words with the help of drag-n-drop mechanism,
-        pictures and sound\n\nDevelopers: Adam &amp; Natasha Filipczyk\nContact: adamfilipczyk@gmail.com</string>
+    <string name="deve_info">Build the words with the help of drag-n-drop mechanism,
+        pictures and sound\nApplication is totally free to use but if you feel you can pay for this,
+        please send 50 cents to my PayPal account to adamfilipczyk@gmail.com\n\nWebsite: http://cccoders.com/afilipczyk/firstwords
+        \n\nDevelopers:\n\nNatasha Filipczyk - design, voice production, picture selection, buttons, icons and layout approvals, distraction\n\n
+    Adam Filipczyk - design, pictures processing, voice processing, buttons / icons production, app development, web development</string>
     <string name="title_activity_splash">splash</string>
     <string name="load">Loading ...</string>
     <string name="title_activity_apple">apple</string>

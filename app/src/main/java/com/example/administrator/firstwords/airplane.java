@@ -105,6 +105,7 @@ public class airplane extends Activity implements View.OnTouchListener, View.OnD
         if (event.getAction() == MotionEvent.ACTION_DOWN){
             View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
             v.startDrag(null, shadowBuilder, v, 0);
+            v.setVisibility(View.INVISIBLE);
             return true;
         }
         else {
@@ -116,6 +117,9 @@ public class airplane extends Activity implements View.OnTouchListener, View.OnD
     public void check (View view) {
 
         click.play(soundID, 1, 1, 1, 0, 1);
+
+        LinearLayout b_i = (LinearLayout)findViewById(R.id.bottom_i);
+        ImageView i = (ImageView) b_i.findViewById(R.id.airplane_i);
 
         LinearLayout b_r = (LinearLayout)findViewById(R.id.bottom_r);
         ImageView r = (ImageView) b_r.findViewById(R.id.airplane_r);
@@ -155,7 +159,7 @@ public class airplane extends Activity implements View.OnTouchListener, View.OnD
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
-        if ((r!= null) && (p!= null) && (l!= null) && (n!= null) && (e!= null) && (((a1!=null) && (a2!=null)) || ((a3!=null) && (a4!=null)))) {
+        if ((i!= null) && (r!= null) && (p!= null) && (l!= null) && (n!= null) && (e!= null) && (((a1!=null) && (a2!=null)) || ((a3!=null) && (a4!=null)))) {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;

@@ -103,6 +103,7 @@ public class window extends Activity implements View.OnTouchListener, View.OnDra
         if (event.getAction() == MotionEvent.ACTION_DOWN){
             View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
             v.startDrag(null, shadowBuilder, v, 0);
+            v.setVisibility(View.INVISIBLE);
             return true;
         }
         else {
@@ -179,6 +180,17 @@ public class window extends Activity implements View.OnTouchListener, View.OnDra
                             }
                         });
                     }
+                    else if (toInt == 11){
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent fin = new Intent(getApplicationContext(), final_screen.class);
+                                startActivity(fin);
+                            }
+                        });
+                    }
                     else {
                         correct1.start();
                         correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -207,6 +219,17 @@ public class window extends Activity implements View.OnTouchListener, View.OnDra
                             }
                         });
                     }
+                    else if (toInt == 11){
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent fin = new Intent(getApplicationContext(), final_screen.class);
+                                startActivity(fin);
+                            }
+                        });
+                    }
                     else {
                         correct1.start();
                         correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -232,6 +255,17 @@ public class window extends Activity implements View.OnTouchListener, View.OnDra
                                 finish();
                                 Intent compl = new Intent(getApplicationContext(), one_completed.class);
                                 startActivity(compl);
+                            }
+                        });
+                    }
+                    else if (toInt == 11){
+                        correct1.start();
+                        correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release();
+                                finish();
+                                Intent fin = new Intent(getApplicationContext(), final_screen.class);
+                                startActivity(fin);
                             }
                         });
                     }
