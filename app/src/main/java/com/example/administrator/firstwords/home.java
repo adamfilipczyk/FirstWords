@@ -53,7 +53,6 @@ public class home extends Activity{
                         .setPositiveButton("Yes",new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog,int id) {
                                 // if this button is clicked, close the app
-                                finish();
                                 System.exit(0);
                             }
                         })

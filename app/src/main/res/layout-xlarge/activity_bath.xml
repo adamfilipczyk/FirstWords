@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listen50"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blue2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".bath">
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="450dp"
+        android:layout_height="370dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/bath" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignTop="@+id/bottom_b"
+        android:background="@drawable/home_btn"
+        android:onClick="back" />
+
+    <ImageButton
+        android:id="@+id/listen"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="right"
+        android:background="@drawable/listend"
+        android:clickable="true"
+        android:onClick="play" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_alignEnd="@+id/top_c"
+        android:layout_alignRight="@+id/listen"
+        android:layout_below="@+id/listen"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/selector"
+        android:clickable="true"
+        android:onClick="check" />
+
+    <LinearLayout
+        android:id="@+id/top_c"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_alignRight="@+id/listen"
+        android:layout_marginTop="430dp"
+        android:gravity="right">
+
+
+        <ImageView
+            android:id="@+id/bath_h"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/h_l" />
+
+        <ImageView
+            android:id="@+id/bath_b"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/b_l" />
+
+        <ImageView
+            android:id="@+id/bath_a"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/a_l" />
+
+        <ImageView
+            android:id="@+id/bath_t"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/t_l" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_b"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/top_c"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="25dp"
+        android:layout_toLeftOf="@+id/bottom_a"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_a"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/top_c"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="25dp"
+        android:layout_toLeftOf="@+id/bottom_t"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_t"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/top_c"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="25dp"
+        android:layout_toLeftOf="@+id/bottom_h"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_h"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/top_c"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignRight="@+id/listen"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</RelativeLayout>

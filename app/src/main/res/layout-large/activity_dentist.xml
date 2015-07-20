@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listen91"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_green_dark"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".dentist">
+
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="440dp"
+        android:layout_height="340dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/dentist" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignTop="@+id/bottom_d"
+        android:background="@drawable/home_btn"
+        android:onClick="back" />
+
+    <ImageButton
+        android:id="@+id/listen"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="right"
+        android:background="@drawable/listend"
+        android:onClick="play" />
+
+    <ImageButton
+        android:id="@+id/btn_check"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_alignEnd="@+id/top_c"
+        android:layout_alignRight="@+id/listen"
+        android:layout_below="@+id/listen"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector"
+        android:clickable="true"
+        android:onClick="check" />
+
+
+    <LinearLayout
+        android:id="@+id/bottom_d"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/top_c"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/bottom_e"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_e"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/top_c"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/bottom_n"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_n"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/top_c"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/bottom_t"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_t"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/top_c"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/bottom_i"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_i"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/top_c"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/bottom_s"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_s"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/top_c"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/bottom_t2"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_t2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignRight="@+id/listen"
+        android:layout_below="@+id/top_c"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top_c"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignRight="@+id/listen"
+        android:layout_marginTop="330dp"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/dentist_s"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/s" />
+
+        <ImageView
+            android:id="@+id/dentist_e"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/e" />
+
+        <ImageView
+            android:id="@+id/dentist_t"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/t" />
+
+        <ImageView
+            android:id="@+id/dentist_i"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/i" />
+
+        <ImageView
+            android:id="@+id/dentist_n"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/n" />
+
+        <ImageView
+            android:id="@+id/dentist_d"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/d" />
+
+        <ImageView
+            android:id="@+id/dentist_t2"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/t" />
+
+    </LinearLayout>
+
+</RelativeLayout>
