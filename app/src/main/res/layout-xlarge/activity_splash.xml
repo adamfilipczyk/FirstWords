@@ -9,8 +9,8 @@
     android:id="@+id/splash_layout">
 
     <ImageView
-        android:layout_width="380dp"
-        android:layout_height="match_parent"
+        android:layout_width="800dp"
+        android:layout_height="480dp"
         android:id="@+id/splash_logo"
         android:focusableInTouchMode="true"
         android:background="@drawable/splash_logo"
@@ -27,6 +27,6 @@
         android:layout_centerHorizontal="true"
         android:textColor="#ffffff"
         android:textStyle="bold"
-        android:textSize="35dp" />
+        android:textSize="65dp" />
 
 </RelativeLayout>

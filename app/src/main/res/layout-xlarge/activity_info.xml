@@ -14,10 +14,10 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="800dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
-        android:background="@drawable/logo_small" />
+        android:background="@drawable/logo_large" />
 
     <ImageButton
         android:id="@+id/home"
@@ -30,7 +30,7 @@
 
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="150dp"
+        android:layout_height="300dp"
         android:layout_below="@+id/imageView3"
         android:fillViewport="true"
         android:layout_marginTop="5dp"
@@ -48,7 +48,8 @@
                 android:singleLine="false"
                 android:text="@string/deve_info"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:textSize="30sp" />
 
         </RelativeLayout>
     </ScrollView>

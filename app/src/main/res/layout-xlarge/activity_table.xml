@@ -12,15 +12,15 @@
 
     <ImageView
         android:id="@+id/picture"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
+        android:layout_width="550dp"
+        android:layout_height="350dp"
         android:layout_gravity="center_vertical"
         android:background="@drawable/table" />
 
     <ImageButton
         android:id="@+id/imageButton11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_alignParentLeft="false"
         android:layout_alignParentStart="false"
         android:layout_alignTop="@+id/bottom_t"
@@ -29,8 +29,8 @@
 
     <ImageButton
         android:id="@+id/listen"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
         android:layout_alignParentEnd="false"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
@@ -41,12 +41,12 @@
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
         android:layout_alignEnd="@+id/top_c"
         android:layout_alignRight="@+id/listen"
         android:layout_below="@+id/listen"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/selector"
         android:clickable="true"
         android:onClick="check" />
@@ -54,49 +54,49 @@
     <LinearLayout
         android:id="@+id/top_c"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="86dp"
         android:layout_alignRight="@+id/listen"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="430dp"
         android:gravity="right">
 
 
         <ImageView
             android:id="@+id/table_e"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/e" />
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/e_l" />
 
         <ImageView
             android:id="@+id/table_t"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/t" />
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/t_l" />
 
         <ImageView
             android:id="@+id/table_b"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/b" />
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/b_l" />
         <ImageView
             android:id="@+id/table_a"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/a" />
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/a_l" />
         <ImageView
             android:id="@+id/table_l"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/l" />
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/l_l" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/bottom_t"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:layout_toLeftOf="@+id/bottom_a"
         android:background="#000000"
         android:orientation="horizontal">
@@ -104,11 +104,11 @@
     </LinearLayout>
     <LinearLayout
         android:id="@+id/bottom_a"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:layout_toLeftOf="@+id/bottom_b"
         android:background="#000000"
         android:orientation="horizontal">
@@ -117,11 +117,11 @@
 
     <LinearLayout
         android:id="@+id/bottom_b"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:layout_toLeftOf="@+id/bottom_l"
         android:background="#000000"
         android:orientation="horizontal">
@@ -130,11 +130,11 @@
 
     <LinearLayout
         android:id="@+id/bottom_l"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:layout_toLeftOf="@+id/bottom_e"
         android:background="#000000"
         android:orientation="horizontal">
@@ -143,11 +143,11 @@
 
     <LinearLayout
         android:id="@+id/bottom_e"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:layout_alignRight="@+id/listen"
         android:background="#000000"
         android:orientation="horizontal">

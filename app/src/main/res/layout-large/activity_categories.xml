@@ -18,8 +18,8 @@
         android:gravity="center">
 
         <TableRow
-            android:layout_height="0dip"
-            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
             android:layout_weight="1"
             android:layout_marginTop="30dp">
 
@@ -71,8 +71,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginRight="15dp"
-                android:background="@drawable/quest"
-                android:layout_marginLeft="15dp" />
+                android:background="@drawable/quest" />
 
             <ImageButton
                 android:id="@+id/icon7"

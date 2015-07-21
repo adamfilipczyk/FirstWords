@@ -12,15 +12,15 @@
 
     <ImageView
         android:id="@+id/picture"
-        android:layout_width="180dp"
-        android:layout_height="200dp"
+        android:layout_width="430dp"
+        android:layout_height="430dp"
         android:layout_gravity="center_vertical"
         android:background="@drawable/window" />
 
     <ImageButton
         android:id="@+id/imageButton11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_alignParentLeft="false"
         android:layout_alignParentStart="false"
         android:layout_alignTop="@+id/bottom_w"
@@ -29,8 +29,8 @@
 
     <ImageButton
         android:id="@+id/listen"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
         android:layout_alignParentEnd="false"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
@@ -41,12 +41,12 @@
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
         android:layout_alignEnd="@+id/top_c"
         android:layout_alignRight="@+id/listen"
         android:layout_below="@+id/listen"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/selector"
         android:clickable="true"
         android:onClick="check" />
@@ -54,54 +54,54 @@
     <LinearLayout
         android:id="@+id/top_c"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="86dp"
         android:layout_alignRight="@+id/listen"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="430dp"
         android:gravity="right">
 
 
         <ImageView
             android:id="@+id/window_w"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/w" />
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/w_l" />
 
         <ImageView
             android:id="@+id/window_o"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/o" />
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/o_l" />
 
         <ImageView
             android:id="@+id/window_d"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/d" />
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/d_l" />
         <ImageView
             android:id="@+id/window_w2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/w" />
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/w_l" />
         <ImageView
             android:id="@+id/window_n"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/n" />
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/n_l" />
         <ImageView
             android:id="@+id/window_i"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/i" />
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/i_l" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/bottom_w"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:layout_toLeftOf="@+id/bottom_i"
         android:background="#000000"
         android:orientation="horizontal">
@@ -109,11 +109,11 @@
     </LinearLayout>
     <LinearLayout
         android:id="@+id/bottom_i"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:layout_toLeftOf="@+id/bottom_n"
         android:background="#000000"
         android:orientation="horizontal">
@@ -122,11 +122,11 @@
 
     <LinearLayout
         android:id="@+id/bottom_n"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:layout_toLeftOf="@+id/bottom_d"
         android:background="#000000"
         android:orientation="horizontal">
@@ -135,11 +135,11 @@
 
     <LinearLayout
         android:id="@+id/bottom_d"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:layout_toLeftOf="@+id/bottom_o"
         android:background="#000000"
         android:orientation="horizontal">
@@ -148,11 +148,11 @@
 
     <LinearLayout
         android:id="@+id/bottom_o"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:layout_toLeftOf="@+id/bottom_w2"
         android:background="#000000"
         android:orientation="horizontal">
@@ -161,11 +161,11 @@
 
     <LinearLayout
         android:id="@+id/bottom_w2"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:layout_alignRight="@+id/listen"
         android:background="#000000"
         android:orientation="horizontal">

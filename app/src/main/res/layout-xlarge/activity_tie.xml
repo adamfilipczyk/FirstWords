@@ -13,15 +13,15 @@
 
     <ImageView
         android:id="@+id/picture"
-        android:layout_width="  130dp"
-        android:layout_height="200dp"
+        android:layout_width="250dp"
+        android:layout_height="450dp"
         android:layout_gravity="center_vertical"
         android:background="@drawable/tie" />
 
     <ImageButton
         android:id="@+id/back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_alignParentLeft="false"
         android:layout_alignParentStart="false"
         android:layout_alignTop="@+id/bottom_t"
@@ -30,8 +30,8 @@
 
     <ImageButton
         android:id="@+id/listen"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
         android:layout_alignParentEnd="false"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
@@ -41,23 +41,23 @@
 
     <ImageButton
         android:id="@+id/btn_check"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
         android:layout_alignEnd="@+id/top_c"
         android:layout_alignRight="@+id/listen"
         android:layout_below="@+id/listen"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/selector"
         android:clickable="true"
         android:onClick="check" />
 
     <LinearLayout
         android:id="@+id/bottom_t"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:layout_toLeftOf="@+id/bottom_i"
         android:background="#000000"
         android:orientation="horizontal">
@@ -66,11 +66,11 @@
 
     <LinearLayout
         android:id="@+id/bottom_i"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:layout_toLeftOf="@+id/bottom_e"
         android:background="#000000"
         android:orientation="horizontal">
@@ -79,12 +79,12 @@
 
     <LinearLayout
         android:id="@+id/bottom_e"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:layout_alignRight="@+id/listen"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:background="#000000"
         android:orientation="horizontal">
 
@@ -93,28 +93,28 @@
     <LinearLayout
         android:id="@+id/top_c"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="86dp"
         android:layout_alignRight="@+id/listen"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="430dp"
         android:gravity="right">
 
         <ImageView
             android:id="@+id/tie_e"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/e" />
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/e_l" />
 
         <ImageView
             android:id="@+id/tie_i"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/i" />
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/i_l" />
 
         <ImageView
             android:id="@+id/tie_t"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/t" />
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/a_l" />
     </LinearLayout>
 
 </RelativeLayout>

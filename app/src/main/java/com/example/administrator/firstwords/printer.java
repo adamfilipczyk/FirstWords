@@ -139,10 +139,10 @@ public class printer extends Activity implements View.OnTouchListener, View.OnDr
         ImageView r2 = (ImageView) b_r2.findViewById(R.id.printer_r2);
 
         LinearLayout b_r3 = (LinearLayout)findViewById(R.id.bottom_r);
-        ImageView r3 = (ImageView) b_r3.findViewById(R.id.printer_r);
+        ImageView r3 = (ImageView) b_r3.findViewById(R.id.printer_r2);
 
         LinearLayout b_r4 = (LinearLayout)findViewById(R.id.bottom_r2);
-        ImageView r4 = (ImageView) b_r4.findViewById(R.id.printer_r2);
+        ImageView r4 = (ImageView) b_r4.findViewById(R.id.printer_r);
 
 
 
