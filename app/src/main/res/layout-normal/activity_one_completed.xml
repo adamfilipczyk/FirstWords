@@ -9,12 +9,12 @@
     android:id="@+id/frame">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
         android:id="@+id/one_completed"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/ballons_small" />
+        android:background="@drawable/ballons" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -24,6 +24,6 @@
         android:layout_alignParentEnd="false"
         android:background="@drawable/star_y"
         android:layout_alignBottom="@+id/one_completed"
-        android:layout_marginRight="50dp"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp" />
 </RelativeLayout>

@@ -12,15 +12,15 @@
 
     <ImageView
         android:id="@+id/picture"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_gravity="center_vertical"
         android:background="@drawable/chair" />
 
     <ImageButton
         android:id="@+id/imageButton11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignParentLeft="false"
         android:layout_alignParentStart="false"
         android:layout_alignTop="@+id/bottom_c"
@@ -29,8 +29,8 @@
 
     <ImageButton
         android:id="@+id/listen"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_alignParentEnd="false"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
@@ -46,7 +46,7 @@
         android:layout_alignEnd="@+id/top_c"
         android:layout_alignRight="@+id/listen"
         android:layout_below="@+id/listen"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/selector"
         android:clickable="true"
         android:onClick="check" />
@@ -56,44 +56,44 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignRight="@+id/listen"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="190dp"
         android:gravity="right">
 
 
         <ImageView
             android:id="@+id/chair_r"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:background="@drawable/r" />
 
         <ImageView
             android:id="@+id/chair_a"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:background="@drawable/a" />
 
         <ImageView
             android:id="@+id/chair_c"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:background="@drawable/c" />
         <ImageView
             android:id="@+id/chair_i"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:background="@drawable/i" />
 
         <ImageView
             android:id="@+id/chair_h"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:background="@drawable/h" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/bottom_c"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
@@ -105,8 +105,8 @@
 
     <LinearLayout
         android:id="@+id/bottom_h"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
@@ -117,8 +117,8 @@
     </LinearLayout>
     <LinearLayout
         android:id="@+id/bottom_a"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
@@ -130,8 +130,8 @@
 
     <LinearLayout
         android:id="@+id/bottom_i"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
@@ -143,8 +143,8 @@
 
     <LinearLayout
         android:id="@+id/bottom_r"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"

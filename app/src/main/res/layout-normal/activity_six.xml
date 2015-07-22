@@ -13,8 +13,8 @@
 
     <ImageView
         android:id="@+id/picture"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_gravity="center_vertical"
         android:background="@drawable/six" />
 
@@ -31,8 +31,8 @@
 
     <ImageButton
         android:id="@+id/listen"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_alignParentEnd="false"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
@@ -47,7 +47,7 @@
         android:layout_alignEnd="@+id/top_c"
         android:layout_alignRight="@+id/listen"
         android:layout_below="@+id/listen"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/selector"
         android:clickable="true"
         android:onClick="check" />
@@ -55,8 +55,8 @@
 
     <LinearLayout
         android:id="@+id/bottom_s"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
@@ -68,8 +68,8 @@
 
     <LinearLayout
         android:id="@+id/bottom_i"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="15dp"
@@ -82,8 +82,8 @@
 
     <LinearLayout
         android:id="@+id/bottom_x"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignRight="@+id/listen"
         android:layout_below="@+id/top_c"
         android:layout_marginLeft="1dp"
@@ -98,25 +98,25 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignRight="@+id/listen"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="190dp"
         android:gravity="right">
 
         <ImageView
             android:id="@+id/six_x"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:background="@drawable/x" />
 
         <ImageView
             android:id="@+id/six_s"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:background="@drawable/s" />
 
         <ImageView
             android:id="@+id/six_i"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:background="@drawable/i" />
 
     </LinearLayout>

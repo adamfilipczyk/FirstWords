@@ -26,15 +26,15 @@
         android:id="@+id/g_timer"
         android:layout_below="@+id/analogClock"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textSize="20sp" />
 
     <ImageButton
-        android:layout_width="230dp"
-        android:layout_height="200dp"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
         android:id="@+id/imageView4"
         android:background="@drawable/btn_lazy"
         android:layout_alignTop="@+id/analogClock"

@@ -17,12 +17,14 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp">
 
-        <TableRow android:layout_weight="1">
+        <TableRow android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
 
             <ImageButton
                 android:id="@+id/icon1"
-                android:layout_width="85dp"
-                android:layout_height="85dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/animals_btn"
                 android:clickable="true"
@@ -32,8 +34,8 @@
 
             <ImageButton
                 android:id="@+id/icon2"
-                android:layout_width="85dp"
-                android:layout_height="85dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/vegetables_btn"
                 android:clickable="true"
@@ -43,65 +45,66 @@
 
             <ImageButton
                 android:id="@+id/icon3"
-                android:layout_width="85dp"
-                android:layout_height="85dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/clothes_btn"
                 android:onClick="btn3" />
 
             <ImageButton
                 android:id="@+id/icon4"
-                android:layout_width="85dp"
-                android:layout_height="85dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/electronics_btn"
                 android:onClick="btn4" />
 
             <ImageButton
                 android:id="@+id/icon5"
-                android:layout_width="85dp"
-                android:layout_height="85dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/cat_home_btn"
                 android:onClick="btn5"/>
 
 
         </TableRow>
         <TableRow android:layout_weight="2"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="15dp"
+            android:gravity="center">
 
             <ImageButton
                 android:id="@+id/icon6"
-                android:layout_width="85dp"
-                android:layout_height="85dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/btn_months"
                 android:onClick="btn6" />
 
             <ImageButton
                 android:id="@+id/icon7"
-                android:layout_width="85dp"
-                android:layout_height="85dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/quest"/>
 
             <ImageButton
                 android:id="@+id/icon8"
-                android:layout_width="85dp"
-                android:layout_height="85dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/quest"/>
 
             <ImageButton
                 android:id="@+id/icon9"
-                android:layout_width="85dp"
-                android:layout_height="85dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/quest"/>
 
             <ImageButton
                 android:id="@+id/icon10"
-                android:layout_width="85dp"
-                android:layout_height="85dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/quest"/>
 
 
@@ -114,7 +117,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="15dp"
+        android:gravity="center">
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -132,89 +136,79 @@
             android:layout_height="wrap_content"
             android:id="@+id/s_one"
             android:background="@drawable/star_small"
-            android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/back"
-            android:layout_marginLeft="40dp" />
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="5dp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/s_two"
             android:background="@drawable/star_small"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/s_one" />
+            android:layout_toRightOf="@+id/s_one"
+            android:layout_marginRight="5dp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/s_three"
             android:background="@drawable/star_small"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/s_two" />
+            android:layout_toRightOf="@+id/s_two"
+            android:layout_marginRight="5dp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/s_four"
             android:background="@drawable/star_small"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/s_three" />
+            android:layout_toRightOf="@+id/s_three"
+            android:layout_marginRight="5dp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/s_five"
             android:background="@drawable/star_small"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/s_four" />
+            android:layout_toRightOf="@+id/s_four"
+            android:layout_marginRight="5dp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/s_six"
             android:background="@drawable/star_small_grey"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/s_five" />
+            android:layout_toRightOf="@+id/s_five"
+            android:layout_marginRight="5dp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/s_seven"
             android:background="@drawable/star_small_grey"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/s_six" />
+            android:layout_toRightOf="@+id/s_six"
+            android:layout_marginRight="5dp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/s_eight"
             android:background="@drawable/star_small_grey"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/s_seven" />
+            android:layout_toRightOf="@+id/s_seven"
+            android:layout_marginRight="5dp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/s_nine"
             android:background="@drawable/star_small_grey"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/s_eight" />
+            android:layout_toRightOf="@+id/s_eight"
+            android:layout_marginRight="5dp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/s_ten"
             android:background="@drawable/star_small_grey"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/s_nine" />
 
     </RelativeLayout>

@@ -9,8 +9,8 @@
     android:id="@+id/splash_layout">
 
     <ImageView
-        android:layout_width="380dp"
-        android:layout_height="match_parent"
+        android:layout_width="450dp"
+        android:layout_height="350dp"
         android:id="@+id/splash_logo"
         android:focusableInTouchMode="true"
         android:background="@drawable/splash_logo"
@@ -23,10 +23,13 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/load"
         android:id="@+id/load"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:textColor="#ffffff"
         android:textStyle="bold"
-        android:textSize="35dp" />
+        android:textSize="30sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/splash_logo"
+        android:layout_alignEnd="@+id/splash_logo"
+        android:layout_marginRight="58dp"
+        android:layout_marginEnd="58dp" />
 
 </RelativeLayout>
