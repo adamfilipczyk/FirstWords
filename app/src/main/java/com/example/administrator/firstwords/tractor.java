@@ -1,6 +1,7 @@
 package com.example.administrator.firstwords;
 
 import android.app.Activity;
+import android.content.ClipData;
 import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -83,14 +84,16 @@ public class tractor extends Activity implements View.OnTouchListener, View.OnDr
     //method for dragging object
     @Override
     public boolean onDrag(View v, DragEvent event) {
-        if (event.getAction() == DragEvent.ACTION_DROP){
-            View view = (View) event.getLocalState();
-            ViewGroup group = (ViewGroup) view.getParent();
-            group.removeView(view);
-            view.invalidate();
-            LinearLayout target = (LinearLayout) v;
-            target.addView(view);
-            view.setVisibility(View.VISIBLE);
+        int action = event.getAction();
+        switch (action){
+            case DragEvent.ACTION_DROP:
+                View view = (View) event.getLocalState();
+                ViewGroup group = (ViewGroup) view.getParent();
+                group.removeView(view);
+                LinearLayout target = (LinearLayout) v;
+                target.addView(view);
+                view.setVisibility(View.VISIBLE);
+                break;
         }
         return true;
     }
@@ -99,8 +102,9 @@ public class tractor extends Activity implements View.OnTouchListener, View.OnDr
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_DOWN){
+            ClipData data = ClipData.newPlainText("", "");
             View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
-            v.startDrag(null, shadowBuilder, v, 0);
+            v.startDrag(data, shadowBuilder, v, 0);
             v.invalidate();
             return true;
         }
@@ -108,7 +112,6 @@ public class tractor extends Activity implements View.OnTouchListener, View.OnDr
             return false;
         }
     }
-
 
     public void check (View view) {
 

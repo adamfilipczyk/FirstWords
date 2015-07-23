@@ -86,7 +86,6 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
             View view = (View) event.getLocalState();
             ViewGroup group = (ViewGroup) view.getParent();
             group.removeView(view);
-            view.invalidate();
             LinearLayout target = (LinearLayout) v;
             target.addView(view);
             view.setVisibility(View.VISIBLE);
