@@ -5,6 +5,7 @@ import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -166,6 +167,17 @@ public class teacher  extends Activity implements View.OnTouchListener, View.OnD
 
         if ((t!= null) && (a!= null) && (c!= null) && (h!= null) && (r!= null) && (((e1!=null) && (e2!=null)) || ((e3!=null) && (e4!=null)))) {
 
+
+            b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_c.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_h.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+
             SharedPreferences sharedPreferences = getSharedPreferences("Save", Context.MODE_PRIVATE);
             String cat = sharedPreferences.getString("category", "");
             int toInt = Integer.parseInt(cat);
@@ -300,6 +312,70 @@ public class teacher  extends Activity implements View.OnTouchListener, View.OnD
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
+
+
+            //e1
+            if (e1!= null ) {
+                b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (e3!= null ) {
+                b_e3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_e.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //e2
+            if (e2!= null ) {
+                b_e2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (e4!= null ) {
+                b_e4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_e2.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //t
+            if (t!= null ) {
+                b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_t.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //a
+            if (a!= null ) {
+                b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_a.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //c
+            if (c!= null ) {
+                b_c.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_c.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //h
+            if (h!= null ) {
+                b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_h.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //r
+            if (r!= null ) {
+                b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_r.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
 
             switch (eventNumber){
                 case 1:

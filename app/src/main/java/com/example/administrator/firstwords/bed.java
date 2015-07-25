@@ -3,6 +3,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -122,6 +123,11 @@ public class bed extends Activity implements View.OnTouchListener, View.OnDragLi
 
 
         if ((b!= null) && (e!= null) && (d!=null)) {
+
+            b_b.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_d.setBackgroundColor(Color.parseColor("#8BC34A"));
+
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
             correct3 = MediaPlayer.create(this, R.raw.didit);
@@ -176,6 +182,25 @@ public class bed extends Activity implements View.OnTouchListener, View.OnDragLi
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
+
+            if (b!= null ) {
+                b_b.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_b.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+            if (e!= null){
+                b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_e.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+            if (d!= null){
+                b_d.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_d.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
 
             switch (eventNumber){
                 case 1:

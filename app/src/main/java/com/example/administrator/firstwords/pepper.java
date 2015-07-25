@@ -3,6 +3,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -222,33 +223,62 @@ public class pepper extends Activity implements View.OnTouchListener, View.OnDra
 
         //check if containers are not empty and all letters are in proper place
         if ((r != null) && (((e1 != null) && (e2 != null)) || ((e3 != null) && (e4 != null))) && ((a1!= null) && (a2!= null) && (a3!= null))){
-            approved();
+            approved(a1, a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a2, a20, a21, a3, a4, a5, a6, a7, a8, a9, e1, e2, e3, e4, b_a1, b_a10, b_a11, b_a12, b_a13, b_a14, b_a15, b_a16, b_a17, b_a18, b_a19, b_a2, b_a20, b_a21, b_a3, b_a4, b_a5, b_a6, b_a7, b_a8, b_a9, r, b_r, b_e1, b_e2, b_e3, b_e4);
         }
         else if ((r != null) && (((e1 != null) && (e2 != null)) || ((e3 != null) && (e4 != null))) && ((a4!= null) && (a5!= null) && (a6!= null))){
-            approved();
+            approved(a1, a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a2, a20, a21, a3, a4, a5, a6, a7, a8, a9, e1, e2, e3, e4, b_a1, b_a10, b_a11, b_a12, b_a13, b_a14, b_a15, b_a16, b_a17, b_a18, b_a19, b_a2, b_a20, b_a21, b_a3, b_a4, b_a5, b_a6, b_a7, b_a8, b_a9, r, b_r, b_e1, b_e2, b_e3, b_e4);
         }
         else if ((r != null) && (((e1 != null) && (e2 != null)) || ((e3 != null) && (e4 != null))) && ((a7!= null) && (a8!= null) && (a9!= null))){
-            approved();
+            approved(a1, a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a2, a20, a21, a3, a4, a5, a6, a7, a8, a9, e1, e2, e3, e4, b_a1, b_a10, b_a11, b_a12, b_a13, b_a14, b_a15, b_a16, b_a17, b_a18, b_a19, b_a2, b_a20, b_a21, b_a3, b_a4, b_a5, b_a6, b_a7, b_a8, b_a9, r, b_r, b_e1, b_e2, b_e3, b_e4);
         }
         else if ((r != null) && (((e1 != null) && (e2 != null) || (e3 != null) && (e4 != null))) && ((a10!= null) && (a11!= null) && (a12!= null))){
-            approved();
+            approved(a1, a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a2, a20, a21, a3, a4, a5, a6, a7, a8, a9, e1, e2, e3, e4, b_a1, b_a10, b_a11, b_a12, b_a13, b_a14, b_a15, b_a16, b_a17, b_a18, b_a19, b_a2, b_a20, b_a21, b_a3, b_a4, b_a5, b_a6, b_a7, b_a8, b_a9, r, b_r, b_e1, b_e2, b_e3, b_e4);
         }
         else if ((r != null) && (((e1 != null) && (e2 != null)) || (e3 != null) && (e4 != null)) && ((a13!= null) && (a14!= null) && (a15!= null))){
-            approved();
+            approved(a1, a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a2, a20, a21, a3, a4, a5, a6, a7, a8, a9, e1, e2, e3, e4, b_a1, b_a10, b_a11, b_a12, b_a13, b_a14, b_a15, b_a16, b_a17, b_a18, b_a19, b_a2, b_a20, b_a21, b_a3, b_a4, b_a5, b_a6, b_a7, b_a8, b_a9, r, b_r, b_e1, b_e2, b_e3, b_e4);
         }
         else if ((r != null) && (((e1 != null) && (e2 != null)) || ((e3 != null) && (e4 != null))) && ((a16!= null) && (a17!= null) && (a18!= null))){
-            approved();
+            approved(a1, a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a2, a20, a21, a3, a4, a5, a6, a7, a8, a9, e1, e2, e3, e4, b_a1, b_a10, b_a11, b_a12, b_a13, b_a14, b_a15, b_a16, b_a17, b_a18, b_a19, b_a2, b_a20, b_a21, b_a3, b_a4, b_a5, b_a6, b_a7, b_a8, b_a9, r, b_r, b_e1, b_e2, b_e3, b_e4);
         }
         else if ((r != null) && (((e1 != null) && (e2 != null)) || ((e3 != null) && (e4 != null))) && ((a19!= null) && (a20!= null) && (a21!= null))){
-            approved();
+            approved(a1, a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a2, a20, a21, a3, a4, a5, a6, a7, a8, a9, e1, e2, e3, e4, b_a1, b_a10, b_a11, b_a12, b_a13, b_a14, b_a15, b_a16, b_a17, b_a18, b_a19, b_a2, b_a20, b_a21, b_a3, b_a4, b_a5, b_a6, b_a7, b_a8, b_a9, r, b_r, b_e1, b_e2, b_e3, b_e4);
         }
         else {
-            disapproved();
+            disapproved(a1, a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a2, a20, a21, a3, a4, a5, a6, a7, a8, a9, e1, e2, e3, e4, b_a1, b_a10, b_a11, b_a12, b_a13, b_a14, b_a15, b_a16, b_a17, b_a18, b_a19, b_a2, b_a20, b_a21, b_a3, b_a4, b_a5, b_a6, b_a7, b_a8, b_a9, r, b_r, b_e1, b_e2, b_e3, b_e4);
         }
     }
 
     //approvals
-    public void approved (){
+    public void approved(ImageView a1, ImageView a10, ImageView a11, ImageView a12, ImageView a13, ImageView a14, ImageView a15, ImageView a16, ImageView a17, ImageView a18, ImageView a19, ImageView a2, ImageView a20, ImageView a21, ImageView a3, ImageView a4, ImageView a5, ImageView a6, ImageView a7, ImageView a8, ImageView a9, ImageView e1, ImageView e2, ImageView e3, ImageView e4, LinearLayout b_a1, LinearLayout b_a10, LinearLayout b_a11, LinearLayout b_a12, LinearLayout b_a13, LinearLayout b_a14, LinearLayout b_a15, LinearLayout b_a16, LinearLayout b_a17, LinearLayout b_a18, LinearLayout b_a19, LinearLayout b_a2, LinearLayout b_a20, LinearLayout b_a21, LinearLayout b_a3, LinearLayout b_a4, LinearLayout b_a5, LinearLayout b_a6, LinearLayout b_a7, LinearLayout b_a8, LinearLayout b_a9, ImageView r, LinearLayout b_r, LinearLayout b_e1, LinearLayout b_e2, LinearLayout b_e3, LinearLayout b_e4){
+
+        //change background color of the containers to green
+        b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a1.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a2.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a3.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a4.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a5.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a6.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a7.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a8.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a9.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a10.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a11.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a12.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a13.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a14.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a15.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a16.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a17.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a18.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a19.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a20.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a21.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e1.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e2.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e3.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e4.setBackgroundColor(Color.parseColor("#8BC34A"));
+
         //objects for approval sounds
         correct1 = MediaPlayer.create(this, R.raw.welldone);
         correct2 = MediaPlayer.create(this, R.raw.congrats);
@@ -300,7 +330,7 @@ public class pepper extends Activity implements View.OnTouchListener, View.OnDra
     }
 
     //disapprovals
-    public void disapproved (){
+    public void disapproved(ImageView a1, ImageView a10, ImageView a11, ImageView a12, ImageView a13, ImageView a14, ImageView a15, ImageView a16, ImageView a17, ImageView a18, ImageView a19, ImageView a2, ImageView a20, ImageView a21, ImageView a3, ImageView a4, ImageView a5, ImageView a6, ImageView a7, ImageView a8, ImageView a9, ImageView e1, ImageView e2, ImageView e3, ImageView e4, LinearLayout b_a1, LinearLayout b_a10, LinearLayout b_a11, LinearLayout b_a12, LinearLayout b_a13, LinearLayout b_a14, LinearLayout b_a15, LinearLayout b_a16, LinearLayout b_a17, LinearLayout b_a18, LinearLayout b_a19, LinearLayout b_a2, LinearLayout b_a20, LinearLayout b_a21, LinearLayout b_a3, LinearLayout b_a4, LinearLayout b_a5, LinearLayout b_a6, LinearLayout b_a7, LinearLayout b_a8, LinearLayout b_a9, ImageView r, LinearLayout b_r, LinearLayout b_e1, LinearLayout b_e2, LinearLayout b_e3, LinearLayout b_e4){
         //objects for disapproval sounds
         incorr1 = MediaPlayer.create(this, R.raw.rusure);
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
@@ -309,6 +339,116 @@ public class pepper extends Activity implements View.OnTouchListener, View.OnDra
         //sounds random generator
         Random generate = new Random();
         int eventNumber = generate.nextInt(3) + 1;
+
+
+        //r
+        if (r!= null) {
+            b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_r.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //e1
+        if (e1!= null){
+            b_e1.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e3!= null){
+            b_e3.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_e1.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //e2
+        if (e2!= null){
+            b_e2.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e4!= null){
+            b_e4.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_e4.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //p1
+        if (a1!= null){
+            b_a1.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (a6!= null){
+            b_a6.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (a8!= null){
+            b_a8.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (a10!= null){
+            b_a10.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (a13!= null){
+            b_a13.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (a16!= null){
+            b_a16.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (a19!= null){
+            b_a19.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_a1.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //p2
+        if (a2!= null){
+            b_a2.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (a4!= null){
+            b_a4.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (a9!= null){
+            b_a9.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (a11!= null){
+            b_a11.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (a14!= null){
+            b_a14.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (a17!= null){
+            b_a17.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (a21!= null){
+            b_a21.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_a2.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //p3
+        if (a3!= null){
+            b_a3.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (a5!= null){
+            b_a5.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (a7!= null){
+            b_a7.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (a12!= null){
+            b_a12.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (a15!= null){
+            b_a15.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (a18!= null){
+            b_a18.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (a20!= null){
+            b_a20.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_a3.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
 
         //load sound based on generated value
         switch (eventNumber) {

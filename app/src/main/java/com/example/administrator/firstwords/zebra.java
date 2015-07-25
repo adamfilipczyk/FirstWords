@@ -4,6 +4,7 @@ import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -147,6 +148,12 @@ public class zebra extends Activity implements OnTouchListener, OnDragListener {
 
         if ((z!= null) && (e!= null) && (b!=null) && (r!= null) && (a!= null)) {
 
+            b_z.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_b.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+
 
             SharedPreferences sharedPreferences = getSharedPreferences("Save", Context.MODE_PRIVATE);
             String cat = sharedPreferences.getString("category", "");
@@ -282,6 +289,48 @@ public class zebra extends Activity implements OnTouchListener, OnDragListener {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
+
+
+
+            //z
+            if (z!= null ) {
+                b_z.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_z.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //e
+            if (e!= null ) {
+                b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_e.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //b
+            if (b!= null ) {
+                b_b.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_b.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //r
+            if (r!= null ) {
+                b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_r.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //a
+            if (a!= null ) {
+                b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_a.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
 
             switch (eventNumber){
                 case 1:

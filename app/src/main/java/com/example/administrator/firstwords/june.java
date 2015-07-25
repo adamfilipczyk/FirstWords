@@ -3,6 +3,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -180,6 +181,39 @@ public class june extends Activity implements View.OnTouchListener, View.OnDragL
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;
+
+            //j
+            if (j!= null ) {
+                b_j.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_j.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //u
+            if (u!= null ) {
+                b_u.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_u.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //n
+            if (n!= null ) {
+                b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_n.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //e
+            if (e!= null ) {
+                b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_e.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
 
             switch (eventNumber) {
                 case 1:

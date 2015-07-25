@@ -3,6 +3,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -151,6 +152,14 @@ public class rainbow extends Activity implements View.OnTouchListener, View.OnDr
 
         if ((r!= null) && (a!= null) && (i!= null) && (n!= null) && (b!= null) && (o!= null) && (w!= null)) {
 
+            b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_b.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_w.setBackgroundColor(Color.parseColor("#8BC34A"));
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
@@ -197,6 +206,62 @@ public class rainbow extends Activity implements View.OnTouchListener, View.OnDr
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
+
+            //r
+            if (r!= null ) {
+                b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_r.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //a
+            if (a!= null ) {
+                b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_a.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //i
+            if (i!= null ) {
+                b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_i.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //n
+            if (n!= null ) {
+                b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_n.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //b
+            if (b!= null ) {
+                b_b.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_b.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //o
+            if (o!= null ) {
+                b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_o.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //w
+            if (w!= null ) {
+                b_w.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_w.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
 
             switch (eventNumber){
                 case 1:

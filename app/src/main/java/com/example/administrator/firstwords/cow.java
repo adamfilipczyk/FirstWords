@@ -2,6 +2,7 @@ package com.example.administrator.firstwords;
 
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -125,6 +126,11 @@ public class cow extends Activity implements OnTouchListener, OnDragListener{
 
         if ((c!= null) && (o!= null) && (w!=null)) {
 
+            b_c.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_w.setBackgroundColor(Color.parseColor("#8BC34A"));
+
+
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
             correct3 = MediaPlayer.create(this, R.raw.didit);
@@ -179,6 +185,32 @@ public class cow extends Activity implements OnTouchListener, OnDragListener{
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
+
+            //c
+            if (c!= null ) {
+                b_c.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_c.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //o
+            if (o!= null ) {
+                b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_o.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+
+            //w
+            if (w!= null ) {
+                b_w.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_w.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
 
             switch (eventNumber){
                 case 1:

@@ -2,6 +2,7 @@ package com.example.administrator.firstwords;
 
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -131,6 +132,13 @@ public class lion extends  Activity implements OnTouchListener, OnDragListener {
         ImageView n = (ImageView) b_n.findViewById(R.id.lion_n);
 
         if ((l!= null) && (i!= null) && (o!=null) && (n!=null)) {
+
+            b_l.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+
+
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
             correct3 = MediaPlayer.create(this, R.raw.didit);
@@ -185,6 +193,39 @@ public class lion extends  Activity implements OnTouchListener, OnDragListener {
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
+
+            //l
+            if (l!= null ) {
+                b_l.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_l.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //i
+            if (i!= null ) {
+                b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_i.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //o
+            if (o!= null ) {
+                b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_o.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //n
+            if (n!= null ) {
+                b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_n.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
 
             switch (eventNumber){
                 case 1:

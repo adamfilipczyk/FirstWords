@@ -4,6 +4,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -111,6 +112,8 @@ public class may  extends Activity implements View.OnTouchListener, View.OnDragL
     //final check
     public void check (View view) {
 
+
+
         click.play(soundID, 1, 1, 1, 0, 1);
 
         LinearLayout b_m = (LinearLayout) findViewById(R.id.bottom_m);
@@ -131,6 +134,10 @@ public class may  extends Activity implements View.OnTouchListener, View.OnDragL
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
         if ((m != null) && (a != null) && (y != null)) {
+
+            b_m.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_y.setBackgroundColor(Color.parseColor("#8BC34A"));
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;
@@ -177,6 +184,30 @@ public class may  extends Activity implements View.OnTouchListener, View.OnDragL
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;
+
+            //m
+            if (a!= null ) {
+                b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_a.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //a
+            if (a!= null ) {
+                b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_a.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //y
+            if (y!= null ) {
+                b_y.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_y.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
 
             switch (eventNumber) {
                 case 1:

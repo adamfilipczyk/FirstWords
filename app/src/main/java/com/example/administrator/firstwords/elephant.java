@@ -2,6 +2,7 @@ package com.example.administrator.firstwords;
 
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -156,16 +157,28 @@ public class elephant extends Activity implements OnTouchListener, OnDragListene
         ImageView t = (ImageView) b_t.findViewById(R.id.elephant_t);
 
         if ((((e!= null) && (e2!=null)) || ((e3!= null) && (e4!=null))) && (l!=null) && (p!= null) && (h!= null) && (a!=null) && (n!= null) && (t!=null)) {
-            approved();
+            approved(e, e2, e3, e4, l, p, h, a, n, t, b_e, b_e2, b_e3, b_e4, b_l, b_p, b_h, b_a, b_n, b_t);
         }
         else {
-            disapproved();
+            disapproved(e, e2, e3, e4, l, p, h, a, n, t, b_e, b_e2, b_e3, b_e4, b_l, b_p, b_h, b_a, b_n, b_t);
         }
 
     }
 
     //approvals
-    public void approved (){
+    public void approved(ImageView e, ImageView e2, ImageView e3, ImageView e4, ImageView l, ImageView p, ImageView h, ImageView a, ImageView n, ImageView t, LinearLayout b_e, LinearLayout b_e2, LinearLayout b_e3, LinearLayout b_e4, LinearLayout b_l, LinearLayout b_p, LinearLayout b_h, LinearLayout b_a, LinearLayout b_n, LinearLayout b_t){
+
+        b_l.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e2.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e3.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e4.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_h.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+
         //objects for approval sounds
         correct1 = MediaPlayer.create(this, R.raw.welldone);
         correct2 = MediaPlayer.create(this, R.raw.congrats);
@@ -217,7 +230,7 @@ public class elephant extends Activity implements OnTouchListener, OnDragListene
     }
 
     //disapproval
-    public void disapproved (){
+    public void disapproved(ImageView e, ImageView e2, ImageView e3, ImageView e4, ImageView l, ImageView p, ImageView h, ImageView a, ImageView n, ImageView t, LinearLayout b_e, LinearLayout b_e2, LinearLayout b_e3, LinearLayout b_e4, LinearLayout b_l, LinearLayout b_p, LinearLayout b_h, LinearLayout b_a, LinearLayout b_n, LinearLayout b_t){
         //objects for disapproval sounds
         incorr1 = MediaPlayer.create(this, R.raw.rusure);
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
@@ -226,6 +239,81 @@ public class elephant extends Activity implements OnTouchListener, OnDragListene
         //sounds random generator
         Random generate = new Random();
         int eventNumber = generate.nextInt(3) + 1;
+
+
+        //d
+        if (l!= null ) {
+            b_l.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_l.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //e1
+        if (e!= null ) {
+            b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e3!= null ) {
+            b_e3.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_e.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //e2
+        if (e2!= null ) {
+            b_e2.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e4!= null ) {
+            b_e4.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_e2.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //p
+        if (p!= null ) {
+            b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_p.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //h
+        if (h!= null ) {
+            b_h.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_h.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //a
+        if (a!= null ) {
+            b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_a.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //h
+        if (n!= null ) {
+            b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_n.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //t
+        if (t!= null ) {
+            b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_t.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+
+
+
 
         //load sound based on generated value
         switch (eventNumber) {

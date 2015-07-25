@@ -3,6 +3,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -205,6 +206,60 @@ public class onion extends Activity implements View.OnTouchListener, View.OnDrag
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
+
+            //i
+            if (i!= null ) {
+                b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_i.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //o1
+            if (o1!= null ) {
+                b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (o3!= null ) {
+                b_o3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_o.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //o2
+            if (o2!= null ) {
+                b_o2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (o4!= null ) {
+                b_o4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_o2.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //n1
+            if (n1!= null ) {
+                b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (n3!= null ) {
+                b_n3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_n.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //n2
+            if (n2!= null ) {
+                b_n2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (n4!= null ) {
+                b_n4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_n2.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+
 
             switch (eventNumber){
                 case 1:

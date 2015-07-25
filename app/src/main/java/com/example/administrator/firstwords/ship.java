@@ -3,6 +3,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -138,6 +139,12 @@ public class ship extends Activity implements View.OnTouchListener, View.OnDragL
 
         if ((s!= null) && (h!= null) && (i!= null) && (p!= null)) {
 
+            b_s.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_h.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
+
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
@@ -184,6 +191,38 @@ public class ship extends Activity implements View.OnTouchListener, View.OnDragL
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
+
+            //s
+            if (s!= null ) {
+                b_s.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_s.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //h
+            if (h!= null ) {
+                b_h.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_h.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //i
+            if (i!= null ) {
+                b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_i.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //p
+            if (p!= null ) {
+                b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_p.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
 
             switch (eventNumber){
                 case 1:

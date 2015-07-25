@@ -3,6 +3,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -161,6 +162,17 @@ public class bicycle extends Activity implements View.OnTouchListener, View.OnDr
 
         if ((b!= null) && (i!= null) && (y!= null) && (l!= null) && (e!= null) && (((c1!=null) && (c2!=null)) || ((c3!=null) && (c4!=null)))) {
 
+            b_b.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_c.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_c2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_c3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_c4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_y.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_l.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
@@ -205,9 +217,73 @@ public class bicycle extends Activity implements View.OnTouchListener, View.OnDr
         }
         else {
 
+            //generate number between 1 and 3
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
+            //b
+            if (b!= null ) {
+                b_b.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_b.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //i
+            if (i!= null){
+                b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_i.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //c1
+            if (c1!= null){
+                b_c.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (c3!= null){
+                b_c3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_c.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //c2
+            if (c2!= null){
+                b_c2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (c4!= null){
+                b_c4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_c2.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //y
+            if (y!=null){
+                b_y.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_y.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //l
+            if (l!=null){
+                b_l.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_l.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //e
+            if (e!=null){
+                b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_e.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //random disapproval sound based on generated integer
             switch (eventNumber){
                 case 1:
                     incorr1.start();

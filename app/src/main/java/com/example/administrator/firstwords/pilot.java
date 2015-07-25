@@ -3,6 +3,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -142,6 +143,16 @@ public class pilot extends Activity implements View.OnTouchListener, View.OnDrag
 
         if ((p!= null) && (i!= null) && (l!= null) && (o!= null) && (t!=null)) {
 
+
+            b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_l.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+
+
+
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
@@ -188,6 +199,48 @@ public class pilot extends Activity implements View.OnTouchListener, View.OnDrag
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
+
+            //p
+            if (p!= null ) {
+                b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_p.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //i
+            if (i!= null ) {
+                b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_i.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //l
+            if (l!= null ) {
+                b_l.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_l.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //o
+            if (o!= null ) {
+                b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_o.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+
+            //t
+            if (t!= null ) {
+                b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_t.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
 
             switch (eventNumber){
                 case 1:

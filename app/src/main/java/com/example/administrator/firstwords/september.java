@@ -4,6 +4,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -134,6 +135,9 @@ public class september  extends Activity implements View.OnTouchListener, View.O
         LinearLayout b_t = (LinearLayout) findViewById(R.id.bottom_t);
         ImageView t = (ImageView) b_t.findViewById(R.id.september_t);
 
+        LinearLayout b_m = (LinearLayout) findViewById(R.id.bottom_m);
+        ImageView m = (ImageView) b_m.findViewById(R.id.september_m);
+
         LinearLayout b_b = (LinearLayout) findViewById(R.id.bottom_b);
         ImageView b = (ImageView) b_b.findViewById(R.id.september_b);
 
@@ -229,34 +233,65 @@ public class september  extends Activity implements View.OnTouchListener, View.O
 
         //redirection to the methods if the letters are properly ordered
         if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && ((e1!= null) && (e2!= null) && (e3!= null))){
-            approved();
+            approved(s, p, t, m, b, r, e1, e10, e11, e12, e13, e14, e15, e16, e17, e18, e19, e2, e20, e21, e3, e4, e5, e6, e7, e8, e9, b_s, b_p, b_t, b_m, b_b, b_r, b_e1, b_e10, b_e11, b_e12, b_e13, b_e14, b_e15, b_e16, b_e17, b_e18, b_e18, b_e19, b_e2, b_e20, b_e21, b_e3, b_e4, b_e5, b_e6, b_e7, b_e8, b_e9);
         }
         else if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && ((e4!= null) && (e5!= null) && (e6!= null))){
-            approved();
+            approved(s, p, t, m, b, r, e1, e10, e11, e12, e13, e14, e15, e16, e17, e18, e19, e2, e20, e21, e3, e4, e5, e6, e7, e8, e9, b_s, b_p, b_t, b_m, b_b, b_r, b_e1, b_e10, b_e11, b_e12, b_e13, b_e14, b_e15, b_e16, b_e17, b_e18, b_e18, b_e19, b_e2, b_e20, b_e21, b_e3, b_e4, b_e5, b_e6, b_e7, b_e8, b_e9);
         }
         else if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && ((e7!= null) && (e8!= null) && (e9!= null))){
-            approved();
+            approved(s, p, t, m, b, r, e1, e10, e11, e12, e13, e14, e15, e16, e17, e18, e19, e2, e20, e21, e3, e4, e5, e6, e7, e8, e9, b_s, b_p, b_t, b_m, b_b, b_r, b_e1, b_e10, b_e11, b_e12, b_e13, b_e14, b_e15, b_e16, b_e17, b_e18, b_e18, b_e19, b_e2, b_e20, b_e21, b_e3, b_e4, b_e5, b_e6, b_e7, b_e8, b_e9);
         }
         else if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && ((e10!= null) && (e11!= null) && (e12!= null))){
-            approved();
+            approved(s, p, t, m, b, r, e1, e10, e11, e12, e13, e14, e15, e16, e17, e18, e19, e2, e20, e21, e3, e4, e5, e6, e7, e8, e9, b_s, b_p, b_t, b_m, b_b, b_r, b_e1, b_e10, b_e11, b_e12, b_e13, b_e14, b_e15, b_e16, b_e17, b_e18, b_e18, b_e19, b_e2, b_e20, b_e21, b_e3, b_e4, b_e5, b_e6, b_e7, b_e8, b_e9);
         }
         else if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && ((e13!= null) && (e14!= null) && (e15!= null))){
-            approved();
+            approved(s, p, t, m, b, r, e1, e10, e11, e12, e13, e14, e15, e16, e17, e18, e19, e2, e20, e21, e3, e4, e5, e6, e7, e8, e9, b_s, b_p, b_t, b_m, b_b, b_r, b_e1, b_e10, b_e11, b_e12, b_e13, b_e14, b_e15, b_e16, b_e17, b_e18, b_e18, b_e19, b_e2, b_e20, b_e21, b_e3, b_e4, b_e5, b_e6, b_e7, b_e8, b_e9);
         }
         else if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && ((e16!= null) && (e17!= null) && (e18!= null))){
-            approved();
+            approved(s, p, t, m, b, r, e1, e10, e11, e12, e13, e14, e15, e16, e17, e18, e19, e2, e20, e21, e3, e4, e5, e6, e7, e8, e9, b_s, b_p, b_t, b_m, b_b, b_r, b_e1, b_e10, b_e11, b_e12, b_e13, b_e14, b_e15, b_e16, b_e17, b_e18, b_e18, b_e19, b_e2, b_e20, b_e21, b_e3, b_e4, b_e5, b_e6, b_e7, b_e8, b_e9);
         }
         else if ((s != null) && (p != null) && (t != null) && (b != null) && (r != null) && ((e19!= null) && (e20!= null) && (e21!= null))){
-            approved();
+            approved(s, p, t, m, b, r, e1, e10, e11, e12, e13, e14, e15, e16, e17, e18, e19, e2, e20, e21, e3, e4, e5, e6, e7, e8, e9, b_s, b_p, b_t, b_m, b_b, b_r, b_e1, b_e10, b_e11, b_e12, b_e13, b_e14, b_e15, b_e16, b_e17, b_e18, b_e18, b_e19, b_e2, b_e20, b_e21, b_e3, b_e4, b_e5, b_e6, b_e7, b_e8, b_e9);
         }
         else {
-            disapproved();
+            disapproved(s, p, t, m, b, r, e1, e10, e11, e12, e13, e14, e15, e16, e17, e18, e19, e2, e20, e21, e3, e4, e5, e6, e7, e8, e9, b_s, b_p, b_t, b_m, b_b, b_r, b_e1, b_e10, b_e11, b_e12, b_e13, b_e14, b_e15, b_e16, b_e17, b_e18, b_e18, b_e19, b_e2, b_e20, b_e21, b_e3, b_e4, b_e5, b_e6, b_e7, b_e8, b_e9);
         }
     }
 
 
     //approvals
-    public void approved (){
+    public void approved(ImageView s, ImageView p, ImageView t, ImageView m, ImageView b, ImageView r, ImageView e1, ImageView e10, ImageView e11, ImageView e12, ImageView e13, ImageView e14, ImageView e15, ImageView e16, ImageView e17, ImageView e18, ImageView e19, ImageView e2, ImageView e20, ImageView e21, ImageView e3, ImageView e4, ImageView e5, ImageView e6, ImageView e7, ImageView e8, ImageView e9, LinearLayout b_s, LinearLayout b_p, LinearLayout b_t, LinearLayout b_m, LinearLayout b_b, LinearLayout b_r, LinearLayout b_e1, LinearLayout b_e10, LinearLayout b_e11, LinearLayout b_e12, LinearLayout b_e13, LinearLayout b_e14, LinearLayout b_e15, LinearLayout b_e16, LinearLayout b_e17, LinearLayout b_e18, LinearLayout bE18, LinearLayout b_e19, LinearLayout b_e2, LinearLayout b_e20, LinearLayout b_e21, LinearLayout b_e3, LinearLayout b_e4, LinearLayout b_e5, LinearLayout b_e6, LinearLayout b_e7, LinearLayout b_e8, LinearLayout b_e9){
+
+
+        //change background color of the containers to green
+        b_s.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_m.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_b.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e1.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e2.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e3.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e4.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e5.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e6.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e7.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e8.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e9.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e10.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e11.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e12.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e13.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e14.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e15.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e16.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e17.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e18.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e19.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e20.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e21.setBackgroundColor(Color.parseColor("#8BC34A"));
+
 
         //sounds random generator
         Random generate = new Random();
@@ -304,11 +339,137 @@ public class september  extends Activity implements View.OnTouchListener, View.O
     }
 
     //disapprovals
-    public void disapproved (){
+    public void disapproved(ImageView s, ImageView p, ImageView t, ImageView m, ImageView b, ImageView r, ImageView e1, ImageView e10, ImageView e11, ImageView e12, ImageView e13, ImageView e14, ImageView e15, ImageView e16, ImageView e17, ImageView e18, ImageView e19, ImageView e2, ImageView e20, ImageView e21, ImageView e3, ImageView e4, ImageView e5, ImageView e6, ImageView e7, ImageView e8, ImageView e9, LinearLayout b_s, LinearLayout b_p, LinearLayout b_t, LinearLayout b_m, LinearLayout b_b, LinearLayout b_r, LinearLayout b_e1, LinearLayout b_e10, LinearLayout b_e11, LinearLayout b_e12, LinearLayout b_e13, LinearLayout b_e14, LinearLayout b_e15, LinearLayout b_e16, LinearLayout b_e17, LinearLayout b_e18, LinearLayout bE18, LinearLayout b_e19, LinearLayout b_e2, LinearLayout b_e20, LinearLayout b_e21, LinearLayout b_e3, LinearLayout b_e4, LinearLayout b_e5, LinearLayout b_e6, LinearLayout b_e7, LinearLayout b_e8, LinearLayout b_e9){
 
         //sounds random generator
         Random generate = new Random();
         int eventNumber = generate.nextInt(3) + 1;
+
+        //s
+        if (s!= null) {
+            b_s.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_s.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //p
+        if (p!= null){
+            b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_p.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //t
+        if (t!= null){
+            b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_t.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //m
+        if (m!= null) {
+            b_m.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_m.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //b
+        if (b!= null){
+            b_b.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_b.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //r
+        if (r!= null){
+            b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_r.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //e1
+        if (e1!= null){
+            b_e1.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e6!= null){
+            b_e6.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e8!= null){
+            b_e8.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e10!= null){
+            b_e10.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e13!= null){
+            b_e13.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e16!= null){
+            b_e16.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e19!= null){
+            b_e19.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_e1.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //e2
+        if (e2!= null){
+            b_e2.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e4!= null){
+            b_e4.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e9!= null){
+            b_e9.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e11!= null){
+            b_e11.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e14!= null){
+            b_e14.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e17!= null){
+            b_e17.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e21!= null){
+            b_e21.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_e2.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //e3
+        if (e3!= null){
+            b_e3.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e5!= null){
+            b_e5.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e7!= null){
+            b_e7.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e12!= null){
+            b_e12.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e15!= null){
+            b_e15.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e18!= null){
+            b_e18.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (e20!= null){
+            b_e20.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_e3.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
 
         //load sound based on generated value
         switch (eventNumber) {

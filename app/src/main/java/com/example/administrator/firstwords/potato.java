@@ -3,6 +3,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -133,8 +134,8 @@ public class potato extends Activity implements View.OnTouchListener, View.OnDra
         LinearLayout b_o2 = (LinearLayout) findViewById(R.id.bottom_o2);
         ImageView o2 = (ImageView) b_o2.findViewById(R.id.potato_o2);
 
-        LinearLayout b_b3 = (LinearLayout) findViewById(R.id.bottom_o);
-        ImageView o3 = (ImageView) b_b3.findViewById(R.id.potato_o2);
+        LinearLayout b_o3 = (LinearLayout) findViewById(R.id.bottom_o);
+        ImageView o3 = (ImageView) b_o3.findViewById(R.id.potato_o2);
 
         LinearLayout b_o4 = (LinearLayout) findViewById(R.id.bottom_o2);
         ImageView o4 = (ImageView) b_o4.findViewById(R.id.potato_o);
@@ -163,6 +164,69 @@ public class potato extends Activity implements View.OnTouchListener, View.OnDra
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
         if ((p != null) && (a != null)&& (((o1 != null) && (o2 != null)) || ((o3 != null) && (o4 != null))) && (((t1 != null) && (t2 != null)) || ((t3 != null) && (t4 != null)))) {
+
+
+            //p
+            if (p!= null ) {
+                b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_p.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //o1
+            if (o1!= null ) {
+                b_o1.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (o3!= null ) {
+                b_o3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_o1.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //o2
+            if (o2!= null ) {
+                b_o2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (o4!= null ) {
+                b_o4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_o2.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //t1
+            if (t1!= null ) {
+                b_t1.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (t3!= null ) {
+                b_t3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_t1.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //t2
+            if (t2!= null ) {
+                b_t2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (t4!= null ) {
+                b_t4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_t2.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+
+            //a
+            if (a!= null ) {
+                b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_a.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;

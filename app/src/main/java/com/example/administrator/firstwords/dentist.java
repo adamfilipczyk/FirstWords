@@ -3,6 +3,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -161,6 +162,17 @@ public class dentist extends Activity implements View.OnTouchListener, View.OnDr
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
         if ((d!= null) && (e!= null) && (n!= null) && (i!= null) && (s!= null) && (((t1!=null) && (t2!=null)) || ((t3!=null) && (t4!=null)))) {
+
+            b_d.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_t2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_t3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_t4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_s.setBackgroundColor(Color.parseColor("#8BC34A"));
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
@@ -207,6 +219,71 @@ public class dentist extends Activity implements View.OnTouchListener, View.OnDr
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
+
+            //d
+            if (d!= null ) {
+                b_d.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_d.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //t1
+            if (t1!= null ) {
+                b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (t3!= null ) {
+                b_t3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_t.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //t2
+            if (t2!= null ) {
+                b_t2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (t4!= null ) {
+                b_t4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_t2.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //e
+            if (e!= null ) {
+                b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_e.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+
+            //n
+            if (n!= null ) {
+                b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_n.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+
+            //i
+            if (i!= null ) {
+                b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_i.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+
+            //s
+            if (s!= null ) {
+                b_s.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_s.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
 
             switch (eventNumber){
                 case 1:

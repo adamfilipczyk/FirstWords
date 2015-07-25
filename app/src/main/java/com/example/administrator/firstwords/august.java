@@ -3,6 +3,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -153,6 +154,17 @@ public class august  extends Activity implements View.OnTouchListener, View.OnDr
 
         if ((a != null) && (g != null) && (s != null) && (t != null) && (((u1!=null) && (u2!=null)) || ((u3!=null) && (u4!=null)))) {
 
+            //change background color of the containers to green
+            b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_u1.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_u2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_u3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_u4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_g.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_s.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;
 
@@ -197,9 +209,54 @@ public class august  extends Activity implements View.OnTouchListener, View.OnDr
         } else {
 
             Random generate = new Random();
-            int eventNumber = generate.nextInt(3) + 1;
+            int eventNumber = generate.nextInt(3)+1;
 
-            switch (eventNumber) {
+            //change color to green if the letter is in proper container;
+            //change color to red if the etter is not in proper container;
+            if (a!= null) {
+                b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_a.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+            if (u1!= null){
+                b_u1.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (u3!= null){
+                b_u3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_u1.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+            if (u2!= null){
+                b_u2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (u4!= null){
+                b_u4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_u2.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+            if (g!= null){
+                b_g.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_g.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+            if (s!= null){
+                b_s.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_s.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+            if (t!= null){
+                b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_t.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            switch (eventNumber){
                 case 1:
                     incorr1.start();
                     break;

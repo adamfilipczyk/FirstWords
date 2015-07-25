@@ -3,6 +3,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -141,6 +142,16 @@ public class drill extends Activity implements View.OnTouchListener, View.OnDrag
 
 
         if ((d!= null) && (r!= null) && (i!=null) && (((l1!=null) && (l2!=null)) || ((l3!=null) && (l4!=null)))) {
+
+
+            b_d.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_l1.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_l2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_l3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_l4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
             correct3 = MediaPlayer.create(this, R.raw.didit);
@@ -195,6 +206,53 @@ public class drill extends Activity implements View.OnTouchListener, View.OnDrag
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
+
+
+            //d
+            if (d!= null ) {
+                b_d.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_d.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //s1
+            if (l1!= null ) {
+                b_l1.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (l3!= null ) {
+                b_l3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_l1.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //s2
+            if (l2!= null ) {
+                b_l2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (l4!= null ) {
+                b_l4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_l2.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //e
+            if (i!= null ) {
+                b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_i.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //r
+            if (r!= null ) {
+                b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_r.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
 
             switch (eventNumber){
                 case 1:

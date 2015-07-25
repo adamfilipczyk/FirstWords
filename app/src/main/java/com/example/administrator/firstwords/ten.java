@@ -5,6 +5,7 @@ import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -136,6 +137,11 @@ public class ten extends Activity implements View.OnTouchListener, View.OnDragLi
 
 
         if ((t!= null) && (e!= null) && (n!=null)) {
+
+
+            b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
 
 
             SharedPreferences sharedPreferences = getSharedPreferences("Save", Context.MODE_PRIVATE);
@@ -272,6 +278,30 @@ public class ten extends Activity implements View.OnTouchListener, View.OnDragLi
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
+
+            //t
+            if (t!= null ) {
+                b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_t.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //e
+            if (e!= null ) {
+                b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_e.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //n
+            if (n!= null ) {
+                b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_n.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
 
             switch (eventNumber){
                 case 1:

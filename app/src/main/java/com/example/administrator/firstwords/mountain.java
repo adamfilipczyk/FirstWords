@@ -3,6 +3,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -213,6 +214,63 @@ public class mountain extends Activity implements View.OnTouchListener, View.OnD
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
+
+            //m
+            if (m!= null ) {
+                b_m.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_m.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //n1
+            if (n1!= null ) {
+                b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (n3!= null ) {
+                b_n3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_n.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //n2
+            if (n2!= null ) {
+                b_n2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (n4!= null ) {
+                b_n4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_n2.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //o
+            if (o!= null ) {
+                b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_o.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+
+            //u
+            if (u!= null ) {
+                b_u.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_u.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+
+            //i
+            if (i!= null ) {
+                b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_i.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
 
             switch (eventNumber){
                 case 1:

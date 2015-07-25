@@ -9,8 +9,8 @@
     android:id="@+id/frame">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="600dp"
+        android:layout_height="600dp"
         android:id="@+id/one_completed"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
@@ -26,5 +26,5 @@
         android:layout_alignBottom="@+id/one_completed"
         android:layout_marginBottom="50dp"
         android:layout_alignRight="@+id/one_completed"
-        android:layout_marginRight="100dp" />
+        android:layout_marginRight="70dp" />
 </RelativeLayout>

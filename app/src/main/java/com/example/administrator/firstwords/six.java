@@ -3,6 +3,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -133,6 +134,12 @@ public class six extends Activity implements View.OnTouchListener, View.OnDragLi
 
         if ((s != null) && (i != null) && (x != null)) {
 
+
+            b_s.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_x.setBackgroundColor(Color.parseColor("#8BC34A"));
+
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;
 
@@ -178,6 +185,30 @@ public class six extends Activity implements View.OnTouchListener, View.OnDragLi
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;
+
+            //s
+            if (s!= null ) {
+                b_s.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_s.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //i
+            if (i!= null ) {
+                b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_i.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //x
+            if (x!= null ) {
+                b_x.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_x.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
 
             switch (eventNumber) {
                 case 1:

@@ -2,6 +2,7 @@ package com.example.administrator.firstwords;
 
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -146,14 +147,25 @@ public class rabbit extends Activity implements OnTouchListener, OnDragListener 
 
 
         if ((r!= null) && (a!= null) && (i!=null) && (t!= null) && (((b!= null) && (b2!=null)) || ((b3!=null) && (b4!=null)))) {
-            approved();
+            approved(r, a, b, b2, b3, b4, i, t, b_r, b_a, b_b, b_b2, b_b3, b_b4, b_i, b_t);
         }
         else {
-            disapproved();
+            disapproved(r, a, b, b2, b3, b4, i, t, b_r, b_a, b_b, b_b2, b_b3, b_b4, b_i, b_t);
         }
     }
     //approvals
-    public void approved (){
+    public void approved(ImageView r, ImageView a, ImageView b, ImageView b2, ImageView b3, ImageView b4, ImageView i, ImageView t, LinearLayout b_r, LinearLayout b_a, LinearLayout b_b, LinearLayout b_b2, LinearLayout b_b3, LinearLayout b_b4, LinearLayout b_i, LinearLayout b_t){
+
+        b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_b.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_b2.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_b3.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_b4.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+
+
         //objects for approval sounds
         correct1 = MediaPlayer.create(this, R.raw.welldone);
         correct2 = MediaPlayer.create(this, R.raw.congrats);
@@ -205,7 +217,7 @@ public class rabbit extends Activity implements OnTouchListener, OnDragListener 
     }
 
     //disapproval
-    public void disapproved (){
+    public void disapproved(ImageView r, ImageView a, ImageView b, ImageView b2, ImageView b3, ImageView b4, ImageView i, ImageView t, LinearLayout b_r, LinearLayout b_a, LinearLayout b_b, LinearLayout b_b2, LinearLayout b_b3, LinearLayout b_b4, LinearLayout b_i, LinearLayout b_t){
         //objects for disapproval sounds
         incorr1 = MediaPlayer.create(this, R.raw.rusure);
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
@@ -214,6 +226,60 @@ public class rabbit extends Activity implements OnTouchListener, OnDragListener 
         //sounds random generator
         Random generate = new Random();
         int eventNumber = generate.nextInt(3) + 1;
+
+        //r
+        if (r!= null ) {
+            b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_r.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //b1
+        if (b!= null ) {
+            b_b.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (b3!= null ) {
+            b_b3.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_b.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //b2
+        if (b2!= null ) {
+            b_b2.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (b4!= null ) {
+            b_b4.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_b2.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //a
+        if (a!= null ) {
+            b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_a.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //i
+        if (i!= null ) {
+            b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_i.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //t
+        if (t!= null ) {
+            b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_t.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
 
         //load sound based on generated value
         switch (eventNumber) {

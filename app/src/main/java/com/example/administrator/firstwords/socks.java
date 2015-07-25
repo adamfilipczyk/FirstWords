@@ -3,6 +3,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -198,6 +199,55 @@ public class socks extends Activity implements View.OnTouchListener, View.OnDrag
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
+
+
+            //s1
+            if (s1!= null ) {
+                b_s.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (s3!= null ) {
+                b_s3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_s.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //s2
+            if (s2!= null ) {
+                b_s2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (s4!= null ) {
+                b_s4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_s2.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+
+            //o
+            if (o!= null ) {
+                b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_o.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //c
+            if (c!= null ) {
+                b_c.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_c.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //k
+            if (k!= null ) {
+                b_k.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_k.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
 
             switch (eventNumber){
                 case 1:

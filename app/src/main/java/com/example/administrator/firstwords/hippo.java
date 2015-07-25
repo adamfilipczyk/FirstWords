@@ -2,6 +2,7 @@ package com.example.administrator.firstwords;
 
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -142,15 +143,25 @@ public class hippo extends Activity implements OnTouchListener, OnDragListener  
 
 
         if ((h!= null) && (i!= null) && (((p!=null) && (p2!=null)) || ((p3!=null) && (p4!=null))) && (o!=null)) {
-            approved();
+            approved(h, i, p, p2, p3, p4, o, b_h, b_i, b_p, b_p2, b_p3, b_p4, b_o);
         }
         else {
-            disapproved();
+            disapproved(h, i, p, p2, p3, p4, o, b_h, b_i, b_p, b_p2, b_p3, b_p4, b_o);
         }
     }
 
     //approvals
-    public void approved (){
+    public void approved(ImageView h, ImageView i, ImageView p, ImageView p2, ImageView p3, ImageView p4, ImageView o, LinearLayout b_h, LinearLayout b_i, LinearLayout b_p, LinearLayout b_p2, LinearLayout b_p3, LinearLayout b_p4, LinearLayout b_o){
+
+
+        b_h.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_p2.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_p3.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_p4.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
+
         //objects for approval sounds
         correct1 = MediaPlayer.create(this, R.raw.welldone);
         correct2 = MediaPlayer.create(this, R.raw.congrats);
@@ -202,7 +213,7 @@ public class hippo extends Activity implements OnTouchListener, OnDragListener  
     }
 
     //disapproval
-    public void disapproved (){
+    public void disapproved(ImageView h, ImageView i, ImageView p, ImageView p2, ImageView p3, ImageView p4, ImageView o, LinearLayout b_h, LinearLayout b_i, LinearLayout b_p, LinearLayout b_p2, LinearLayout b_p3, LinearLayout b_p4, LinearLayout b_o){
         //objects for disapproval sounds
         incorr1 = MediaPlayer.create(this, R.raw.rusure);
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
@@ -211,6 +222,53 @@ public class hippo extends Activity implements OnTouchListener, OnDragListener  
         //sounds random generator
         Random generate = new Random();
         int eventNumber = generate.nextInt(3) + 1;
+
+
+        //h
+        if (h!= null ) {
+            b_h.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_h.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //p1
+        if (p!= null ) {
+            b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (p3!= null ) {
+            b_p3.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_p.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //p2
+        if (p2!= null ) {
+            b_p2.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (p4!= null ) {
+            b_p4.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_p2.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //i
+        if (i!= null ) {
+            b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_i.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //o
+        if (o!= null ) {
+            b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_o.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
 
         //load sound based on generated value
         switch (eventNumber) {

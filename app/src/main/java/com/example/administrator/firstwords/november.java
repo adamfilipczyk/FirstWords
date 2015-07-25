@@ -3,6 +3,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -132,6 +133,9 @@ public class november  extends Activity implements View.OnTouchListener, View.On
         LinearLayout b_v = (LinearLayout) findViewById(R.id.bottom_v);
         ImageView v = (ImageView) b_v.findViewById(R.id.november_v);
 
+        LinearLayout b_m = (LinearLayout) findViewById(R.id.bottom_b);
+        ImageView m = (ImageView) b_m.findViewById(R.id.november_m);
+
         LinearLayout b_b = (LinearLayout) findViewById(R.id.bottom_b);
         ImageView b = (ImageView) b_b.findViewById(R.id.november_b);
 
@@ -162,6 +166,18 @@ public class november  extends Activity implements View.OnTouchListener, View.On
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
         if ((n != null) && (o != null) && (v != null) && (b != null) && (r != null) && (((e1!=null) && (e2!=null)) || ((e3!=null) && (e4!=null)))) {
+
+
+            b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e1.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_v.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_m.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_b.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;
@@ -208,6 +224,76 @@ public class november  extends Activity implements View.OnTouchListener, View.On
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;
+
+            //n
+            if (n!= null ) {
+                b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_n.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //e1
+            if (e1!= null ) {
+                b_e1.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (e3!= null ) {
+                b_e3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_e1.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //e2
+            if (e2!= null ) {
+                b_e2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (e4!= null ) {
+                b_e4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_e2.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //o
+            if (o!= null ) {
+                b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_o.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //v
+            if (v!= null ) {
+                b_v.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_v.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //m
+            if (m!= null ) {
+                b_m.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_m.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //b
+            if (b!= null ) {
+                b_b.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_b.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //r
+            if (r!= null ) {
+                b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_r.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
 
             switch (eventNumber) {
                 case 1:

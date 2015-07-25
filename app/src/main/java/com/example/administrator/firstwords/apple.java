@@ -2,6 +2,7 @@ package com.example.administrator.firstwords;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -34,8 +35,8 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         //initial sound
-       mMediaPlayer = MediaPlayer.create(this, R.raw.apple);
-       mMediaPlayer.start();
+        mMediaPlayer = MediaPlayer.create(this, R.raw.apple);
+        mMediaPlayer.start();
 
 
         //speaker btn sound
@@ -67,7 +68,7 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
 
     //sound of the picture displayed
     public void play(View view) {
-       sound.play(soundID, 1, 1, 1, 0, 1);
+        sound.play(soundID, 1, 1, 1, 0, 1);
     }
 
     //click btn sound; redirection to home screen
@@ -82,7 +83,7 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
     //method for dragging object
     @Override
     public boolean onDrag(View v, DragEvent event) {
-        if (event.getAction() == DragEvent.ACTION_DROP){
+        if (event.getAction() == DragEvent.ACTION_DROP) {
             View view = (View) event.getLocalState();
             ViewGroup group = (ViewGroup) view.getParent();
             group.removeView(view);
@@ -96,47 +97,46 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
     //method to set object moving
     @Override
     public boolean onTouch(View v, MotionEvent event) {
-        if (event.getAction() == MotionEvent.ACTION_DOWN){
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
             View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
             v.startDrag(null, shadowBuilder, v, 0);
             v.invalidate();
             return true;
-        }
-        else {
+        } else {
             return false;
         }
     }
 
 
     //final check
-    public void check (View view) {
+    public void check(View view) {
 
         click.play(soundID, 1, 1, 1, 0, 1);
 
         //letters to containers
-        LinearLayout b_a = (LinearLayout)findViewById(R.id.bottom_a);
+        LinearLayout b_a = (LinearLayout) findViewById(R.id.bottom_a);
         ImageView a = (ImageView) b_a.findViewById(R.id.apple_a);
 
-        LinearLayout b_l = (LinearLayout)findViewById(R.id.bottom_l);
+        LinearLayout b_l = (LinearLayout) findViewById(R.id.bottom_l);
         ImageView l = (ImageView) b_l.findViewById(R.id.apple_l);
 
-        LinearLayout b_e = (LinearLayout)findViewById(R.id.bottom_e);
+        LinearLayout b_e = (LinearLayout) findViewById(R.id.bottom_e);
         ImageView e = (ImageView) b_e.findViewById(R.id.apple_e);
 
         //p---------------------------------------------------------
 
-        LinearLayout b_p = (LinearLayout)findViewById(R.id.bottom_p);
+        LinearLayout b_p = (LinearLayout) findViewById(R.id.bottom_p);
         ImageView p = (ImageView) b_p.findViewById(R.id.apple_p);
 
-        LinearLayout b_p2 = (LinearLayout)findViewById(R.id.bottom_p2);
+        LinearLayout b_p2 = (LinearLayout) findViewById(R.id.bottom_p2);
         ImageView p2 = (ImageView) b_p2.findViewById(R.id.apple_p2);
 
-        LinearLayout b_p3 = (LinearLayout)findViewById(R.id.bottom_p);
+        LinearLayout b_p3 = (LinearLayout) findViewById(R.id.bottom_p);
         ImageView p3 = (ImageView) b_p3.findViewById(R.id.apple_p2);
 
-        LinearLayout b_p4 = (LinearLayout)findViewById(R.id.bottom_p2);
+        LinearLayout b_p4 = (LinearLayout) findViewById(R.id.bottom_p2);
         ImageView p4 = (ImageView) b_p4.findViewById(R.id.apple_p);
-    
+
         //approval / disapproval sounds
         correct1 = MediaPlayer.create(this, R.raw.welldone);
         correct2 = MediaPlayer.create(this, R.raw.congrats);
@@ -147,13 +147,23 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
         incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
         //redirection to the next screen if the letters are properly ordered
-        if ((a!= null) && (l!= null) && (e!=null) && (((p!=null) && (p2!=null)) || ((p3!=null) && (p4!=null)))) {
+        if ((a != null) && (l != null) && (e != null) && (((p != null) && (p2 != null)) || ((p3 != null) && (p4 != null)))) {
+
+            //change background color of the containers to green
+            b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_l.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_p2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_p3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_p4.setBackgroundColor(Color.parseColor("#8BC34A"));
 
             //sounds random generator
             Random generate = new Random();
-            int eventNumber = generate.nextInt(3)+1;
+            int eventNumber = generate.nextInt(3) + 1;
 
-            switch (eventNumber){
+            //load aproval sound and redirect to te next screen
+            switch (eventNumber) {
                 case 1:
                     correct1.start();
                     correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -191,14 +201,55 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
                     //do nothing
                     break;
             }
-        }
-        else {
+        } else {
 
             //disapproval sounds random generator
             Random generate = new Random();
-            int eventNumber = generate.nextInt(3)+1;
+            int eventNumber = generate.nextInt(3) + 1;
 
-            switch (eventNumber){
+            //change color to green if the letter is in proper container;
+            //change color to red if the etter is not in proper container;
+            if (a != null) {
+                b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            } else {
+                b_a.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            if (p != null) {
+                b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (p3 != null) {
+                b_p3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_p.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            if (p2 != null) {
+                b_p2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (p4 != null) {
+                b_p4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_p2.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            if (l != null) {
+                b_l.setBackgroundColor(Color.parseColor("#8BC34A"));
+            } else {
+                b_l.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            if (e != null) {
+                b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            } else {
+                b_e.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+
+            //load random disapproval sound
+            switch (eventNumber) {
                 case 1:
                     incorr1.start();
                     break;

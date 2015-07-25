@@ -2,6 +2,7 @@ package com.example.administrator.firstwords;
 
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -151,15 +152,15 @@ public class giraffe extends Activity implements OnTouchListener, OnDragListener
 
 
         if ((g!= null) && (i!= null) && (r!=null) && (a!= null) && (((f!= null) && (f2!=null)) || ((f3!=null) && (f4!=null))) && (e!= null)) {
-            approved();
+            approved(g, i, r, a, f, f2, f3, f4, e, b_g, b_i, b_r, b_a, b_f, b_f2, b_f3, b_f4, b_e);
         }
         else {
-            disapproved();
+            disapproved(g, i, r, a, f, f2, f3, f4, e, b_g, b_i, b_r, b_a, b_f, b_f2, b_f3, b_f4, b_e);
         }
     }
 
     //approvals
-    public void approved (){
+    public void approved(ImageView g, ImageView i, ImageView r, ImageView a, ImageView f, ImageView f2, ImageView f3, ImageView f4, ImageView e, LinearLayout b_g, LinearLayout b_i, LinearLayout b_r, LinearLayout b_a, LinearLayout b_f, LinearLayout b_f2, LinearLayout b_f3, LinearLayout b_f4, LinearLayout b_e){
         //objects for approval sounds
         correct1 = MediaPlayer.create(this, R.raw.welldone);
         correct2 = MediaPlayer.create(this, R.raw.congrats);
@@ -211,7 +212,7 @@ public class giraffe extends Activity implements OnTouchListener, OnDragListener
     }
 
     //disapproval
-    public void disapproved (){
+    public void disapproved(ImageView g, ImageView i, ImageView r, ImageView a, ImageView f, ImageView f2, ImageView f3, ImageView f4, ImageView e, LinearLayout b_g, LinearLayout b_i, LinearLayout b_r, LinearLayout b_a, LinearLayout b_f, LinearLayout b_f2, LinearLayout b_f3, LinearLayout b_f4, LinearLayout b_e){
         //objects for disapproval sounds
         incorr1 = MediaPlayer.create(this, R.raw.rusure);
         incorr2 = MediaPlayer.create(this, R.raw.incorrect);
@@ -220,6 +221,71 @@ public class giraffe extends Activity implements OnTouchListener, OnDragListener
         //sounds random generator
         Random generate = new Random();
         int eventNumber = generate.nextInt(3) + 1;
+
+
+        //g
+        if (g!= null ) {
+            b_g.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_g.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //f1
+        if (f!= null ) {
+            b_f.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (f3!= null ) {
+            b_f3.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_f.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //f2
+        if (f2!= null ) {
+            b_f2.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else if (f4!= null ) {
+            b_f4.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_f2.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //i
+        if (i!= null ) {
+            b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_i.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //r
+        if (r!= null ) {
+            b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_r.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //a
+        if (a!= null ) {
+            b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_a.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //r
+        if (e!= null ) {
+            b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_e.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+
 
         //load sound based on generated value
         switch (eventNumber) {

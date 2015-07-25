@@ -3,6 +3,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -170,6 +171,19 @@ public class cucumber extends Activity implements View.OnTouchListener, View.OnD
 
         if ((m!= null) && (b!= null) && (e!=null) && (r!=null) && (((c1!=null) && (c2!=null)) || ((c3!=null) && (c4!=null))) && (((u1!=null) && (u2!=null)) || ((u3!=null) && (u4!=null)))) {
 
+            b_c1.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_c2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_c3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_c4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_u1.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_u2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_u3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_u4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_m.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_b.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
@@ -216,6 +230,85 @@ public class cucumber extends Activity implements View.OnTouchListener, View.OnD
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
+
+            //c1
+            if (c1!= null ) {
+                b_c1.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (c3!= null ) {
+                b_c3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_c1.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //c2
+            if (c2!= null ) {
+                b_c2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (c4!= null ) {
+                b_c4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_c2.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //u1
+            if (u1!= null ) {
+                b_u1.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (u3!= null ) {
+                b_u3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_u1.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //u2
+            if (u2!= null ) {
+                b_u2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (u4!= null ) {
+                b_u4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_u2.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            //m
+            if (m!= null ) {
+                b_m.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_m.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+
+            //b
+            if (b!= null ) {
+                b_b.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_b.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+
+            //e
+            if (e!= null ) {
+                b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_e.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+
+            //r
+            if (r!= null ) {
+                b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_r.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
 
             switch (eventNumber){
                 case 1:

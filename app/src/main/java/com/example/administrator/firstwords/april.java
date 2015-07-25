@@ -3,6 +3,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -142,6 +143,12 @@ public class april extends Activity implements View.OnTouchListener, View.OnDrag
 
         if ((a != null) && (p != null) && (r != null) && (i != null) && (l != null)) {
 
+            b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_l.setBackgroundColor(Color.parseColor("#8BC34A"));
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;
 
@@ -187,6 +194,40 @@ public class april extends Activity implements View.OnTouchListener, View.OnDrag
 
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;
+
+            //change color to green if the letter is in proper container;
+            //change color to red if the etter is not in proper container;
+            if (a != null) {
+                b_a.setBackgroundColor(Color.parseColor("#FF0000"));
+            } else {
+                b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+
+            if (p != null) {
+                b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_p.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            if (r != null) {
+                b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_r.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            if (i != null) {
+                b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            } else {
+                b_i.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+            if (l != null) {
+                b_l.setBackgroundColor(Color.parseColor("#8BC34A"));
+            } else {
+                b_l.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
 
             switch (eventNumber) {
                 case 1:

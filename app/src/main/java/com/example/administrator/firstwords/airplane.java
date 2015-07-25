@@ -3,6 +3,7 @@ package com.example.administrator.firstwords;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -166,6 +167,18 @@ public class airplane extends Activity implements View.OnTouchListener, View.OnD
 
         if ((i!= null) && (r!= null) && (p!= null) && (l!= null) && (n!= null) && (e!= null) && (((a1!=null) && (a2!=null)) || ((a3!=null) && (a4!=null)))) {
 
+            //change background color of the containers to green
+            b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_l.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_a2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_a3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_a4.setBackgroundColor(Color.parseColor("#8BC34A"));
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
@@ -213,6 +226,63 @@ public class airplane extends Activity implements View.OnTouchListener, View.OnD
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
+            //change color to green if the letter is in proper container;
+            //change color to red if the etter is not in proper container;
+            if (i!= null) {
+                b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_i.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+            if (r!= null){
+                b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_r.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+            if (p!= null){
+                b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_p.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+            if (l!= null){
+                b_l.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_l.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+            if (n!= null){
+                b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_n.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+            if (e!= null){
+                b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_e.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+            if (a1!=null){
+                b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (a3!=null) {
+                b_a3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_a.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+            if (a2!=null){
+                b_a2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else if (a4!=null){
+                b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_a2.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
             switch (eventNumber){
                 case 1:
                     incorr1.start();
@@ -227,6 +297,7 @@ public class airplane extends Activity implements View.OnTouchListener, View.OnD
                     //do nothing
                     break;
             }
+
         }
     }
 }
