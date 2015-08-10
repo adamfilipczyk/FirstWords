@@ -12,7 +12,6 @@ import android.view.View.OnTouchListener;
 import android.view.View;
 import android.view.DragEvent;
 import android.view.MotionEvent;
-import android.view.View.DragShadowBuilder;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -192,7 +191,7 @@ public class hen extends  Activity implements OnTouchListener, OnDragListener {
                 b_h.setBackgroundColor(Color.parseColor("#FF0000"));
             }
 
-            //a
+            //e
             if (e!= null ) {
                 b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
@@ -200,7 +199,7 @@ public class hen extends  Activity implements OnTouchListener, OnDragListener {
                 b_e.setBackgroundColor(Color.parseColor("#FF0000"));
             }
 
-            //t
+            //n
             if (n!= null ) {
                 b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
@@ -224,5 +223,11 @@ public class hen extends  Activity implements OnTouchListener, OnDragListener {
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

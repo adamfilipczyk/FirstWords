@@ -12,7 +12,6 @@ import android.view.View.OnTouchListener;
 import android.view.View;
 import android.view.DragEvent;
 import android.view.MotionEvent;
-import android.view.View.DragShadowBuilder;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -296,5 +295,11 @@ public class rabbit extends Activity implements OnTouchListener, OnDragListener 
                 //do nothing
                 break;
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

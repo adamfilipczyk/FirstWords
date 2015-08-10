@@ -213,12 +213,16 @@ public class august  extends Activity implements View.OnTouchListener, View.OnDr
 
             //change color to green if the letter is in proper container;
             //change color to red if the etter is not in proper container;
+
+            //a
             if (a!= null) {
                 b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
                 b_a.setBackgroundColor(Color.parseColor("#FF0000"));
             }
+
+            //u1
             if (u1!= null){
                 b_u1.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
@@ -228,6 +232,8 @@ public class august  extends Activity implements View.OnTouchListener, View.OnDr
             else {
                 b_u1.setBackgroundColor(Color.parseColor("#FF0000"));
             }
+
+            //u2
             if (u2!= null){
                 b_u2.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
@@ -237,18 +243,24 @@ public class august  extends Activity implements View.OnTouchListener, View.OnDr
             else {
                 b_u2.setBackgroundColor(Color.parseColor("#FF0000"));
             }
+
+            //g
             if (g!= null){
                 b_g.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
                 b_g.setBackgroundColor(Color.parseColor("#FF0000"));
             }
+
+            //s
             if (s!= null){
                 b_s.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
                 b_s.setBackgroundColor(Color.parseColor("#FF0000"));
             }
+
+            //t
             if (t!= null){
                 b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
@@ -271,5 +283,11 @@ public class august  extends Activity implements View.OnTouchListener, View.OnDr
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

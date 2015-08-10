@@ -423,7 +423,7 @@ public class december  extends Activity implements View.OnTouchListener, View.On
         Random generate = new Random();
         int eventNumber = generate.nextInt(3) + 1;
 
-        //b
+        //d
         if (d!= null) {
             b_d.setBackgroundColor(Color.parseColor("#8BC34A"));
         }
@@ -437,6 +437,32 @@ public class december  extends Activity implements View.OnTouchListener, View.On
         }
         else {
             b_c.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+
+        //m
+        if (m!= null) {
+            b_m.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_m.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+        //b
+        if (b!= null){
+            b_b.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_b.setBackgroundColor(Color.parseColor("#FF0000"));
+        }
+
+
+        //r
+        if (r!= null){
+            b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+        }
+        else {
+            b_r.setBackgroundColor(Color.parseColor("#FF0000"));
         }
 
 
@@ -533,5 +559,11 @@ public class december  extends Activity implements View.OnTouchListener, View.On
                 //do nothing
                 break;
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

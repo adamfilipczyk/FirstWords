@@ -237,4 +237,10 @@ public class four extends Activity implements View.OnTouchListener, View.OnDragL
             }
         }
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

@@ -12,7 +12,6 @@ import android.view.View.OnTouchListener;
 import android.view.View;
 import android.view.DragEvent;
 import android.view.MotionEvent;
-import android.view.View.DragShadowBuilder;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -134,6 +133,13 @@ public class tiger extends Activity implements OnTouchListener, OnDragListener {
 
 
         if ((t!= null) && (i!= null) && (g!=null) && (e!= null) && (r!= null)) {
+
+            b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_g.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
             correct3 = MediaPlayer.create(this, R.raw.didit);
@@ -246,5 +252,11 @@ public class tiger extends Activity implements OnTouchListener, OnDragListener {
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

@@ -51,4 +51,10 @@ public class categories2 extends Activity {
         Intent cat2 = new Intent(this, apple.class);
         startActivity(cat2);
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

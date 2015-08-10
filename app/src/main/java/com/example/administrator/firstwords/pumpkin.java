@@ -166,6 +166,7 @@ public class pumpkin extends Activity implements View.OnTouchListener, View.OnDr
             b_p2.setBackgroundColor(Color.parseColor("#8BC34A"));
             b_p3.setBackgroundColor(Color.parseColor("#8BC34A"));
             b_p4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_m.setBackgroundColor(Color.parseColor("#8BC34A"));
             b_k.setBackgroundColor(Color.parseColor("#8BC34A"));
             b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
             b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
@@ -247,6 +248,14 @@ public class pumpkin extends Activity implements View.OnTouchListener, View.OnDr
                 b_p2.setBackgroundColor(Color.parseColor("#FF0000"));
             }
 
+            //m
+            if (m!= null ) {
+                b_m.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_m.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
             //k
             if (k!= null ) {
                 b_k.setBackgroundColor(Color.parseColor("#8BC34A"));
@@ -287,5 +296,11 @@ public class pumpkin extends Activity implements View.OnTouchListener, View.OnDr
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

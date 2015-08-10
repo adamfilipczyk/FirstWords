@@ -91,4 +91,10 @@ public class categories7 extends Activity {
         Intent cat7 = new Intent(this, cactus.class);
         startActivity(cat7);
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

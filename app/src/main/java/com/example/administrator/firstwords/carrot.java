@@ -162,7 +162,7 @@ public class carrot extends Activity implements View.OnTouchListener, View.OnDra
             b_r1.setBackgroundColor(Color.parseColor("#8BC34A"));
             b_r2.setBackgroundColor(Color.parseColor("#8BC34A"));
             b_r3.setBackgroundColor(Color.parseColor("#8BC34A"));
-            b_r3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_r4.setBackgroundColor(Color.parseColor("#8BC34A"));
             b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
             b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
 
@@ -284,5 +284,11 @@ public class carrot extends Activity implements View.OnTouchListener, View.OnDra
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

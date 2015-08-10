@@ -59,4 +59,10 @@ public class categories3 extends Activity {
         Intent cat3 = new Intent(this, boot.class);
         startActivity(cat3);
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

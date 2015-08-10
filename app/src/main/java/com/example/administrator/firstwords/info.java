@@ -40,4 +40,10 @@ public class info extends ActionBarActivity {
         Intent home = new Intent(this, home.class);
         startActivity(home);
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

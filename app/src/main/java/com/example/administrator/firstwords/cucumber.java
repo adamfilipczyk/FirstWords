@@ -326,4 +326,10 @@ public class cucumber extends Activity implements View.OnTouchListener, View.OnD
             }
         }
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

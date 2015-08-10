@@ -114,4 +114,10 @@ public class categories11 extends Activity {
         Intent cat10 = new Intent(this, airplane.class);
         startActivity(cat10);
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

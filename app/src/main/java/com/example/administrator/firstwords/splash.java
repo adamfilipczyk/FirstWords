@@ -1,8 +1,6 @@
 package com.example.administrator.firstwords;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -38,4 +36,9 @@ public class splash extends ActionBarActivity {
         });
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

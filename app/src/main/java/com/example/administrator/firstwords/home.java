@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.media.SoundPool;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -82,6 +83,17 @@ public class home extends Activity{
         Intent home = new Intent(this, info.class);
         startActivity(home);
     }
+
+
+    public void youtube (View view) {
+
+        click.play(soundID, 1, 1, 1, 0, 1);
+        Uri uri = Uri.parse("http://youtu.be/BH4b-k8fePE");
+        finish();
+        Intent utube = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(utube);
+    }
+
 
     public void play(View view) {
 
@@ -163,5 +175,11 @@ public class home extends Activity{
                 break;
         }
 
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

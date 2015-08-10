@@ -143,6 +143,12 @@ public class judge extends Activity implements View.OnTouchListener, View.OnDrag
 
         if ((j!= null) && (u!= null) && (d!= null) && (g!= null) && (e!=null)) {
 
+            b_u.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_u.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_d.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_g.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
@@ -249,5 +255,11 @@ public class judge extends Activity implements View.OnTouchListener, View.OnDrag
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

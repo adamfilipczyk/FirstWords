@@ -160,6 +160,17 @@ public class onion extends Activity implements View.OnTouchListener, View.OnDrag
 
         if ((i!= null) && (((n1!=null) && (n2!=null)) || ((n3!=null) && (n4!=null))) && (((o1!=null) && (o2!=null)) || ((o3!=null) && (o4!=null)))) {
 
+            b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_o2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_o3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_o4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_n2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_n3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_n3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_n4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
@@ -276,5 +287,11 @@ public class onion extends Activity implements View.OnTouchListener, View.OnDrag
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

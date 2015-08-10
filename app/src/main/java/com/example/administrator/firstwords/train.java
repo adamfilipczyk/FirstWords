@@ -251,4 +251,10 @@ public class train extends Activity implements View.OnTouchListener, View.OnDrag
             }
         }
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

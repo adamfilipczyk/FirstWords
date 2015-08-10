@@ -313,4 +313,10 @@ public class february  extends Activity implements View.OnTouchListener, View.On
             }
         }
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

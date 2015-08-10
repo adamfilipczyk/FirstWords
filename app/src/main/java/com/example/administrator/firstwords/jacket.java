@@ -138,6 +138,13 @@ public class jacket extends Activity implements View.OnTouchListener, View.OnDra
 
         if ((j!= null) && (a!= null) && (c!=null) && (k!= null) && (e!= null) && (t!=null)) {
 
+            b_j.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_c.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_k.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
             correct3 = MediaPlayer.create(this, R.raw.didit);
@@ -258,5 +265,11 @@ public class jacket extends Activity implements View.OnTouchListener, View.OnDra
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

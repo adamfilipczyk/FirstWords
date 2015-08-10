@@ -312,4 +312,10 @@ public class tractor extends Activity implements View.OnTouchListener, View.OnDr
             }
         }
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

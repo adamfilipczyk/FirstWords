@@ -213,7 +213,7 @@ public class boot extends Activity implements View.OnTouchListener, View.OnDragL
             if (o1!= null){
                 b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
-            if (o3!= null){
+            else if (o3!= null){
                 b_o3.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
@@ -225,7 +225,7 @@ public class boot extends Activity implements View.OnTouchListener, View.OnDragL
             if (o2!= null){
                 b_o2.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
-            if (o4!= null){
+            else if (o4!= null){
                 b_o4.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
@@ -256,5 +256,11 @@ public class boot extends Activity implements View.OnTouchListener, View.OnDragL
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

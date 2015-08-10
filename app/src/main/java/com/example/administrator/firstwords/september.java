@@ -487,4 +487,10 @@ public class september  extends Activity implements View.OnTouchListener, View.O
                 break;
         }
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

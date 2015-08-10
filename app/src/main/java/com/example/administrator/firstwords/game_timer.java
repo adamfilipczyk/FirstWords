@@ -136,4 +136,10 @@ public class game_timer extends Activity {
                 break;
         }
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

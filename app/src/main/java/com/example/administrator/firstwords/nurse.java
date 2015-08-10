@@ -143,6 +143,13 @@ public class nurse extends Activity implements View.OnTouchListener, View.OnDrag
 
         if ((n!= null) && (u!= null) && (r!= null) && (s!= null) && (e!=null)) {
 
+            b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_u.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_s.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
@@ -245,5 +252,11 @@ public class nurse extends Activity implements View.OnTouchListener, View.OnDrag
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

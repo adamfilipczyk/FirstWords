@@ -141,6 +141,11 @@ public class leaf extends Activity implements View.OnTouchListener, View.OnDragL
 
         if ((l!= null) && (e!= null) && (a!= null) && (f!= null)) {
 
+            b_l.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_f.setBackgroundColor(Color.parseColor("#8BC34A"));
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
@@ -235,5 +240,11 @@ public class leaf extends Activity implements View.OnTouchListener, View.OnDragL
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

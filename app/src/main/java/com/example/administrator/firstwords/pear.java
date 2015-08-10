@@ -137,6 +137,11 @@ public class pear extends Activity implements View.OnTouchListener, View.OnDragL
 
         if ((p!= null) && (e!= null) && (a!=null) && (r!=null)) {
 
+            b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
@@ -232,5 +237,11 @@ public class pear extends Activity implements View.OnTouchListener, View.OnDragL
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

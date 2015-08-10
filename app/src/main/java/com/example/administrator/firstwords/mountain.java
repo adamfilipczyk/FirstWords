@@ -168,6 +168,17 @@ public class mountain extends Activity implements View.OnTouchListener, View.OnD
 
         if ((m!= null) && (o!= null) && (u!= null) && (t!= null) && (a!= null) && (i!= null) && (((n1!=null) && (n2!=null)) || ((n3!=null) && (n4!=null)))) {
 
+            b_m.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_u.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_n2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_n3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_n4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
@@ -263,6 +274,23 @@ public class mountain extends Activity implements View.OnTouchListener, View.OnD
             }
 
 
+            //t
+            if (t!= null ) {
+                b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_t.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
+
+            //a
+            if (a!= null ) {
+                b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            }
+            else {
+                b_a.setBackgroundColor(Color.parseColor("#FF0000"));
+            }
+
             //i
             if (i!= null ) {
                 b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
@@ -287,5 +315,11 @@ public class mountain extends Activity implements View.OnTouchListener, View.OnD
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

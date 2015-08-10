@@ -284,4 +284,10 @@ public class camera extends Activity implements View.OnTouchListener, View.OnDra
             }
         }
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

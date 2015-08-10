@@ -183,18 +183,23 @@ public class bed extends Activity implements View.OnTouchListener, View.OnDragLi
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
+            //b
             if (b!= null ) {
                 b_b.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
                 b_b.setBackgroundColor(Color.parseColor("#FF0000"));
             }
+
+            //e
             if (e!= null){
                 b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
                 b_e.setBackgroundColor(Color.parseColor("#FF0000"));
             }
+
+            //d
             if (d!= null){
                 b_d.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
@@ -217,5 +222,11 @@ public class bed extends Activity implements View.OnTouchListener, View.OnDragLi
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

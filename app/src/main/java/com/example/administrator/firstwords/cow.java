@@ -12,19 +12,20 @@ import android.view.View.OnTouchListener;
 import android.view.View;
 import android.view.DragEvent;
 import android.view.MotionEvent;
-import android.view.View.DragShadowBuilder;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.app.Activity;
+
 import java.util.Random;
 
 /**
  * @author Adam Filipczyk
  */
 
-public class cow extends Activity implements OnTouchListener, OnDragListener{
+public class cow extends Activity implements OnTouchListener, OnDragListener {
+
 
     SoundPool sound, click;
     int soundID;
@@ -82,14 +83,15 @@ public class cow extends Activity implements OnTouchListener, OnDragListener{
     @Override
     public boolean onDrag(View v, DragEvent event) {
         int action = event.getAction();
-        switch (action){
+        switch (action) {
             case DragEvent.ACTION_DROP:
+
                 View view = (View) event.getLocalState();
                 ViewGroup group = (ViewGroup) view.getParent();
                 group.removeView(view);
                 LinearLayout target = (LinearLayout) v;
                 target.addView(view);
-                view.setVisibility(View.VISIBLE);
+                target.setVisibility(View.VISIBLE);
                 break;
         }
         return true;
@@ -98,33 +100,32 @@ public class cow extends Activity implements OnTouchListener, OnDragListener{
     //method to set object moving
     @Override
     public boolean onTouch(View v, MotionEvent event) {
-        if (event.getAction() == MotionEvent.ACTION_DOWN){
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
             ClipData data = ClipData.newPlainText("", "");
             View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(v);
             v.startDrag(data, shadowBuilder, v, 0);
             v.invalidate();
             return true;
-        }
-        else {
+        } else {
             return false;
         }
     }
 
 
-    public void check (View view) {
+    public void check(View view) {
 
-       click.play(soundID, 1, 1, 1, 0, 1);
+        click.play(soundID, 1, 1, 1, 0, 1);
 
-       LinearLayout b_c = (LinearLayout)findViewById(R.id.bottom_c);
+        LinearLayout b_c = (LinearLayout) findViewById(R.id.bottom_c);
         ImageView c = (ImageView) b_c.findViewById(R.id.cow_c);
 
-        LinearLayout b_o = (LinearLayout)findViewById(R.id.bottom_o);
+        LinearLayout b_o = (LinearLayout) findViewById(R.id.bottom_o);
         ImageView o = (ImageView) b_o.findViewById(R.id.cow_o);
 
-        LinearLayout b_w = (LinearLayout)findViewById(R.id.bottom_w);
+        LinearLayout b_w = (LinearLayout) findViewById(R.id.bottom_w);
         ImageView w = (ImageView) b_w.findViewById(R.id.cow_w);
 
-        if ((c!= null) && (o!= null) && (w!=null)) {
+        if ((c != null) && (o != null) && (w != null)) {
 
             b_c.setBackgroundColor(Color.parseColor("#8BC34A"));
             b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
@@ -136,9 +137,9 @@ public class cow extends Activity implements OnTouchListener, OnDragListener{
             correct3 = MediaPlayer.create(this, R.raw.didit);
 
             Random generate = new Random();
-            int eventNumber = generate.nextInt(3)+1;
+            int eventNumber = generate.nextInt(3) + 1;
 
-            switch (eventNumber){
+            switch (eventNumber) {
                 case 1:
                     correct1.start();
                     correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -176,43 +177,39 @@ public class cow extends Activity implements OnTouchListener, OnDragListener{
                     //do nothing
                     break;
             }
-        }
-        else {
+        } else {
 
             incorr1 = MediaPlayer.create(this, R.raw.rusure);
             incorr2 = MediaPlayer.create(this, R.raw.incorrect);
             incorr3 = MediaPlayer.create(this, R.raw.tryagain);
 
             Random generate = new Random();
-            int eventNumber = generate.nextInt(3)+1;
+            int eventNumber = generate.nextInt(3) + 1;
 
             //c
-            if (c!= null ) {
+            if (c != null) {
                 b_c.setBackgroundColor(Color.parseColor("#8BC34A"));
-            }
-            else {
+            } else {
                 b_c.setBackgroundColor(Color.parseColor("#FF0000"));
             }
 
             //o
-            if (o!= null ) {
+            if (o != null) {
                 b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
-            }
-            else {
+            } else {
                 b_o.setBackgroundColor(Color.parseColor("#FF0000"));
             }
 
 
             //w
-            if (w!= null ) {
+            if (w != null) {
                 b_w.setBackgroundColor(Color.parseColor("#8BC34A"));
-            }
-            else {
+            } else {
                 b_w.setBackgroundColor(Color.parseColor("#FF0000"));
             }
 
 
-            switch (eventNumber){
+            switch (eventNumber) {
                 case 1:
                     incorr1.start();
                     break;
@@ -227,5 +224,11 @@ public class cow extends Activity implements OnTouchListener, OnDragListener{
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

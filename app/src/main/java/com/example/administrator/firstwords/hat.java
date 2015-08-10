@@ -227,5 +227,9 @@ public class hat extends Activity implements View.OnTouchListener, View.OnDragLi
         }
     }
 
-
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

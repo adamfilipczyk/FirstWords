@@ -307,19 +307,12 @@ public class trousers extends Activity implements View.OnTouchListener, View.OnD
 
             //e
             if (e!= null ) {
-                b_s.setBackgroundColor(Color.parseColor("#8BC34A"));
-            }
-            else {
-                b_e.setBackgroundColor(Color.parseColor("#FF0000"));
-            }
-
-            //e
-            if (e!= null ) {
                 b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
                 b_e.setBackgroundColor(Color.parseColor("#FF0000"));
             }
+
 
 
             switch (eventNumber){
@@ -339,4 +332,9 @@ public class trousers extends Activity implements View.OnTouchListener, View.OnD
         }
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

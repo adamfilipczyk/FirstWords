@@ -133,7 +133,7 @@ public class november  extends Activity implements View.OnTouchListener, View.On
         LinearLayout b_v = (LinearLayout) findViewById(R.id.bottom_v);
         ImageView v = (ImageView) b_v.findViewById(R.id.november_v);
 
-        LinearLayout b_m = (LinearLayout) findViewById(R.id.bottom_b);
+        LinearLayout b_m = (LinearLayout) findViewById(R.id.bottom_m);
         ImageView m = (ImageView) b_m.findViewById(R.id.november_m);
 
         LinearLayout b_b = (LinearLayout) findViewById(R.id.bottom_b);
@@ -310,5 +310,11 @@ public class november  extends Activity implements View.OnTouchListener, View.On
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

@@ -166,6 +166,63 @@ public class potato extends Activity implements View.OnTouchListener, View.OnDra
         if ((p != null) && (a != null)&& (((o1 != null) && (o2 != null)) || ((o3 != null) && (o4 != null))) && (((t1 != null) && (t2 != null)) || ((t3 != null) && (t4 != null)))) {
 
 
+            b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_o1.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_o2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_o3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_o4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_t1.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_t2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_t3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_t4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+
+            Random generate = new Random();
+            int eventNumber = generate.nextInt(3) + 1;
+
+            switch (eventNumber) {
+                case 1:
+                    correct1.start();
+                    correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        public void onCompletion(MediaPlayer mp) {
+                            mp.release();
+                            finish();
+                            Intent pum = new Intent(getApplicationContext(), pumpkin.class);
+                            startActivity(pum);
+                        }
+                    });
+                    break;
+                case 2:
+                    correct2.start();
+                    correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        public void onCompletion(MediaPlayer mp) {
+                            mp.release();
+                            finish();
+                            Intent pum = new Intent(getApplicationContext(), pumpkin.class);
+                            startActivity(pum);
+                        }
+                    });
+                    break;
+                case 3:
+                    correct3.start();
+                    correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        public void onCompletion(MediaPlayer mp) {
+                            mp.release();
+                            finish();
+                            Intent pum = new Intent(getApplicationContext(), pumpkin.class);
+                            startActivity(pum);
+                        }
+                    });
+                    break;
+                default:
+                    //do nothing
+                    break;
+            }
+        } else {
+
+            Random generate = new Random();
+            int eventNumber = generate.nextInt(3) + 1;
+
             //p
             if (p!= null ) {
                 b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
@@ -228,52 +285,6 @@ public class potato extends Activity implements View.OnTouchListener, View.OnDra
             }
 
 
-            Random generate = new Random();
-            int eventNumber = generate.nextInt(3) + 1;
-
-            switch (eventNumber) {
-                case 1:
-                    correct1.start();
-                    correct1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                        public void onCompletion(MediaPlayer mp) {
-                            mp.release();
-                            finish();
-                            Intent pum = new Intent(getApplicationContext(), pumpkin.class);
-                            startActivity(pum);
-                        }
-                    });
-                    break;
-                case 2:
-                    correct2.start();
-                    correct2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                        public void onCompletion(MediaPlayer mp) {
-                            mp.release();
-                            finish();
-                            Intent pum = new Intent(getApplicationContext(), pumpkin.class);
-                            startActivity(pum);
-                        }
-                    });
-                    break;
-                case 3:
-                    correct3.start();
-                    correct3.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                        public void onCompletion(MediaPlayer mp) {
-                            mp.release();
-                            finish();
-                            Intent pum = new Intent(getApplicationContext(), pumpkin.class);
-                            startActivity(pum);
-                        }
-                    });
-                    break;
-                default:
-                    //do nothing
-                    break;
-            }
-        } else {
-
-            Random generate = new Random();
-            int eventNumber = generate.nextInt(3) + 1;
-
             switch (eventNumber) {
                 case 1:
                     incorr1.start();
@@ -289,5 +300,11 @@ public class potato extends Activity implements View.OnTouchListener, View.OnDra
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

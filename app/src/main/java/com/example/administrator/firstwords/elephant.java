@@ -12,7 +12,6 @@ import android.view.View.OnTouchListener;
 import android.view.View;
 import android.view.DragEvent;
 import android.view.MotionEvent;
-import android.view.View.DragShadowBuilder;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -241,7 +240,7 @@ public class elephant extends Activity implements OnTouchListener, OnDragListene
         int eventNumber = generate.nextInt(3) + 1;
 
 
-        //d
+        //l
         if (l!= null ) {
             b_l.setBackgroundColor(Color.parseColor("#8BC34A"));
         }
@@ -295,7 +294,7 @@ public class elephant extends Activity implements OnTouchListener, OnDragListene
             b_a.setBackgroundColor(Color.parseColor("#FF0000"));
         }
 
-        //h
+        //n
         if (n!= null ) {
             b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
         }
@@ -330,5 +329,11 @@ public class elephant extends Activity implements OnTouchListener, OnDragListene
                 //do nothing
                 break;
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

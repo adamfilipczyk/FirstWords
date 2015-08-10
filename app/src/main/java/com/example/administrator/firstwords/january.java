@@ -162,6 +162,16 @@ public class january extends Activity implements View.OnTouchListener, View.OnDr
 
         if ((j != null) && (n != null) && (u != null) && (r != null) && (y != null) && (((a1 != null) && (a2 != null)) || ((a3 != null) && (a4 != null)))) {
 
+            b_j.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_a1.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_a2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_a3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_a4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_u.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_y.setBackgroundColor(Color.parseColor("#8BC34A"));
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;
 
@@ -288,5 +298,11 @@ public class january extends Activity implements View.OnTouchListener, View.OnDr
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

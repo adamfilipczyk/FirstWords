@@ -365,7 +365,7 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
             b_n4.setBackgroundColor(Color.parseColor("#8BC34A"));
         }
         else {
-            b_n4.setBackgroundColor(Color.parseColor("#FF0000"));
+            b_n2.setBackgroundColor(Color.parseColor("#FF0000"));
         }
 
         //a1
@@ -462,6 +462,12 @@ public class banana extends Activity implements View.OnTouchListener, View.OnDra
                 //do nothing
                 break;
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }
 

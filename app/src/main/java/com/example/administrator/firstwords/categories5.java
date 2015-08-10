@@ -75,4 +75,10 @@ public class categories5 extends Activity {
         Intent cat5 = new Intent(this, bath.class);
         startActivity(cat5);
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

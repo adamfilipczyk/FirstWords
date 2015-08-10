@@ -99,4 +99,10 @@ public class categories8  extends Activity {
         startActivity(cat8);
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
+
 }

@@ -149,6 +149,13 @@ public class sleigh  extends Activity implements View.OnTouchListener, View.OnDr
 
         if ((s!= null) && (l!= null) && (e!= null) && (i!= null)&& (g!= null) && (h!= null)) {
 
+            b_s.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_l.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_g.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_h.setBackgroundColor(Color.parseColor("#8BC34A"));
+
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
@@ -261,5 +268,11 @@ public class sleigh  extends Activity implements View.OnTouchListener, View.OnDr
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

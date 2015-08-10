@@ -99,4 +99,10 @@ public class one_completed extends Activity {
                 break;
         }
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

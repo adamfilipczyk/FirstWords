@@ -89,7 +89,8 @@
                 android:layout_height="180dp"
                 android:id="@+id/btn_youtube"
                 android:background="@drawable/youtube_btn"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:onClick="youtube"/>
         </LinearLayout>
     </GridLayout>
 </LinearLayout>

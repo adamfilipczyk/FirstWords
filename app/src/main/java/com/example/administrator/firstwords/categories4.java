@@ -67,4 +67,10 @@ public class categories4 extends Activity {
         Intent cat4 = new Intent(this, camera.class);
         startActivity(cat4);
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

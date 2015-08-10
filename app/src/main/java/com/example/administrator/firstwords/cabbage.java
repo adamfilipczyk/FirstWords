@@ -274,7 +274,7 @@ public class cabbage extends Activity implements View.OnTouchListener, View.OnDr
             if (b2!=null){
                 b_b2.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
-            if (b4!= null){
+            else if (b4!= null){
                 b_b4.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
@@ -316,5 +316,11 @@ public class cabbage extends Activity implements View.OnTouchListener, View.OnDr
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

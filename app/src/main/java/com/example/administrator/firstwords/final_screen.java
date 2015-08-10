@@ -48,4 +48,10 @@ public class final_screen extends Activity {
         Intent home = new Intent(this, home.class);
         startActivity(home);
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

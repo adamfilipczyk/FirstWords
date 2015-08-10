@@ -12,7 +12,6 @@ import android.view.View.OnTouchListener;
 import android.view.View;
 import android.view.DragEvent;
 import android.view.MotionEvent;
-import android.view.View.DragShadowBuilder;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -161,6 +160,18 @@ public class giraffe extends Activity implements OnTouchListener, OnDragListener
 
     //approvals
     public void approved(ImageView g, ImageView i, ImageView r, ImageView a, ImageView f, ImageView f2, ImageView f3, ImageView f4, ImageView e, LinearLayout b_g, LinearLayout b_i, LinearLayout b_r, LinearLayout b_a, LinearLayout b_f, LinearLayout b_f2, LinearLayout b_f3, LinearLayout b_f4, LinearLayout b_e){
+
+        b_g.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_f.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_f2.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_f3.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_f4.setBackgroundColor(Color.parseColor("#8BC34A"));
+        b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+
+
         //objects for approval sounds
         correct1 = MediaPlayer.create(this, R.raw.welldone);
         correct2 = MediaPlayer.create(this, R.raw.congrats);
@@ -277,7 +288,7 @@ public class giraffe extends Activity implements OnTouchListener, OnDragListener
             b_a.setBackgroundColor(Color.parseColor("#FF0000"));
         }
 
-        //r
+        //e
         if (e!= null ) {
             b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
         }
@@ -302,5 +313,11 @@ public class giraffe extends Activity implements OnTouchListener, OnDragListener
                 //do nothing
                 break;
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

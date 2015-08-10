@@ -186,11 +186,11 @@ public class may  extends Activity implements View.OnTouchListener, View.OnDragL
             int eventNumber = generate.nextInt(3) + 1;
 
             //m
-            if (a!= null ) {
-                b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            if (m!= null ) {
+                b_m.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
-                b_a.setBackgroundColor(Color.parseColor("#FF0000"));
+                b_m.setBackgroundColor(Color.parseColor("#FF0000"));
             }
 
             //a
@@ -224,5 +224,11 @@ public class may  extends Activity implements View.OnTouchListener, View.OnDragL
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

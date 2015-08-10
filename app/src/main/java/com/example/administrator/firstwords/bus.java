@@ -194,7 +194,7 @@ public class bus extends Activity implements View.OnTouchListener, View.OnDragLi
             }
 
             //u
-            if (u== null){
+            if (u!= null){
                 b_u.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
@@ -202,7 +202,7 @@ public class bus extends Activity implements View.OnTouchListener, View.OnDragLi
             }
 
             //s
-            if (s== null){
+            if (s!= null){
                 b_s.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
@@ -225,5 +225,11 @@ public class bus extends Activity implements View.OnTouchListener, View.OnDragLi
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

@@ -152,6 +152,14 @@ public class grass extends Activity implements View.OnTouchListener, View.OnDrag
 
         if ((g!= null) && (r!= null) && (a!= null) && (((s1!=null) && (s2!=null)) || ((s3!=null) && (s4!=null)))) {
 
+            b_g.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_s.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_s2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_s3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_s4.setBackgroundColor(Color.parseColor("#8BC34A"));
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
@@ -262,5 +270,11 @@ public class grass extends Activity implements View.OnTouchListener, View.OnDrag
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

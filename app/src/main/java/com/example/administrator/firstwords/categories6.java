@@ -84,4 +84,10 @@ public class categories6  extends Activity {
         Intent cat6 = new Intent(this, january.class);
         startActivity(cat6);
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

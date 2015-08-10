@@ -269,4 +269,10 @@ public class fridge extends Activity implements View.OnTouchListener, View.OnDra
             }
         }
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

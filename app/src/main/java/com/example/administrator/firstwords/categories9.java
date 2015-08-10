@@ -106,4 +106,10 @@ public class categories9 extends Activity {
         Intent cat8 = new Intent(this, chief.class);
         startActivity(cat8);
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

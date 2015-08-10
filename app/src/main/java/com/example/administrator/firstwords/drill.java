@@ -216,7 +216,7 @@ public class drill extends Activity implements View.OnTouchListener, View.OnDrag
                 b_d.setBackgroundColor(Color.parseColor("#FF0000"));
             }
 
-            //s1
+            //l1
             if (l1!= null ) {
                 b_l1.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
@@ -227,7 +227,7 @@ public class drill extends Activity implements View.OnTouchListener, View.OnDrag
                 b_l1.setBackgroundColor(Color.parseColor("#FF0000"));
             }
 
-            //s2
+            //l2
             if (l2!= null ) {
                 b_l2.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
@@ -238,7 +238,7 @@ public class drill extends Activity implements View.OnTouchListener, View.OnDrag
                 b_l2.setBackgroundColor(Color.parseColor("#FF0000"));
             }
 
-            //e
+            //i
             if (i!= null ) {
                 b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
@@ -269,5 +269,11 @@ public class drill extends Activity implements View.OnTouchListener, View.OnDrag
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

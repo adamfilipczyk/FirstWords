@@ -197,33 +197,33 @@ public class april extends Activity implements View.OnTouchListener, View.OnDrag
 
             //change color to green if the letter is in proper container;
             //change color to red if the etter is not in proper container;
-            if (a != null) {
-                b_a.setBackgroundColor(Color.parseColor("#FF0000"));
-            } else {
+            if (a!= null) {
                 b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+            } else {
+                b_a.setBackgroundColor(Color.parseColor("#FF0000"));
             }
 
-            if (p != null) {
+            if (p!= null) {
                 b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
                 b_p.setBackgroundColor(Color.parseColor("#FF0000"));
             }
 
-            if (r != null) {
+            if (r!= null) {
                 b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
                 b_r.setBackgroundColor(Color.parseColor("#FF0000"));
             }
 
-            if (i != null) {
+            if (i!= null) {
                 b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
             } else {
                 b_i.setBackgroundColor(Color.parseColor("#FF0000"));
             }
 
-            if (l != null) {
+            if (l!= null) {
                 b_l.setBackgroundColor(Color.parseColor("#8BC34A"));
             } else {
                 b_l.setBackgroundColor(Color.parseColor("#FF0000"));
@@ -244,5 +244,11 @@ public class april extends Activity implements View.OnTouchListener, View.OnDrag
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

@@ -368,7 +368,7 @@ public class pepper extends Activity implements View.OnTouchListener, View.OnDra
             b_e4.setBackgroundColor(Color.parseColor("#8BC34A"));
         }
         else {
-            b_e4.setBackgroundColor(Color.parseColor("#FF0000"));
+            b_e2.setBackgroundColor(Color.parseColor("#FF0000"));
         }
 
         //p1
@@ -467,5 +467,9 @@ public class pepper extends Activity implements View.OnTouchListener, View.OnDra
         }
     }
 
-
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

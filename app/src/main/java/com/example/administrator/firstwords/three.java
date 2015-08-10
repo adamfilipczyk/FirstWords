@@ -152,6 +152,15 @@ public class three extends Activity implements View.OnTouchListener, View.OnDrag
 
         if ((t != null) && (h != null) && (r != null) && (((e1 != null) && (e2 != null)) || ((e3 != null) && (e4 != null)))) {
 
+            b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_h.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_r.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e4.setBackgroundColor(Color.parseColor("#8BC34A"));
+
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;
 
@@ -260,5 +269,11 @@ public class three extends Activity implements View.OnTouchListener, View.OnDrag
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

@@ -188,24 +188,31 @@ public class bath extends Activity implements View.OnTouchListener, View.OnDragL
             Random generate = new Random();
             int eventNumber = generate.nextInt(3)+1;
 
+            //b
             if (b!= null ) {
                 b_b.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
                 b_b.setBackgroundColor(Color.parseColor("#FF0000"));
             }
+
+            //a
             if (a!= null){
                 b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
                 b_a.setBackgroundColor(Color.parseColor("#FF0000"));
             }
+
+            //t
             if (t!= null){
                 b_t.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
                 b_t.setBackgroundColor(Color.parseColor("#FF0000"));
             }
+
+            //h
             if (h!= null){
                 b_h.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
@@ -229,5 +236,11 @@ public class bath extends Activity implements View.OnTouchListener, View.OnDragL
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

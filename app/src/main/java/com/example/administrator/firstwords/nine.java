@@ -147,6 +147,13 @@ public class nine  extends Activity implements View.OnTouchListener, View.OnDrag
 
         if ((e != null) && (i != null) && (((n1 != null) && (n2 != null)) || ((n3 != null) && (n4 != null)))) {
 
+            b_n.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_n2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_n3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_n4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
+
             Random generate = new Random();
             int eventNumber = generate.nextInt(3) + 1;
 
@@ -225,11 +232,11 @@ public class nine  extends Activity implements View.OnTouchListener, View.OnDrag
             }
 
             //e
-            if (i!= null ) {
-                b_i.setBackgroundColor(Color.parseColor("#8BC34A"));
+            if (e!= null ) {
+                b_e.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
-                b_i.setBackgroundColor(Color.parseColor("#FF0000"));
+                b_e.setBackgroundColor(Color.parseColor("#FF0000"));
             }
 
 
@@ -249,5 +256,11 @@ public class nine  extends Activity implements View.OnTouchListener, View.OnDrag
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

@@ -362,7 +362,7 @@ public class teacher  extends Activity implements View.OnTouchListener, View.OnD
 
             //h
             if (h!= null ) {
-                b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+                b_h.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
                 b_h.setBackgroundColor(Color.parseColor("#FF0000"));
@@ -392,5 +392,11 @@ public class teacher  extends Activity implements View.OnTouchListener, View.OnD
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

@@ -145,6 +145,14 @@ public class socks extends Activity implements View.OnTouchListener, View.OnDrag
 
         if ((o!= null) && (c!=null) && (k!= null) && (((s1!=null) && (s2!=null)) || ((s3!=null) && (s4!=null)))) {
 
+            b_s.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_s2.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_s3.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_s4.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_o.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_c.setBackgroundColor(Color.parseColor("#8BC34A"));
+            b_k.setBackgroundColor(Color.parseColor("#8BC34A"));
+
             correct1 = MediaPlayer.create(this, R.raw.welldone);
             correct2 = MediaPlayer.create(this, R.raw.congrats);
             correct3 = MediaPlayer.create(this, R.raw.didit);
@@ -266,5 +274,9 @@ public class socks extends Activity implements View.OnTouchListener, View.OnDrag
         }
     }
 
-
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

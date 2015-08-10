@@ -215,20 +215,20 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
                 b_a.setBackgroundColor(Color.parseColor("#FF0000"));
             }
 
-            if (p != null) {
+            if (p!= null) {
                 b_p.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
-            else if (p3 != null) {
+            else if (p3!= null) {
                 b_p3.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
                 b_p.setBackgroundColor(Color.parseColor("#FF0000"));
             }
 
-            if (p2 != null) {
+            if (p2!= null) {
                 b_p2.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
-            else if (p4 != null) {
+            else if (p4!= null) {
                 b_p4.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
@@ -264,5 +264,11 @@ public class apple extends Activity implements View.OnTouchListener, View.OnDrag
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

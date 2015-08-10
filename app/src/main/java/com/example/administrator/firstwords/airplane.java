@@ -277,7 +277,7 @@ public class airplane extends Activity implements View.OnTouchListener, View.OnD
                 b_a2.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else if (a4!=null){
-                b_a.setBackgroundColor(Color.parseColor("#8BC34A"));
+                b_a4.setBackgroundColor(Color.parseColor("#8BC34A"));
             }
             else {
                 b_a2.setBackgroundColor(Color.parseColor("#FF0000"));
@@ -299,5 +299,11 @@ public class airplane extends Activity implements View.OnTouchListener, View.OnD
             }
 
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
     }
 }

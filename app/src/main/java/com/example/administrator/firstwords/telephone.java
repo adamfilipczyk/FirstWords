@@ -486,4 +486,10 @@ public class telephone extends Activity implements View.OnTouchListener, View.On
                 break;
         }
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }

@@ -301,4 +301,10 @@ public class dentist extends Activity implements View.OnTouchListener, View.OnDr
             }
         }
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        System.exit(0);
+    }
 }
