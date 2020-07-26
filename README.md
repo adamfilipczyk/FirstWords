@@ -28,7 +28,7 @@ Installation on Huawei P Smart with Android 9.1.0 example:
   
 Software Disclaimer
 -------------------
-The Software has been written as a programming exercise, and it is no longer continued
+The First Words has been developed purely as a programming exercise, and it is no longer continued
 
 There are inherent dangers in the use of any software available for download on the Internet, and we caution you to make sure that you completely understand the potential risks before downloading any of the software.
 
