@@ -9,7 +9,7 @@ The application was wrote the way that it does remember its state, so every time
 
 Application is designed for the phones and tablets running Android in version 4.0 Ice Cream Sandwich and up. Minimum screen size is set to 4.7 inch and bigger up to 10 inches. Application does not contain any form of advertisement, nor monetizing systems built in, so there no obstacles and it is safe to use by kids. Also there is no additional permissions required during the installation process and it is totally free to use.
 
-The application initially published in Google Store, but due to the Google agresive policies removed and published on the GitHub page only.
+The application initially published in Google Store, but due to the Google agresive policies it was removed and accessible on the GitHub project page only.
 
 Installation intruction
 ------------------------
