@@ -11,6 +11,11 @@ Application is designed for the phones and tablets running Android in version 4.
 
 The application initially published in Google Store, but due to the Google agresive policies it was removed and accessible on the GitHub project page only.
 
+Short video
+-----------
+
+Youtube: https://youtu.be/U3Kk3U7sf6c
+
 Installation intruction
 ------------------------
 Installation on Huawei P Smart with Android 9.1.0 example: 
