@@ -14,7 +14,7 @@ The application initially published in Google Store, but due to the Google agres
 Short video
 -----------
 
-Youtube: https://youtu.be/U3Kk3U7sf6c
+Youtube: https://www.youtube.com/watch?v=U3Kk3U7sf6c
 
 Installation intruction
 ------------------------
