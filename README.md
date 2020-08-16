@@ -9,7 +9,7 @@ The application was written the way that it does remember its state, so every ti
 
 Application is designed for the phones and tablets running Android version 4.0 Ice Cream Sandwich and up. The minimum screen size was set to 4.7 inches and bigger. The application does not contain any form of advertisement, nor monetizing systems built-in, so there no obstacles, and it is safe to use by children. Also, there are no additional permissions required during the installation process, and it is totally free to use.
 
-The application initially published in Google Store, but due to the Google aggressive policies, it was removed and accessible on the GitHub project page only.
+The application initially published in Google Store, but due to the Google aggressive policies, it was removed and is accessible on the GitHub project page only.
 
 Short video
 -----------
