@@ -21,7 +21,7 @@ Installation intruction
 Installation on Huawei P Smart with Android 9.1.0 example: 
 
   - Download the "FirstWords-rc.apk" installation file from "Installation file" folder
-  - After installation file is dowloaded we need to allow installations from external sources on our phone. 
+  - After installation file is dowloaded we need to allow installations from external sources on our phone.
   - Go to Settings > Security & Privacy > More settings
   - Tap "Install apps from external sources"
   - Tap the application from where we want to allow the installation (eg. Files in case when installation file is downloaded)
