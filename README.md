@@ -14,7 +14,7 @@ The application initially published in Google Store, but due to the Google aggre
 Known issues
 ------------
   - Please bear in mind that in the "profession" category, Natasha says chief rather than a chef.
-  - More than one bubble letter fit into one container. If some of the letters are not found on the screen, please check if it did not fell under other ones. 
+  - More than one bubble letter fits into one container. If some of the letters are not found on the screen, please check if it did not fell under other ones. 
 
 
 Short video
