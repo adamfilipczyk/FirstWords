@@ -1,7 +1,7 @@
 # FirstWords
 First Words teaches kids how to build the words with the help of pictures, sounds and drag'n'drop mechanism. First Words is a simple spelling game. A whole project was initiated by my few years old daughter Natasha in the middle of June 2015. She basically asked me for some new mobile game, so we've agreed we can try to build one from scratch.
 
-We have planned ten categories. Initially, only one category is active. Every completed category unlocks the next one. Each category contains 9 - 15 words, and there are 116 words altogether, so it's a helpful starting spelling tool for the kids.
+We have planned ten categories. Animals, fruit & veg, clothes, electronic, home, months, nature, numbers, proffession and vehicles. Initially, only one category is active "animals". Every completed category unlocks the next one. Each category contains 9 - 15 words, and there are 116 words altogether, so it's a helpful starting spelling tool for the kids.
 
 Each word is loaded with the help of little picture and sound. Natasha's voice is used to describe what is on the image. All pictures and graphics were carefully chosen and approved by Natasha, so she has a significant contribution to a whole project. The game rules are straightforward. As mentioned, each word is loaded with the picture and Natasha's voice is saying what is on the image. Also, little bubble letters and black containers appear, next to the image and at the bottom of the screen. Bubble letters have to be correctly moved down to the black boxes with the help of drag-n-drop mechanism. Every time the word is spelt wrong, Natasha's voice will say that something went wrong. While the word is spelt correctly, the application automatically moves forward to the next word. After all words in the category are successfully done, congratulation screen will pop up, and one star will be added to the bottom of the choosing category screen. After every second category is completed, the screen with 2 minutes break will pop up. If the child does not want to take a break, there is an option to skip the break by tapping the lazy bee belly and move forward with the next category.
 
@@ -10,6 +10,12 @@ The application was written the way that it does remember its state, so every ti
 Application is designed for the phones and tablets running Android version 4.0 Ice Cream Sandwich and up. The minimum screen size was set to 4.7 inches and bigger. The application does not contain any form of advertisement, nor monetizing systems built-in, so there no obstacles, and it is safe to use by children. Also, there are no additional permissions required during the installation process, and it is totally free to use.
 
 The application initially published in Google Store, but due to the Google aggressive policies, it was removed and is accessible on the GitHub project page only.
+
+Known issues
+------------
+  - Please bear in mind that in the "profession" category, Natasha says chief rather than a chef.
+  - More than one bubble letter fit into one container. If some of the letters are not found on the screen, please check if it did not fell under other ones. 
+
 
 Short video
 -----------
