@@ -67,7 +67,6 @@ In no event shall we be liable to you or any third parties for any special, puni
 
 ## Tested platforms 
 ----------------
-
 - Huawei P Smart with Android 9.1.0
 - Galaxy A03 with Android version 11
 
