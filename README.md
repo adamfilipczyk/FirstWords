@@ -59,6 +59,7 @@ The software, code sample and their documentation made available on this website
 
   - could include technical or other mistakes, inaccuracies or typographical errors. We may make changes to the software or documentation made available on its web site at any time without prior-notice.
   - may be out of date, and we make no commitment to update such materials.
+  - could be a subject of application vulnerabilities.
   
 We assume no responsibility for errors or omissions in the software or documentation available from its web site.
 
